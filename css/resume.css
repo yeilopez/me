@@ -127,6 +127,7 @@ input:checked + .slider:before {
   border-radius: 25px;
   transition: 0.2s;
   cursor: pointer;
+  font-size: 0.7rem;
 }
 
 .card_btn span {
