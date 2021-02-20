@@ -1,4 +1,4 @@
-:root{--principal:#4583FE;--secundario:#20253a;--terciario:#FFEBF7;--white:#fff;--gris_oscuro:#6D757E;--gris:#BCD6FF;--alternativo: #4583FE;--gris_alt:#BCD6FF}
+:root{--principal:#4583FE;--secundario:#20253a;--terciario:#FFEBF7;--white:#fff;--gris_oscuro:#6D757E;--gris:#BCD6FF;--alternativo: #4583FE;--gris_alt:#e6f2ff}
 
 [data-theme="dark"] {
 
@@ -8,7 +8,7 @@
     --white: #20253a;
     --gris: #20253a;
     --alternativo:#BCD6FF;
-    --gris_alt:#BCD6FF;
+    --gris_alt:#e6f2ff;
 }
 body{font-family:'Open Sans',serif;padding-top:54px;color:var(--gris_oscuro);background-color:var(--white)}i{color:var(--principal);margin:0 5px;}.icon_dark{color:var(--secundario)}.icon_medium{color:var(--principal);margin-right:10px}ul{list-style:none;padding:0}.list-inline-item{width:18%}.list-inline-item a img{max-width:60px}
 .list-inline-item a img:hover{  transform: translateY(-8%);transition: 0.2s}.list-social-icons{padding:0}.men_nav{margin:10px 0 0 0}.nav_aba{padding-left:20px;font-size:.8em}.logos{max-width:100px;width:100%}.ser_soy{display:flex;flex-wrap:wrap}.ser_soy i{font-size:1.5em}.pad{padding:0 15px}
@@ -127,7 +127,7 @@ input:checked + .slider:before {
   border-radius: 25px;
   transition: 0.2s;
   cursor: pointer;
-  font-size: 0.7rem;
+  max-width: 300px;
 }
 
 .card_btn span {
@@ -170,3 +170,18 @@ p{max-width: 850px}
 .a_alt{text-decoration: none !important;color: var(--alternativo)}
 :focus-visible{border: dashed 5px red; outline: none !important}
 :-moz-focusring{border: dashed 5px red; outline: none !important}
+
+.preloader {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+  z-index: 9999;
+  pointer-events: none;
+}

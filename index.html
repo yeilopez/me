@@ -30,6 +30,11 @@
   </head>
 
   <body id="page-top">
+
+    <div class="preloader">
+      <img src="img/spinner.svg" alt="spinner">
+    </div>
+
   <ul class="sr-only">
     <li><a href="english.html" target="_self">Change language to English. Cambiar idioma a Inglés</a></li>
     <li><a href="#top">Ir al contenido principal</a></li>
@@ -342,7 +347,7 @@
             <h2 class="mb-3">Contacto <i class="lni lni-comments i_size"></i></h2>
             <div class="subheading mb-3">Hablemos o tomemos un café</div>
             <p>Esta es mi pequeña historia. Para algún trabajo, colaboración o simplemente charlar sobre lo que me ha pasado en la ciudad, podemos charlar un rato:</p>
-            <a href="https://calendly.com/yeilpz/entrevista-de-trabajo" target="_blank"><button class="card_btn" aria-labelledby="Agendar reunión">Agendar reunión <span>→</span></button></a>
+            <a href="https://calendly.com/yeilpz/charla-entrevista" target="_blank"><button class="card_btn" aria-labelledby="Agendar reunión">Agendar reunión <span>→</span></button></a>
         </div>
         <div class="col-xs-12 col-sm-5 col-lg-4 todo mar-top ">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -365,6 +370,23 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    
+    <script>
+    const preloader = document.querySelector('.preloader');
+    const fadeEffect = setInterval(() => {
+ 
+    if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+      }
+    if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+    } else {
+    clearInterval(fadeEffect);
+    }
+    }, 100);
+    window.addEventListener('load', fadeEffect);
+
+    </script>
   </div>
   </body>
 
