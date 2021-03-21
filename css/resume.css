@@ -44,7 +44,7 @@ body{font-family:'Open Sans',serif;padding-top:54px;color:var(--gris_oscuro);bac
   }
 
   .bg-primary{background-color:var(--white)!important}
-  a:active,a:hover{color:var(--principal);font-weight:600;outline:0}.img-profile{width:50px}h1{font-size:5rem;line-height:4rem}.navbar-nav{margin-bottom:5%;color:var(--alternativo)}.ser_soy{margin-top: 40px}
+  a:active,a:hover{color:var(--principal);outline:0}.img-profile{width:50px}h1{font-size:5rem;line-height:4rem}.navbar-nav{margin-bottom:5%;color:var(--alternativo)}.ser_soy{margin-top: 40px}
   .nav-link:focus .nav-link:hover{color:var(--principal)}.rw-words span{position:absolute;opacity:0;overflow:hidden}.rw-sentence span{margin-right:.5rem}.rw-words-1 span{animation:rotateWord 18s linear infinite 0s}.rw-words span:nth-child(2){animation-delay:3s}.rw-words span:nth-child(3){animation-delay:6s}.rw-words span:nth-child(4){animation-delay:9s}.rw-words span:nth-child(5){animation-delay:12s}.rw-words span:nth-child(6){animation-delay:15s}@-webkit-keyframes rotateWord{0%{opacity:0}2%{opacity:0;-webkit-transform:translateY(-30px)}5%{opacity:1;-webkit-transform:translateY(0)}17%{opacity:1;-webkit-transform:translateY(0)}20%{opacity:0;-webkit-transform:translateY(30px)}80%{opacity:0}100%{opacity:0}}@-ms-keyframes rotateWord{0%{opacity:0}2%{opacity:0;-ms-transform:translateY(-30px)}5%{opacity:1;-ms-transform:translateY(0)}17%{opacity:1;-ms-transform:translateY(0)}20%{opacity:0;-ms-transform:translateY(30px)}80%{opacity:0}100%{opacity:0}}@keyframes rotateWord{0%{opacity:0}2%{opacity:0;-webkit-transform:translateY(-30px);transform:translateY(-30px)}5%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}17%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}20%{opacity:0;-webkit-transform:translateY(30px);transform:translateY(30px)}80%{opacity:0}100%{opacity:0}}.vert-move{-webkit-animation:mover 1s infinite alternate;animation:mover 1s infinite alternate}.vert-move{-webkit-animation:mover 1s infinite alternate;animation:mover 1s infinite alternate}@-webkit-keyframes mover{0%{transform:translateY(0)}100%{transform:translateY(-10px)}}@keyframes mover{0%{transform:translateY(0)}100%{transform:translateY(-10px)}}
 .theme-switch-wrapper {
   display: flex;
@@ -129,6 +129,10 @@ input:checked + .slider:before {
   max-width: 300px;
 }
 
+.card_btn a{
+  color: var(--white)
+}
+
 .card_btn span {
   margin-left: 0.25rem;
   transition: 0.2s;
@@ -168,7 +172,7 @@ color: #0d0d0d;
 margin-bottom: 1.5rem;
 }
 
-.card a{
+a{
 text-decoration: none !important;
 }
 
