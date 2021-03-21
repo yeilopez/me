@@ -138,6 +138,29 @@ input:checked + .slider:before {
   margin-left: 0.7rem;
 }
 
+.line_btn {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--principal);
+  background-color:var(--white);
+  border: solid 2px var(--principal);
+  border-radius: 25px;
+  transition: 0.2s;
+  cursor: pointer;
+  max-width: 300px;
+  margin-top: 16px;
+}
+
+.line_btn span {
+  margin-left: 0.25rem;
+  transition: 0.2s;
+}
+
+.line_btn:hover span, .line_btn:active span {
+  margin-left: 0.7rem;
+}
+
 .card_header{
 font-size: 2rem;
 font-weight: 500;
