@@ -262,7 +262,7 @@ p{max-width: 850px}
   right: 0;
   display: block;
   z-index: 1;
-  background-color: var(--alternativo);
+  background-color: var(--principal);
   color: #fff;
   padding: 10px 20px;
   border-bottom: solid 1px white;
