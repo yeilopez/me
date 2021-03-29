@@ -148,7 +148,7 @@ input:checked + .slider:before {
   text-align: center;
   color: var(--principal);
   background-color:var(--white);
-  border: solid 2px var(--principal);
+  border: solid 2px var(--alternativo);
   border-radius: 25px;
   transition: 0.2s;
   cursor: pointer;
