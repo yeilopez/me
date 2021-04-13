@@ -20,6 +20,8 @@ h1,h2,h3,h5,h6 {
   font-family:MuseoModerno,cursive;font-weight:700;color:var(--secundario)
 }
 
+h1 {color: #20253a}
+
 .subheading{font-weight:500;font-size:1.35rem;margin:20px 0;color:var(--alternativo);}.desc{font-size:1.35rem;margin:5px 0}
 .list-social-icons a{color:var(--white); padding: 13px 0}.list-social-icons a:hover{color:var(--principal)}#sideNav .navbar-nav .nav-item .nav-link{padding-left:15%}.navbar-dark .navbar-toggler {
   color: var(--alternativo);border-color: var(--alternativo)}.nombre{font-size:2rem;color:var(--alternativo);display:none;font-family:MuseoModerno,cursive}.navbar-toggler{font-size:1rem}.detalle{display:none}.nav-link{border-top-left-radius:50px;border-bottom-left-radius:50px;border-top-right-radius:50px;border-bottom-right-radius:50px;padding-left:25%}.nav-link:hover{color:var(--principal)!important}.navbar-dark .navbar-nav .nav-link{color:var(--secundario)}
@@ -128,6 +130,10 @@ input:checked + .slider:before {
   background-color: var(--white);
 }
 
+.maxwi{
+  max-width: 300px;
+}
+
 .card_btn {
   width: 100%;
   padding: 0.5rem;
@@ -138,7 +144,6 @@ input:checked + .slider:before {
   border-radius: 25px;
   transition: 0.2s;
   cursor: pointer;
-  max-width: 300px;
 }
 
 .card_btn a{
