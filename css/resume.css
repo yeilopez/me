@@ -20,7 +20,7 @@ h1,h2,h3,h5,h6 {
   font-family:MuseoModerno,cursive;font-weight:700;color:var(--secundario)
 }
 
-h1 {color: #20253a}
+h1 {color: var(--secundario)}
 
 .subheading{font-weight:500;font-size:1.35rem;margin:20px 0;color:var(--alternativo);}.desc{font-size:1.35rem;margin:5px 0}
 .list-social-icons a{color:var(--white); padding: 13px 0}.list-social-icons a:hover{color:var(--principal)}#sideNav .navbar-nav .nav-item .nav-link{padding-left:15%}.navbar-dark .navbar-toggler {
@@ -37,8 +37,9 @@ h1 {color: #20253a}
 }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}.img-profile{width:100%!important}}section.resume-section{border-bottom:1px solid var(--alternativo);padding-top:5rem!important;padding-bottom:5rem!important}
 
-@media (min-width:320px){#contact {
-  padding-bottom: 0 !important;}
+@media (min-width:320px)
+  {h1{font-size: 3rem !important}.subti{font-size: 1rem !important}#contact {
+  padding-bottom: 0 !important}
 .navbar-nav{margin: 0 auto; width: 70%;color:var(--alternativo)}
   .navbar{border-bottom: solid 0.5px var(--alternativo)}.mitad{width:100%}.resume-content{margin-left:0;margin-top:10px}.i_size{font-size:30px}h2{font-size:2.5rem}.nom_mob{font-family:MuseoModerno,cursive;color:var(--alternativo)}.redes{text-align:center}.nav-item{width:90%;margin:auto}.mar-top{margin-top:3em}#top{background-image:url(../img/ilus/paisaje_mobile.svg);background-size:cover;background-position:center;background-repeat:no-repeat;min-height:75vh}
   .ser_soy{margin-top: 10px}.rw-words{display:block}
@@ -50,11 +51,11 @@ h1 {color: #20253a}
   h2{font-size:3rem}
   .i_size{font-size:40px}
   .nav-item{margin:auto}
-  .redes{margin:0 0 2% 0}#top{background-image:url(../img/ilus/paisaje_desktop.svg);min-height:82vh}
+  .redes{margin:0 0 2% 0}#top{background-image:url(../img/ilus/paisaje_desktop.svg);height:75vh}
   .mar-top{margin-top:1.5em}
 }
 
-  @media (min-width:992px){section.resume-section{padding-top:3rem;padding-bottom:3rem}.nombre{display:block}.detalle{display:block}#top{min-height:85vh}h1{font-size:6rem;line-height:5.5rem}.redes{text-align:center}.nav-item{width:90%;margin:auto}.rw-words{display:inline}
+  @media (min-width:992px){section.resume-section{padding-top:3rem;padding-bottom:3rem}.nombre{display:block}.detalle{display:block}#top{height:100vh}h1{font-size:6rem;line-height:5.5rem}.redes{text-align:center}.nav-item{width:90%;margin:auto}.rw-words{display:inline}
   }
 
   .bg-primary{background-color:var(--white)!important}
