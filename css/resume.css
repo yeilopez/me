@@ -22,21 +22,21 @@ body{
   font-family: 'Poppins', sans-serif;
   padding-top:54px;
   color:var(--gris_oscuro);
-  background-color:var(--gris)
+  background-color: #f6f9ff;
 }
 
 .contenedor {
-  max-width: 1366px;
+  max-width: 1600px;
   margin: auto;
   display: flex;
 }
 
 #avatar_profile {
   background: var(--bg_avatar);
-  width: 128px;
-  max-width: 128px;
-  height: 128px;
-  margin-top: 16px;
+  width: 120px;
+  max-width: 120px;
+  height: 120px;
+  margin-top: 8px;
 }
 #avatar_profile_m {
   background: var(--bg_avatar);
@@ -61,7 +61,12 @@ i {
     transform: translateY(-8%);
     transition: 0.5s;
   }
-    .list-social-icons{padding:0}.men_nav{margin:10px 0 0 0}.nav_aba{padding-left:20px;font-size:.8em}.logos{max-width:100px;width:100%}.ser_soy{display:flex;flex-wrap:wrap}.ser_soy i{font-size:1.5em}.pad{padding:0 15px}.lni-travel{color: var(--principal)}
+.list-social-icons {
+  padding:0;
+  display: flex;
+  justify-content: center;
+}
+.men_nav{margin:10px 0 0 0}.nav_aba{padding-left:20px;font-size:.8em}.logos{max-width:100px;width:100%}.ser_soy{display:flex;flex-wrap:wrap}.ser_soy i{font-size:1.5em}.pad{padding:0 15px}.lni-travel{color: var(--principal)}
 .shadow{box-shadow:0 0 20px rgba(0,0,0,.1),0 0 0 rgba(0,0,0,.1)}
 .mar-top-6 {
   margin-top:3em;
