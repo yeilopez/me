@@ -24,3 +24,5 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, true);
 
+document.getElementById("checkbox").checked = true;
+
