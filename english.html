@@ -15,9 +15,9 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 
     <link href="css/style.css" rel="stylesheet">
@@ -36,7 +36,79 @@
     <img src="img/spinner.svg" alt="spinner">
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <header id="header" class="mobi chanback avatar_profile_m">
+    <div class="navbar-brand js-scroll-trigger">
+      <div id="avatar_profile_m" class="img-fluid img-profile rounded-circle mx-auto nom_mob">
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="toggle-menu">
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="menu" class="">
+
+    <nav class="main-nav">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger active" href="#top" tabindex="-1">Hi!</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link js-scroll-trigger" href="#about" tabindex="-1">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education" tabindex="-1">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills" tabindex="-1">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact" tabindex="-1">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="menu-footer">
+
+      <div class="redes">
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/yeilpz/" target="_blank" tabindex="-1" data-tooltip="Instagram"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.behance.net/yeilpz" target="_blank" tabindex="-1" data-tooltip="Behance"><img src="img/icons/behance.svg" alt="Behance"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" tabindex="-1" data-tooltip="Linkedin"><img src="img/icons/linkedin.svg" alt="Linkedin"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ofMG90k6VLvjQE_26prBBAKAtzbGuK8xo06vqQaKFyg_Jw/viewform" target="_blank" tabindex="-1" data-tooltip="Send message"><img src="img/icons/mail.svg" alt="Send message"></a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav">
+        <ul class="nav_aba mb-6">
+          <li class="bitem">
+              <a href="english.html" target="_self" class="a_alt" tabindex="-1" data-tooltip="Ver en Español">
+                <i class="lni lni-world icon_medium"></i> 
+                <p>ENG</p></a>
+          </li>
+          <li class="bitem">
+            <a href="https://drive.google.com/drive/folders/1nb_9_8djHKRSHvFAJJo2zULVP4pleFTC?usp=sharing" target="_blank" class="a_alt" tabindex="-1" data-tooltip="Download resume (PDF)">
+              <i class="lni lni-cloud-download icon_medium"></i>
+              <p>CV</p></a>
+          </li>
+          <div class="b">
+          </div> 
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top desk" id="sideNav">
 
       <div class="navbar-brand js-scroll-trigger">
         <div id="avatar_profile_m" class="img-fluid img-profile rounded-circle mx-auto nom_mob">
@@ -74,7 +146,7 @@
               </li>
             </ul>
           </div>
-        <div class="men_nav mar-top">
+        <div class="men_nav">
           <ul>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger active" href="#top" tabindex="-1"><i class="lni lni-travel icon_medium"></i>Hi!</a>
@@ -108,17 +180,17 @@
               <p>RES</p></a>
           </li>
 
-          <li class="bitem">
-            <a href="#" class="a_alt" data-tooltip="Dark mode">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox"/>
-              <span class="slider round"></span>
-            </label>
-            </a>
-            <p>DARK</p>
-          
-          </li>
-          
+          <div class="a">
+            <li class="bitem" id="moveElement">
+              <a href="#" class="a_alt" data-tooltip="Dark mode">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox"/>
+                <span class="slider round"></span>
+              </label>
+              </a>
+              <p>DARK</p>
+            </li>
+          </div>
         </ul>
 
     </div>
@@ -374,8 +446,10 @@
             <div class="card shadow">
               <a href="https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process" target="_blank" tabindex="-1"><img src="img/portfolio/suitable.png" alt="" class="card-img-top">
               <div class="card-body">
+                <div>
                 <h5 id="suitablemain"> Suitable part 1</h5>
                 <p class="text-muted card-text">Logistics process animation</p>
+                </div>
                 <button class="card_btn" >Go to Behance <span>→</span></button>
               </div>
             </a>
@@ -386,8 +460,10 @@
             <div class="card shadow">
               <a href="https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations" target="_blank" tabindex="-1"><img src="img/portfolio/suitable4.png" alt="" class="card-img-top">
               <div class="card-body">
+                <div>
                 <h5 id="suitable4"> Suitable part 2</h5>
                 <p class="text-muted card-text">4 animations about Suitable's services</p>
+                </div>
                 <button class="card_btn" >Go to Behance <span>→</span></button>
               </div>
             </a>
@@ -397,8 +473,10 @@
           <div class="col-sm-12 mb-3 pad crd">
             <div class="card shadow"><a href="https://www.behance.net/gallery/113799217/Rediseno-MateClub-de-conversacion" target="_blank" tabindex="-1"><img src="img/portfolio/mateclub.png" alt="" class="card-img-top">
               <div class="card-body">
-                <h5 id="mateclub"> Ux UI - Mateclub</h5>
+                <div>
+                <h5 id="mateclub"> Mateclub</h5>
                 <p class="text-muted card-text">A new way to learn languages whith mate</p>
+                </div>
                 <button class="card_btn" aria-labelledby="mateclub">Go to Behance <span>→</span></button>
               </div>
             </a>
@@ -409,8 +487,10 @@
             <div class="card shadow">
               <a href="https://www.behance.net/gallery/89936865/Descuentio" target="_blank" tabindex="-1"><img src="img/portfolio/descuentio.png" alt="" class="card-img-top">
               <div class="card-body">
-                <h5 id="descuentio"> Ux Ui - Descuentio</h5>
-                <p class="text-muted card-text">We change the way we go to the Supermarket</p>
+                <div>
+                <h5 id="descuentio"> Descuentio</h5>
+                <p class="text-muted card-text">Save on your supermarket purchases</p>
+                </div>
                 <button class="card_btn" >Go to Behance <span>→</span></button>
               </div>
             </a>
@@ -420,8 +500,10 @@
           <div class="col-sm-12 mb-3 pad crd">
             <div class="card shadow"><a href="https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata" target="_blank" tabindex="-1"><img src="img/portfolio/teatro_argentino.png" alt="" class="card-img-top">
               <div class="card-body">
+                <div>
                 <h5 id="sistema"> Design system</h5>
                 <p class="text-muted card-text">Graphic identity for the Teatro Argentino</p>
+                </div>
                 <button class="card_btn" aria-labelledby="sistema">Go to Behance <span>→</span></button>
               </div>
             </a>
@@ -440,7 +522,7 @@
 <section id="contact">
 
   <div class="hl_container hsticky">
-      <h2>Contacto <i class="lni lni-bolt-alt i_size"></i></h2>
+      <h2>Contact <i class="lni lni-bolt-alt i_size"></i></h2>
       <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_brbdp3km.json"  background="transparent"  speed="1"  style="width: 100%; height: 320px;"  loop  autoplay></lottie-player>
   </div>
 
@@ -448,7 +530,7 @@
     <div class="col-xs-12 col-sm-7 cont">
       <h2>Let's talk <i class="lni lni-comments i_size"></i></h2>
       <div class="subheading mb-3">Write me or have coffee</div>
-      <p>Esta es mi historia. Para algún trabajo, colaboración o simplemente saber sobre lo que me ha pasado en la ciudad, podemos charlar un rato:</p>
+      <p>This is my story. For some work, collaboration or just know what happened to me in the city, we can chat for a while:</p>
       <button class="card_btn ajust mar-top-6"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ofMG90k6VLvjQE_26prBBAKAtzbGuK8xo06vqQaKFyg_Jw/viewform" target="_blank">Send message <span>→</span></a></button>
       <p class="p-3 color_alt">yeison.prodes@gmail.com</p>
     </div>
@@ -463,9 +545,7 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <script src="js/scripts.js"></script>
 
     <script>

@@ -15,9 +15,9 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 
     <link href="css/style.css" rel="stylesheet">
@@ -36,7 +36,79 @@
     <img src="img/spinner.svg" alt="spinner">
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <header id="header" class="mobi chanback avatar_profile_m">
+    <div class="navbar-brand js-scroll-trigger">
+      <div id="avatar_profile_m" class="img-fluid img-profile rounded-circle mx-auto nom_mob">
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="toggle-menu">
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="menu" class="">
+
+    <nav class="main-nav">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger active" href="#top" tabindex="-1">Buenas!</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link js-scroll-trigger" href="#about" tabindex="-1">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education" tabindex="-1">Educación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills" tabindex="-1">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact" tabindex="-1">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="menu-footer">
+
+      <div class="redes">
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/yeilpz/" target="_blank" tabindex="-1" data-tooltip="Instagram"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.behance.net/yeilpz" target="_blank" tabindex="-1" data-tooltip="Behance"><img src="img/icons/behance.svg" alt="Behance"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" tabindex="-1" data-tooltip="Linkedin"><img src="img/icons/linkedin.svg" alt="Linkedin"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ofMG90k6VLvjQE_26prBBAKAtzbGuK8xo06vqQaKFyg_Jw/viewform" target="_blank" tabindex="-1" data-tooltip="Enviar mensaje"><img src="img/icons/mail.svg" alt="Enviar mensaje"></a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav">
+        <ul class="nav_aba mb-6">
+          <li class="bitem">
+              <a href="english.html" target="_self" class="a_alt" tabindex="-1" data-tooltip="View in English">
+                <i class="lni lni-world icon_medium"></i> 
+                <p>ESP</p></a>
+          </li>
+          <li class="bitem">
+            <a href="https://drive.google.com/drive/folders/1nb_9_8djHKRSHvFAJJo2zULVP4pleFTC?usp=sharing" target="_blank" class="a_alt" tabindex="-1" data-tooltip="Descargar CV (PDF)">
+              <i class="lni lni-cloud-download icon_medium"></i>
+              <p>CV</p></a>
+          </li>
+          <div class="b">
+          </div> 
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top desk" id="sideNav">
 
       <div class="navbar-brand js-scroll-trigger">
         <div id="avatar_profile_m" class="img-fluid img-profile rounded-circle mx-auto nom_mob">
@@ -50,9 +122,6 @@
       </div>
 
       <span class="nombre">Yeison</span><span class="detalle">Product designer</span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="-1">
-       <span> Menú <i class="lni lni-menu"></i></span>
-      </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -74,8 +143,8 @@
               </li>
             </ul>
           </div>
-        <div class="men_nav mar-top">
-          <ul>
+        <div class="men_nav">
+        <ul>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger active" href="#top" tabindex="-1"><i class="lni lni-travel icon_medium"></i>Buenas!</a>
           </li>
@@ -94,21 +163,19 @@
         </ul>
         </div>
       </div>
-
         <ul class="nav_aba mb-6">
           <li class="bitem">
               <a href="english.html" target="_self" class="a_alt" tabindex="-1" data-tooltip="View in English">
                 <i class="lni lni-world icon_medium"></i> 
                 <p>ESP</p></a>
           </li>
-
           <li class="bitem">
             <a href="https://drive.google.com/drive/folders/1nb_9_8djHKRSHvFAJJo2zULVP4pleFTC?usp=sharing" target="_blank" class="a_alt" tabindex="-1" data-tooltip="Descargar CV (PDF)">
               <i class="lni lni-cloud-download icon_medium"></i>
               <p>CV</p></a>
           </li>
-
-          <li class="bitem">
+          <div class="a">
+          <li class="bitem" id="moveElement">
             <a href="#" class="a_alt" data-tooltip="Modo oscuro">
             <label class="theme-switch" for="checkbox">
               <input type="checkbox" id="checkbox"/>
@@ -116,10 +183,10 @@
             </label>
             </a>
             <p>DARK</p>
-          
           </li>
-          
+          </div>
         </ul>
+        
 
     </div>
 
@@ -165,12 +232,12 @@
                 <div class="rw-sentence mt-4 mb-4">
                   <span>Nací en un pueblo de 🇨🇴 Colombia y soy:
                       <span class="rw-words rw-words-1 color_alt">
-                        <span><i class="lni lni-coffee-cup"></i>Catador de buen café</span>
-                        <span><i class="lni lni-keyword-research"></i>Curioso y cambiante</span>
-                        <span><i class="lni lni-library"></i>Lector e investigador</span>
-                        <span><i class="lni lni-eye"></i>Admirador de la cultura</span>
-                        <span><i class="lni lni-happy"></i>Conversador delirante</span>
-                        <span><i class="lni lni-leaf"></i>Visitante de la naturaleza</span>
+                        <span>Catador de buen café<i class="lni lni-coffee-cup"></i></span>
+                        <span>Curioso y cambiante<i class="lni lni-keyword-research"></i></span>
+                        <span>Lector e investigador<i class="lni lni-library"></i></span>
+                        <span>Admirador de la cultura<i class="lni lni-eye"></i></span>
+                        <span>Conversador delirante<i class="lni lni-happy"></i></span>
+                        <span>Visitante de la naturaleza<i class="lni lni-leaf"></i></span>
                       </span>
                     </span>
                 </div>
@@ -374,8 +441,10 @@
             <div class="card shadow">
               <a href="https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process" target="_blank" tabindex="-1"><img src="img/portfolio/suitable.png" alt="" class="card-img-top">
               <div class="card-body">
+                <div>
                 <h5 id="suitablemain"> Suitable parte 1</h5>
                 <p class="text-muted card-text">Animación de proceso logístico para la web</p>
+                </div>
                 <button class="card_btn" >Ir a Behance <span>→</span></button>
               </div>
             </a>
@@ -386,8 +455,10 @@
             <div class="card shadow">
               <a href="https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations" target="_blank" tabindex="-1"><img src="img/portfolio/suitable4.png" alt="" class="card-img-top">
               <div class="card-body">
+                <div>
                 <h5 id="suitable4"> Suitable parte 2</h5>
                 <p class="text-muted card-text">4 animaciones sobre sus servicios</p>
+                </div>
                 <button class="card_btn" >Ir a Behance <span>→</span></button>
               </div>
             </a>
@@ -397,8 +468,10 @@
           <div class="col-sm-12 mb-3 pad crd">
             <div class="card shadow"><a href="https://www.behance.net/gallery/113799217/Rediseno-MateClub-de-conversacion" target="_blank" tabindex="-1"><img src="img/portfolio/mateclub.png" alt="" class="card-img-top">
               <div class="card-body">
-                <h5 id="mateclub"> Ux UI - Mateclub</h5>
+                <div>
+                <h5 id="mateclub"> Mateclub</h5>
                 <p class="text-muted card-text">Una nueva forma de aprender idiomas</p>
+                </div>
                 <button class="card_btn" aria-labelledby="mateclub">Ir a Behance <span>→</span></button>
               </div>
             </a>
@@ -409,8 +482,10 @@
             <div class="card shadow">
               <a href="https://www.behance.net/gallery/89936865/Descuentio" target="_blank" tabindex="-1"><img src="img/portfolio/descuentio.png" alt="" class="card-img-top">
               <div class="card-body">
-                <h5 id="descuentio"> Ux Ui - Descuentio</h5>
-                <p class="text-muted card-text">Cambiamos la forma de ir al Supermercado</p>
+                <div>
+                <h5 id="descuentio"> Descuentio</h5>
+                <p class="text-muted card-text">Ahorrá con tus compras del supermercado</p>
+                </div>
                 <button class="card_btn" >Ir a Behance <span>→</span></button>
               </div>
             </a>
@@ -420,8 +495,10 @@
           <div class="col-sm-12 mb-3 pad crd">
             <div class="card shadow"><a href="https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata" target="_blank" tabindex="-1"><img src="img/portfolio/teatro_argentino.png" alt="" class="card-img-top">
               <div class="card-body">
+                <div>
                 <h5 id="sistema"> Sistema gráfico</h5>
                 <p class="text-muted card-text">Identidad gráfica para el Teatro Argentino</p>
+                </div>
                 <button class="card_btn" aria-labelledby="sistema">Ir a Behance <span>→</span></button>
               </div>
             </a>
@@ -445,7 +522,7 @@
   </div>
 
   <div class="content">
-    <div class="col-xs-12 col-sm-7 cont">
+    <div class="col-xs-12 cont">
       <h2>Hablemos <i class="lni lni-comments i_size"></i></h2>
       <div class="subheading mb-3">Escribime o tomemos un café</div>
       <p>Esta es mi historia. Para algún trabajo, colaboración o simplemente saber sobre lo que me ha pasado en la ciudad, podemos charlar un rato:</p>
@@ -463,9 +540,7 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <script src="js/scripts.js"></script>
 
     <script>
@@ -484,6 +559,7 @@
     window.addEventListener('load', fadeEffect);
 
     </script>
+
   </div>
   </body>
 
