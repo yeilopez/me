@@ -66,6 +66,10 @@ h4 {
   font-size: 1.2rem;
 }
 
+hr {
+  border-top: 0.5px solid #88A0B2;
+}
+
 .contenedor {
   max-width: 1600px;
   margin: auto;
@@ -707,6 +711,10 @@ h2 {
 }
 
   @media (min-width:992px) {
+
+    .i_size {
+      font-size: 2rem;
+    }
     #avatar_profile_m {
       display: none;
     }
@@ -852,6 +860,11 @@ h2 {
   .nav-link:focus .nav-link:hover{
     color:var(--principal);
   }
+
+ .rw-words {
+  margin-left: 0.5rem;
+ } 
+
 .rw-words span {
   position:absolute;
   opacity:0;
@@ -919,6 +932,7 @@ input:checked + .slider:before {
   max-width: 320px;
   margin: 0.5em;
   border: solid 2px var(--gris_alt);
+  border-radius: 4px;
   transform: translateY(0);
   transition: 0.7s;
   background-color: var(--white);
@@ -970,6 +984,11 @@ input:checked + .slider:before {
 
 .card_btn:hover span, .card_btn:active span {
   margin-left: 0.7rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
 }
 
 .ajust {
