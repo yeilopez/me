@@ -62,7 +62,7 @@ i {
     transition: 0.5s;
   }
 .list-social-icons {
-  padding:0;
+  padding:1;
   display: flex;
   justify-content: center;
 }
