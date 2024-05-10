@@ -498,6 +498,10 @@ section.resume-section {
 .col-md-4 {
     max-width: 400px;
 }
+
+.mh-auto {
+  min-height: auto !important;
+}
 @media (min-width:250px) {
 
   #header {
