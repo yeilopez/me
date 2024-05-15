@@ -38,6 +38,12 @@
   --bg_avatar: url(../img/ilus/profile.svg) center / cover;
 }
 
+.la-belle-aurore-regular {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -439,7 +445,8 @@ animation-delay:15s;
   font-size: 2rem;
   color: var(--alternativo);
   display: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "La Belle Aurore", cursive;
+  margin-bottom: -14px;
   }
 
 label {
