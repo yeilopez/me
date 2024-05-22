@@ -605,8 +605,8 @@ section.resume-section {
       color:var(--alternativo);
     }
     .redes {
-      text-align:center;
-      margin: 16px;
+      max-width: 300px;
+      margin: 16px auto;
     }
     .nav-item {
       margin:auto;
@@ -746,9 +746,6 @@ h2 {
     .nombre{display:block}.detalle{display:block}
     #top{
       height:90vh;
-    }
-    .redes{
-      text-align:center
     }
     .nav-item{
       width:90%;
