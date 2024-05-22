@@ -123,7 +123,7 @@ i {
   }
   
   .list-inline-item a img{
-    max-width:60px;
+    max-width:40px;
     transform: translateY(0);
     transition: 0.5s;
   }
@@ -135,7 +135,7 @@ i {
   padding:0;
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
 }
 .men_nav {
   margin:10px 0 0 0;
@@ -181,6 +181,7 @@ i {
   border-radius: 3px;
   background-color: var(--prinbtn);
   font-size: 0.85rem;
+  font-weight: 600;
   color: var(--white_alt);
   content: attr(data-tooltip);
   text-align: center;
@@ -605,6 +606,7 @@ section.resume-section {
     }
     .redes {
       text-align:center;
+      margin: 16px;
     }
     .nav-item {
       margin:auto;
@@ -666,11 +668,6 @@ section.resume-section {
     .inh {
       max-width: 100%;
       min-height: 112px;
-  }
-
-  .redes {
-    max-width: fit-content;
-    margin: 0 auto;
   }
 }
 @media (min-width:768px){
