@@ -19,7 +19,7 @@
 }
   
   [data-theme="light"] {
-  --principal:#4583FE;
+  --principal:#0A49DB;
   --secundario:#11161B;
   --terciario:#FFEBF7;
   --hs: #094067;
@@ -27,8 +27,8 @@
   --white_alt:#fff;
   --gris_oscuro:#094067;
   --gris:#BCD6FF;
-  --alternativo: #4583FE;
-  --prinbtn: #4583FE;
+  --alternativo: #0A49DB;
+  --prinbtn: #0A49DB;
   --altsecundario: #11161B;
   --fondo_alt:#e6f2ff; 
   --gris_alt: #f2f6ff;
