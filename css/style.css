@@ -1013,7 +1013,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 250px) {
     .hide-mobile {
         display: none;
     }
