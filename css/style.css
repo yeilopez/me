@@ -232,8 +232,13 @@ nav {
     color: var(--secondary);
 }
 
+.btn-prim:hover a {
+    color: #cbd5e1;
+}
+
 .btn-prim:hover {
-    background-color: var(--gray);
+    background-color: #171d26;
+    color: #cbd5e1;
     transition: 0.5s;
 }
 
