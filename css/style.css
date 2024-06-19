@@ -125,7 +125,6 @@ header {
     width: 100%;
     max-width: 1440px;
     height: 100px;
-    padding: 20px 80px;
 }
 
 .info-s {
@@ -1145,6 +1144,10 @@ input:checked + .slider:before {
 
     .hide-responsive {
         display: flex;
+    }
+
+    .header-s {
+        padding: 20px 80px;
     }
 
     .nav-menu {
