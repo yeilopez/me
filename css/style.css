@@ -857,16 +857,16 @@ section {
 
 .logo-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     border-radius: 12px;
     transform: translateY(0);
     transition: 0.7s;
     color: var(--n-900);
     background-color: var(--n-100);
-    max-width: 520px;
+    max-width: 480px;
     padding: 2.5rem 2rem;
-    gap: 32px;
 }
 
 .logo-card img {
