@@ -74,3 +74,17 @@ $(".main-nav ul li a").on("click", function (e) {
   $(".toggle-menu").removeClass("active");
   $("#menu").removeClass("open");
 });
+
+const selectTyped = document.querySelector('.typed');
+  if (selectTyped) {
+    let typed_strings = selectTyped.getAttribute('data-typed-items');
+    typed_strings = typed_strings.split(',');
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 40,
+      backSpeed: 20,
+      backDelay: 2000
+    });
+  }
+
