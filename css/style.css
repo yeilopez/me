@@ -393,6 +393,7 @@ nav {
 
 #menu ul a {
     -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     transition: opacity 0.3s ease-in-out;
 }
 
