@@ -190,14 +190,6 @@ nav {
     margin: 0 auto;
 }
 
-.active {
-    color: #fafafa;
-    cursor: not-allowed;
-    pointer-events: none;
-    border-bottom: solid 2px #fafafa;
-    position: relative;
-}
-
 .btn {
     font-weight: 400;
     padding: 8px 24px 8px 16px;
