@@ -802,8 +802,8 @@ label {
 
 .slider {
     max-width: 35px;
-    background-color: #1c1b1b;
-    border: solid 1px #fff;
+    background-color: var(--n-100);
+    border: solid 1px #C3C3C3;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -814,7 +814,7 @@ label {
 }
 
 .slider:before {
-    background-color: #fff;
+    background-color: #C3C3C3;
     bottom: 2px;
     content: "";
     height: 16px;
