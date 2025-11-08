@@ -81,6 +81,48 @@ systemDarkQuery.addEventListener('change', onSystemChange);
 // Fix para el checkbox inicial (ajustado)
 document.getElementById("checkbox").checked = localStorage.getItem("theme") === "dark";
 
+// Idioma: Toggle manual + auto-detección del sistema/navegador
+let userPrefersLang = localStorage.getItem("lang"); // 'es' o 'en'
+
+// Función para aplicar idioma y redirigir
+function applyLang(lang) {
+  localStorage.setItem("lang", lang);
+  userPrefersLang = lang;
+  const currentPath = window.location.pathname;
+  const esPath = '/me/index.html'; // Ajusta si es necesario (ruta base de GitHub Pages)
+  const enPath = '/me/en.html';
+  if (lang === 'es' && currentPath.includes('en.html')) {
+    window.location.href = esPath;
+  } else if (lang === 'en' && !currentPath.includes('en.html')) {
+    window.location.href = enPath;
+  }
+}
+
+// Detectar idioma del sistema/navegador
+function detectSystemLang() {
+  const browserLang = navigator.language ? navigator.language.split('-')[0] : 'en';
+  return browserLang === 'es' ? 'es' : 'en';
+}
+
+// Inicializar idioma
+function initLang() {
+  if (userPrefersLang) {
+    // Respeta lo guardado
+    applyLang(userPrefersLang);
+  } else {
+    // Usa sistema como default
+    const systemLang = detectSystemLang();
+    applyLang(systemLang);
+  }
+}
+
+// Para toggle manual: Asumiendo que el link de idioma ya existe, pero si querés un toggle real, agregá event listener al botón/link
+// Ejemplo: document.querySelector('.bitem a[href="en.html"]').addEventListener('click', () => applyLang('en'));
+// Similar para español.
+
+// Inicializar al cargar (después del DOM)
+document.addEventListener('DOMContentLoaded', initLang);
+
 $(window).resize(function () {
   if ($(window).width() < 992) {
     $("#moveElement").appendTo(".b");
