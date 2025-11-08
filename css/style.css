@@ -1089,3 +1089,26 @@ z-index: 1;
         text-align: center;
     }
 }
+
+/* Fix: Dots del timeline no superponen título en mobile, sin romper desktop */
+.bsb-timeline-1 .timeline > .timeline-item:before {
+  z-index: 0; /* Baja el z-index de los dots para que queden debajo del sticky title (z-index:1) */
+}
+
+/* Asegurar que la barra de settings quede por encima de todo en desktop */
+@media (min-width: 768px) { /* Solo desktop/tablet */
+  .settings-bar {
+    z-index: 20; /* Alto para flotar sobre secciones sticky (z-index:1) */
+  }
+  
+  .section-name {
+    z-index: 1; /* Mantiene el original, sin subirlo */
+  }
+}
+
+/* Opcional: En mobile, un leve margen para timeline si los dots aún pegan */
+@media (min-width: 250px) {
+  .timeline-container {
+    margin-top: 10px; /* Pequeño ajuste para "respirar" bajo el título sticky */
+  }
+}
