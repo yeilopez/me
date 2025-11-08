@@ -24,104 +24,73 @@
     e("body").scrollspy({ target: ".nav-menu" });
 })(jQuery);
 
-// Tema: Toggle manual + auto-detección del sistema
+// Tema: Toggle manual + auto-detección del sistema (mantiene lo anterior)
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const html = document.documentElement; // Para setAttribute más rápido
-let userPrefersDark = localStorage.getItem("theme") === "dark"; // Flag: ¿el usuario eligió manualmente?
+const html = document.documentElement;
+let userPrefersDark = localStorage.getItem("theme") === "dark";
 
-// Función para aplicar tema
 function applyTheme(isDark) {
   if (isDark) {
     html.setAttribute("data-theme", "dark");
     toggleSwitch.checked = true;
     localStorage.setItem("theme", "dark");
-    userPrefersDark = true; // Marca como preferencia manual
+    userPrefersDark = true;
   } else {
     html.setAttribute("data-theme", "light");
     toggleSwitch.checked = false;
     localStorage.setItem("theme", "light");
-    userPrefersDark = true; // Marca como manual
+    userPrefersDark = true;
   }
 }
 
-// Función para toggle manual
 function switchTheme(e) {
   applyTheme(e.target.checked);
 }
 
-// Detectar preferencia del sistema
 const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Inicializar tema
 function initTheme() {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) {
-    // Respeta lo guardado
     applyTheme(savedTheme === "dark");
   } else {
-    // Usa sistema como default
     applyTheme(systemDarkQuery.matches);
   }
 }
 
-// Escuchar cambios en el toggle
 toggleSwitch.addEventListener("change", switchTheme);
-
-// Inicializar al cargar
 initTheme();
 
-// Escuchar cambios en el sistema SOLO si no hay preferencia manual (para no overridear al usuario)
 function onSystemChange(e) {
-  if (!userPrefersDark && !localStorage.getItem("theme")) { // Solo si no hay manual
+  if (!userPrefersDark && !localStorage.getItem("theme")) {
     applyTheme(e.matches);
   }
 }
 systemDarkQuery.addEventListener('change', onSystemChange);
 
-// Fix para el checkbox inicial (ajustado)
 document.getElementById("checkbox").checked = localStorage.getItem("theme") === "dark";
 
-// Idioma: Toggle manual + auto-detección del sistema/navegador
-let userPrefersLang = localStorage.getItem("lang"); // 'es' o 'en'
-
-// Función para aplicar idioma y redirigir
-function applyLang(lang) {
-  localStorage.setItem("lang", lang);
-  userPrefersLang = lang;
-  const currentPath = window.location.pathname;
-  const esPath = '/me/index.html'; // Ajusta si es necesario (ruta base de GitHub Pages)
-  const enPath = '/me/en.html';
-  if (lang === 'es' && currentPath.includes('en.html')) {
-    window.location.href = esPath;
-  } else if (lang === 'en' && !currentPath.includes('en.html')) {
-    window.location.href = enPath;
-  }
-}
-
-// Detectar idioma del sistema/navegador
-function detectSystemLang() {
-  const browserLang = navigator.language ? navigator.language.split('-')[0] : 'en';
-  return browserLang === 'es' ? 'es' : 'en';
-}
-
-// Inicializar idioma
-function initLang() {
-  if (userPrefersLang) {
-    // Respeta lo guardado
-    applyLang(userPrefersLang);
-  } else {
-    // Usa sistema como default
-    const systemLang = detectSystemLang();
-    applyLang(systemLang);
-  }
-}
-
-// Para toggle manual: Asumiendo que el link de idioma ya existe, pero si querés un toggle real, agregá event listener al botón/link
-// Ejemplo: document.querySelector('.bitem a[href="en.html"]').addEventListener('click', () => applyLang('en'));
-// Similar para español.
-
-// Inicializar al cargar (después del DOM)
-document.addEventListener('DOMContentLoaded', initLang);
+// Toggle simple de idioma: Cambia entre index.html (ES) y en.html (EN) al clickear
+document.addEventListener('DOMContentLoaded', function() {
+  // Selector para links de idioma (mobile: #menu .menu-footer .bitem a, desktop: .settings-bar .bitem a)
+  const langLinks = document.querySelectorAll('#menu .menu-footer .bitem a, .settings-bar .bitem a');
+  
+  langLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Previene href default
+      const pathname = window.location.pathname;
+      const isEnglish = pathname.includes('en.html');
+      // Redirect relativo: funciona en GitHub Pages desde /me/
+      if (isEnglish) {
+        // En EN, ve a ES
+        window.location.href = 'index.html';
+      } else {
+        // En ES, ve a EN
+        window.location.href = 'en.html';
+      }
+    });
+  });
+});
 
 $(window).resize(function () {
   if ($(window).width() < 992) {
@@ -167,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const cursorImage = document.querySelector("#cursor-image");
   let isHovering = false;
 
-  // Seguimiento del mouse en todo el documento
   document.addEventListener("mousemove", (e) => {
     if (isHovering) {
       cursorImage.style.left = (e.clientX - cursorImage.offsetWidth / 2) + "px";
@@ -175,7 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Para cada área de hover (tus cards)
   const hoverAreas = document.querySelectorAll(".hover-area");
   hoverAreas.forEach((hoverArea) => {
     hoverArea.addEventListener("mouseenter", (e) => {
