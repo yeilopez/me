@@ -25,19 +25,38 @@
 })(jQuery);
 
 // Tema: Toggle manual + auto-detección del sistema (mantiene lo anterior)
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const toggleSwitch = document.querySelector('.theme-icon-toggle input[type="checkbox"]');
 const html = document.documentElement;
 let userPrefersDark = localStorage.getItem("theme") === "dark";
 
 function applyTheme(isDark) {
+  const themeIcon = document.getElementById("theme-icon");
+  const themeContainer = document.querySelector(".theme-toggle-container");
+  const isEnglish = window.location.pathname.includes('en.html');
+
   if (isDark) {
     html.setAttribute("data-theme", "dark");
-    toggleSwitch.checked = true;
+    if (toggleSwitch) toggleSwitch.checked = true;
+    if (themeIcon) {
+      themeIcon.classList.remove("lni-moon");
+      themeIcon.classList.remove("lni-night");
+      themeIcon.classList.add("lni-sun");
+    }
+    if (themeContainer) {
+      themeContainer.setAttribute("data-tooltip", isEnglish ? "Light mode" : "Modo claro");
+    }
     localStorage.setItem("theme", "dark");
     userPrefersDark = true;
   } else {
     html.setAttribute("data-theme", "light");
-    toggleSwitch.checked = false;
+    if (toggleSwitch) toggleSwitch.checked = false;
+    if (themeIcon) {
+      themeIcon.classList.remove("lni-sun");
+      themeIcon.classList.add("lni-night");
+    }
+    if (themeContainer) {
+      themeContainer.setAttribute("data-tooltip", isEnglish ? "Dark mode" : "Modo oscuro");
+    }
     localStorage.setItem("theme", "light");
     userPrefersDark = true;
   }
@@ -58,7 +77,9 @@ function initTheme() {
   }
 }
 
-toggleSwitch.addEventListener("change", switchTheme);
+if (toggleSwitch) {
+  toggleSwitch.addEventListener("change", switchTheme);
+}
 initTheme();
 
 function onSystemChange(e) {
@@ -68,15 +89,18 @@ function onSystemChange(e) {
 }
 systemDarkQuery.addEventListener('change', onSystemChange);
 
-document.getElementById("checkbox").checked = localStorage.getItem("theme") === "dark";
+const checkbox = document.getElementById("checkbox");
+if (checkbox) {
+  checkbox.checked = localStorage.getItem("theme") === "dark";
+}
 
 // Toggle simple de idioma: Cambia entre index.html (ES) y en.html (EN) al clickear
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Selector para links de idioma (mobile: #menu .menu-footer .bitem a, desktop: .settings-bar .bitem a)
   const langLinks = document.querySelectorAll('#menu .menu-footer .bitem a, .settings-bar .bitem a');
-  
+
   langLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
       e.preventDefault(); // Previene href default
       const pathname = window.location.pathname;
       const isEnglish = pathname.includes('en.html');
@@ -132,14 +156,14 @@ if (selectTyped) {
 }
 
 // Efecto de imagen de preview en hover de cards
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const cursorImage = document.querySelector("#cursor-image");
   let isHovering = false;
 
   document.addEventListener("mousemove", (e) => {
     if (isHovering) {
       cursorImage.style.left = (e.clientX - cursorImage.offsetWidth / 2) + "px";
-      cursorImage.style.top = (e.clientY - cursorImage.offsetHeight / 2 + 120) + "px";
+      cursorImage.style.top = (e.clientY - cursorImage.offsetHeight / 2 + 144) + "px";
     }
   });
 
