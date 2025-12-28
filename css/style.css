@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 144px;
+}
+
 :root {
     --n-0: #fff;
     --n-100: #f3f3f3;
@@ -585,7 +589,7 @@ section {
     position: -o-sticky;
     position: -ms-sticky;
     position: sticky;
-    top: 176px;
+    top: 144px;
     display: flex;
 }
 

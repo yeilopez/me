@@ -10,7 +10,7 @@
       if ((t = t.length ? t : e("[name=" + this.hash.slice(1) + "]")).length)
         return (
           e("html, body").animate(
-            { scrollTop: t.offset().top },
+            { scrollTop: t.offset().top - 144 },
             1e3,
             "easeInOutExpo",
           ),
