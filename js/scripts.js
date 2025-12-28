@@ -116,6 +116,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Scroll Top Button Logic
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    $(".btn-scroll-top").addClass("show");
+  } else {
+    $(".btn-scroll-top").removeClass("show");
+  }
+});
+
+$(".btn-scroll-top").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 1000, "easeInOutExpo");
+  return false;
+});
+
 $(window).resize(function () {
   if ($(window).width() < 992) {
     $("#moveElement").appendTo(".b");
