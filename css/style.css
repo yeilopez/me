@@ -106,7 +106,8 @@ header {
     font-family: "Rubik", serif;
     font-size: 4.8rem;
     font-weight: 600;
-    height: 4.8rem;
+    height: 6.8rem;
+    line-height: 1.4;
     overflow: hidden;
     margin-bottom: 8px;
 }
@@ -185,6 +186,11 @@ nav {
     gap: 8px;
 }
 
+.btn-scroll-top i {
+    font-size: 1.5rem;
+    color: var(--n-100);
+}
+
 .nav-link i {
     font-size: 1.1rem;
     color: var(--n-700);
@@ -215,7 +221,7 @@ nav {
 
 .btn {
     font-weight: 400;
-    padding: 8px 24px 8px 16px;
+    padding: 8px 16px;
     text-align: center;
     border: none;
     border-radius: 12px;
@@ -225,6 +231,8 @@ nav {
 
 .btn a {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn span {
@@ -234,6 +242,7 @@ nav {
 .btn i {
     margin-right: 8px;
     font-size: 1.5rem;
+    line-height: 90%;
 }
 
 .btn-prim {
@@ -244,6 +253,93 @@ nav {
 .btn-prim:hover {
     transform: translateY(-8%);
     transition: 0.5s;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 20px 40px;
+    text-align: center;
+    background-color: var(--n-0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-icon {
+    font-size: 80px;
+    color: var(--n-900);
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.hero-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5rem;
+    /* 40px */
+    line-height: 3rem;
+    /* 48px */
+    font-weight: 700;
+    color: var(--n-1000);
+    max-width: 800px;
+    margin: 0 auto 16px;
+    width: 100%;
+}
+
+.hero-subtitle {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
+    font-weight: 400;
+    color: var(--n-900);
+    max-width: 800px;
+    margin: 0 auto 40px;
+    width: 100%;
+}
+
+.hero-subtitle .typed {
+    font-weight: 400;
+    color: var(--n-900);
+}
+
+/* Pills Section background adjustment */
+.section-pills {
+    background-color: var(--n-100);
+    padding: 60px 48px 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--n-600);
+}
+
+.pills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 12px;
+    max-width: 800px;
+    /* Limits width to help with pill count per row */
+    margin: 0 auto;
+}
+
+.pill {
+    padding: 8px 24px;
+    border: 0.5px solid var(--n-600);
+    border-radius: 100px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--n-800);
+    background-color: var(--n-0);
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.pill:hover {
+    background-color: var(--n-100);
+    border-color: var(--n-900);
+    color: var(--n-1000);
 }
 
 .btn-prim a {
@@ -445,13 +541,19 @@ nav {
 
 #menu .main-nav a {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
     font-size: 1.2rem;
     font-weight: 500;
     padding: 1rem 1rem;
     text-decoration: none;
     width: 248px;
     margin-right: 0;
+}
+
+#menu .main-nav a img {
+    margin-left: auto;
 }
 
 #menu .main-nav a:first {
@@ -613,6 +715,31 @@ section {
     width: 100%;
     background-color: var(--n-0);
     border-left: 1px solid var(--n-600);
+}
+
+.section-content h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5rem;
+    /* 40px */
+    line-height: 3rem;
+    /* 48px */
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.section-content p {
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: var(--n-900);
+}
+
+.section-content p strong {
+    font-weight: 500;
+    color: var(--n-1000);
 }
 
 .description {
@@ -1042,15 +1169,29 @@ label {
     }
 
     .section-content {
-        padding: 80px 24px;
+        padding: 40px 24px;
     }
 
     .section-content h3 {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
+        /* ~28px */
+        line-height: 2.25rem;
     }
 
-    .section-content .description {
-        font-size: 1rem;
+    .section-content p {
+        font-size: 1.1rem;
+        /* ~18px */
+        line-height: 1.6rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
 
     .pref {

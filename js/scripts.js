@@ -159,7 +159,7 @@ $(".main-nav ul li a").on("click", function (e) {
 const selectTyped = document.querySelector('.typed');
 if (selectTyped) {
   let typed_strings = selectTyped.getAttribute('data-typed-items');
-  typed_strings = typed_strings.split(',');
+  typed_strings = typed_strings.split('|');
   new Typed('.typed', {
     strings: typed_strings,
     loop: true,
