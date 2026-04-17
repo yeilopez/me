@@ -25,11 +25,9 @@
                 if (storedLang === 'en' && !isEnPage) window.location.replace('en.html');
                 if (storedLang === 'es' && isEnPage) window.location.replace('index.html');
             } else {
-                const browserLang = (navigator.language || 'es').split('-')[0];
+                const browserLang = (navigator.language || 'en').split('-')[0];
                 if (browserLang === 'en' && !isEnPage) {
                     window.location.replace('en.html');
-                } else if (browserLang !== 'en' && isEnPage) {
-                    window.location.replace('index.html');
                 }
             }
         })();

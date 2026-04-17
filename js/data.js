@@ -32,7 +32,7 @@ const DB_ES = {
                     title: "Mi Intervención: Diagnóstico y Rediseño",
                     description: "Transformando la herramienta en un activo centrado en el usuario y el negocio.",
                     image: "projects/app-centaurus/sc-2.png",
-                    detail: "Al asumir el proyecto, realicé entrevistas con los custodios para identificar dolores en terreno y dificultades en el monitoreo. Ejecuté un <b>rediseño integral</b> enfocado en la simplicidad y la reducción de carga cognitiva. <br><br><b>Mis hipótesis de diseño:</b> <br><ul><li><b>Centralización:</b> Si conectamos la data con Saphiro, eliminamos la falta de visibilidad y aceleramos la respuesta ante incidentes.</li><li><b>Minimalismo y jerarquía visual:</b> Si simplificamos la interfaz al mínimo, reduciremos el error humano en un 90% mediante procesos automatizados.</li><li><b>Validación con IA:</b> Si utilizamos modelos de IA, podremos anticipar fallos operativos antes del despliegue.</li></ul>"
+                    detail: "Al asumir el proyecto, realicé entrevistas con los custodios para identificar dolores en terreno y dificultades en el monitoreo. Ejecuté un <b>rediseño integral</b> enfocado en la simplicidad y la reducción de carga cognitiva. <br><br><b>Mis hipótesis de diseño:</b> <br><ul><li><b>Centralización:</b> Si conectamos la data con Saphiro, eliminamos la falta de visibilidad y aceleramos la respuesta ante incidentes.</li><li><b>Minimalismo y jerarquía visual:</b> If we simplify the interface to the minimum, we will reduce human error by 90% through automated processes.</li><li><b>Validación con IA:</b> Si utilizamos modelos de IA, podremos anticipar fallos operativos antes del despliegue.</li></ul>"
                 },
                 {
                     title: "Aprendizaje continuo: Ajustes de Campo",
@@ -55,6 +55,12 @@ const DB_ES = {
                 {
                     title: "Feedback Visual: Microinteracciones",
                     description: "Reforzando la comunicación del sistema a través del movimiento.",
+                    lotties: [
+                        "projects/app-centaurus/Sucess_confetti.json",
+                        "projects/app-centaurus/Onboarding-1.json",
+                        "projects/app-centaurus/Onboarding-2.json",
+                        "projects/app-centaurus/onboarding-3.json"
+                    ],
                     detail: "Reforcé secciones clave con <b>microinteracciones realizadas en Lottie</b>. Estas animaciones no solo mejoran la estética, sino que sirven como confirmación visual inmediata de acciones exitosas y estados de carga, humanizando la tecnología y guiando al custodio de forma intuitiva durante su jornada."
                 },
                 {
@@ -64,6 +70,14 @@ const DB_ES = {
                     detail: "Centaurus transformó la ceguera operativa en <b>evidencia real</b>. Al digitalizar el terreno, logramos métricas que impactaron directamente en la rentabilidad del negocio: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Eficiencia Operativa</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>mensuales ahorradas en revisión de chats de WhatsApp y transcripción manual.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Data</span><span class='kpi-value'>90%</span><span class='kpi-desc'>de reducción en el ruido informativo y errores de reporte en canales internos.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfacción (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>de mejora en el sentimiento del custodio gracias a la visibilidad de sus evidencias de pago.</span></div></div> Para entender el ecosistema completo, te invito a revisar el detalle del proyecto de la <b>Consola de monitoreo</b>."
                 }
             ]
+        },
+        {
+            id: "hubbing-latam",
+            title: "Hubbing Latam",
+            category: "product",
+            tagline: "Web Platform & Mobile Apps para logística internacional.",
+            tags: ["Logística Internacional", "SaaS", "Cross-border"],
+            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             id: "consola-monitoreo",
@@ -84,14 +98,6 @@ const DB_ES = {
             image: "projects/app-finder.jpg",
             tags: ["Logística", "Monitoreo"],
             description: "En construcción"
-        },
-        {
-            id: "hubbing-latam",
-            title: "Hubbing Latam",
-            category: "product",
-            tagline: "Web Platform & Mobile Apps para logística internacional.",
-            tags: ["Logística Internacional", "SaaS", "Cross-border"],
-            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             id: "suitable-1",
@@ -225,6 +231,12 @@ const DB_EN = {
                 {
                     title: "Visual Feedback: Microinteractions",
                     description: "Reinforcing system communication through movement.",
+                    lotties: [
+                        "projects/app-centaurus/Sucess_confetti.json",
+                        "projects/app-centaurus/Onboarding-1.json",
+                        "projects/app-centaurus/Onboarding-2.json",
+                        "projects/app-centaurus/onboarding-3.json"
+                    ],
                     detail: "I reinforced key sections with <b>Lottie microinteractions</b>. These animations not only improve aesthetics but serve as immediate visual confirmation of successful actions and loading states, humanizing technology and guiding the escort intuitively during their day."
                 },
                 {
@@ -234,6 +246,14 @@ const DB_EN = {
                     detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>monthly saved in WhatsApp chat review and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Precision</span><span class='kpi-value'>90%</span><span class='kpi-desc'>reduction in information noise and reporting errors in internal channels.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to visibility of their payment evidence.</span></div></div> To understand the full ecosystem, I invite you to review the details of the <b>Monitoring Console</b> project."
                 }
             ]
+        },
+        {
+            id: "hubbing-latam",
+            title: "Hubbing Latam",
+            category: "product",
+            tagline: "Web Platform & Mobile Apps for international logistics.",
+            tags: ["International Logistics", "SaaS", "Cross-border"],
+            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             id: "consola-monitoreo",
@@ -254,14 +274,6 @@ const DB_EN = {
             image: "projects/app-finder.jpg",
             tags: ["Logistics", "Monitoring"],
             description: "Under construction"
-        },
-        {
-            id: "hubbing-latam",
-            title: "Hubbing Latam",
-            category: "product",
-            tagline: "Web Platform & Mobile Apps for international logistics.",
-            tags: ["International Logistics", "SaaS", "Cross-border"],
-            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             id: "suitable-1",
@@ -302,12 +314,12 @@ const DB_EN = {
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "Web / Content Designer"
+            role: "Diseñador Web / de Contenidos"
         },
         {
             company: "POTENCIAL DIGITAL",
             period: "2015 - 2017",
-            role: "Web Designer Junior"
+            role: "Diseñador Web Junior"
         }
     ],
     education: [

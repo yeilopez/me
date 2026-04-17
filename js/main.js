@@ -336,7 +336,21 @@ function openProject(id) {
         ${metaHTML}
 
         <div id="modal-project-sections">
-            ${(p.sections || []).map(sec => `
+            ${(p.sections || []).map(sec => {
+                let lottieHTML = '';
+                if (sec.lotties && sec.lotties.length > 0) {
+                    lottieHTML = `
+                        <div class="lottie-grid">
+                            ${sec.lotties.map(url => `
+                                <div class="lottie-item">
+                                    <dotlottie-player src="${url}" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                return `
                 <div class="modal-section">
                     <div class="section-header">
                         <h4 class="section-title">${sec.title}</h4>
@@ -345,9 +359,12 @@ function openProject(id) {
                     
                     <img src="${sec.image}" class="section-full-img" alt="${sec.title}" onerror="this.style.display='none'">
                     
+                    ${lottieHTML}
+                    
                     <div class="section-detail">${sec.detail}</div>
                 </div>
-            `).join('')}
+                `;
+            }).join('')}
         </div>
     `;
     document.getElementById('project-modal').style.display = 'block';

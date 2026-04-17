@@ -28,8 +28,6 @@
                 const browserLang = (navigator.language || 'en').split('-')[0];
                 if (browserLang === 'en' && !isEnPage) {
                     window.location.replace('en.html');
-                } else if (browserLang !== 'en' && isEnPage) {
-                    window.location.replace('index.html');
                 }
             }
         })();
@@ -67,7 +65,7 @@
                 <div class="dropdown">
                     <button class="nav-btn"><span class="material-symbols-outlined">download</span> CV</button>
                     <div class="dropdown-content">
-                        <a href="assets/pdf/cv_yeison-bedoya-lopez.pdf" download="cv_yeison-bedoya-lopez.pdf"><span
+                        <a href="assets/pdf/resume_yeison-bedoya-lopez.pdf" download="resume_yeison-bedoya-lopez.pdf"><span
                                 class="material-symbols-outlined">download</span> Download CV (PDF)</a>
                     </div>
                 </div>

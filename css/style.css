@@ -385,14 +385,14 @@ body.modal-open {
     overflow: hidden;
     background: var(--white);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .photo-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
 }
 
 .statement {
@@ -1263,5 +1263,51 @@ body.modal-open {
 
     .timeline-marker::after {
         left: 19px;
+    }
+}
+
+/* Lottie Integration */
+.lottie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin: 24px 0;
+    justify-items: center;
+}
+
+.lottie-item {
+    width: 100%;
+    max-width: 500px;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.lottie-item dotlottie-player {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    max-width: 480px; /* Leave space for padding */
+}
+
+@media (max-width: 768px) {
+    .lottie-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .lottie-item {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lottie-grid {
+        grid-template-columns: 1fr;
     }
 }
