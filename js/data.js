@@ -58,8 +58,7 @@ const DB_ES = {
                     lotties: [
                         "projects/app-centaurus/Sucess_confetti.json",
                         "projects/app-centaurus/Onboarding-1.json",
-                        "projects/app-centaurus/Onboarding-2.json",
-                        "projects/app-centaurus/onboarding-3.json"
+                        "projects/app-centaurus/Onboarding-2.json"
                     ],
                     detail: "Reforcé secciones clave con <b>microinteracciones realizadas en Lottie</b>. Estas animaciones no solo mejoran la estética, sino que sirven como confirmación visual inmediata de acciones exitosas y estados de carga, humanizando la tecnología y guiando al custodio de forma intuitiva durante su jornada."
                 },
