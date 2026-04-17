@@ -771,6 +771,12 @@ section {
     transition: 0.3s;
 }
 
+.project-card.no-hover:hover {
+    transform: none;
+    box-shadow: none;
+    cursor: default;
+}
+
 #cursor-image {
     width: 375px;
     /* Nuevo ancho (25% más de 300px) */
