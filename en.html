@@ -1,836 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description"
-        content="Personal Website - Resume Yeison Bedoya Lopez - UX UI Product Designer in Manizales Colombia" />
-    <meta name="Yeison Bedoya Lopez"
-        content="Presentation of Yeison Bedoya Lopez, UX UI Product Designer - University of Buenos Aires - Universidad tecnológia nacional UTN" />
-    <meta property="og:image" content="assets/prev.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeison Bedoya Lopez | Product Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0" />
+    <!-- Theme Preload Script -->
+    <script>
+        (function () {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            }
 
-    <title>Yeison Bedoya Lopez - Product designer - Ux Ui Motion</title>
+            // Language detection and redirection
+            const storedLang = localStorage.getItem('language');
+            const path = window.location.pathname;
+            const isEnPage = path.includes('en.html');
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.lineicons.com/5.1/line/lineicons.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Uncial+Antiqua&display=swap"
-        rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            if (storedLang) {
+                if (storedLang === 'en' && !isEnPage) window.location.replace('en.html');
+                if (storedLang === 'es' && isEnPage) window.location.replace('index.html');
+            } else {
+                const browserLang = (navigator.language || 'en').split('-')[0];
+                if (browserLang === 'en' && !isEnPage) {
+                    window.location.replace('en.html');
+                } else if (browserLang !== 'en' && isEnPage) {
+                    window.location.replace('index.html');
+                }
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yeison Bedoya Lopez",
+      "jobTitle": "Product Designer",
+      "url": "https://yeilopez.github.io/me/"
+    }
+    </script>
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="preloader">
-            <img src="assets/spinner.svg" alt="spinner" />
-        </div>
-
-        <header id="about" class="hide-responsive">
-            <div class="js-scroll-trigger">
-                <div class="top-bar">
-                    <img src="assets/avatar.png" class="img-profile" alt="" />
-                    <div class="info">
-                        <h1 class="name" style="font-family: 'Uncial Antiqua', cursive;">YEISON BEDOYA LOPEZ</h1>
-                        <div class="info-bottom">
-                            <div class="role">PRODUCT DESIGNER</div>
-
-                            <div>
-                                <i class="lni lni-map-marker-1"></i> Manizales
-                                Colombia
-                            </div>
-
-                            <div class="social">
-                                <ul class="list-inline list-social-icons mb-0">
-                                    <li class="list-inline-item">
-                                        <a href="https://www.behance.net/yeilpz" target="_blank" tabindex="-1"
-                                            data-tooltip="Behance"><img src="assets/icons/behance.svg"
-                                                alt="Behance" /></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" tabindex="-1"
-                                            data-tooltip="Linkedin"><img src="assets/icons/linkedin.svg"
-                                                alt="Linkedin" /></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="mailto:yeilopez.design@gmail.com?subject=Contact from the website"
-                                            target="_blank" tabindex="-1" data-tooltip="Send message"><img
-                                                src="assets/icons/message.svg" alt="send message" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <div class="wrapper">
+        <header class="card header-nav">
+            <div class="brand">
+                <span class="name">YEISON BEDOYA LOPEZ</span>
+                <span class="dot">•</span>
+                <span class="role">PRODUCT DESIGNER</span>
+                <div class="loc">
+                    <span class="material-symbols-outlined">globe_location_pin</span>
+                    <span>MANIZALES • COLOMBIA</span>
                 </div>
             </div>
+            <nav class="menu">
+                <button class="nav-btn" onclick="openTab('exp')"><span class="material-symbols-outlined">badge</span>
+                    EXPERIENCE</button>
+                <button class="nav-btn" onclick="openTab('edu')"><span class="material-symbols-outlined">school</span>
+                    EDUCATION</button>
+                <div class="dropdown">
+                    <button class="nav-btn"><span class="material-symbols-outlined">download</span> CV</button>
+                    <div class="dropdown-content">
+                        <a href="assets/pdf/cv_yeison-bedoya-lopez.pdf" download="cv_yeison-bedoya-lopez.pdf"><span
+                                class="material-symbols-outlined">download</span> Download CV (PDF)</a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <div class="header-s">
-            <div class="info-s">
-                <img src="assets/avatar.png" class="img-profile" alt="" />
-                <div class="group-info-s">
-                    <div class="name" style="font-family: 'Uncial Antiqua', cursive;">YEISON BEDOYA LOPEZ</div>
-                    <div class="role">PRODUCT DESIGNER</div>
-                </div>
-            </div>
-            <div class="social hide-responsive">
-                <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                        <a href="https://www.behance.net/yeilpz" target="_blank" tabindex="-1"><img
-                                src="assets/icons/behance.svg" alt="Behance" /></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" tabindex="-1"><img
-                                src="assets/icons/linkedin.svg" alt="Linkedin" /></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="mailto:yeilopez.design@gmail.com?subject=Contact from the website" target="_blank"
-                            tabindex="-1"><img src="assets/icons/message.svg" alt="send message" /></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="menu-responsive-container display-responsive">
-                <div class="hide-mobile">Menu</div>
-                <div>
-                    <button class="toggle-menu">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div id="menu" class="">
-            <div class="main-nav">
-                <ul>
-                    <li class="nav-item">
-                        <a class="js-scroll-trigger" href="#about" tabindex="-1"><i class="lni lni-rocket-5"></i> About
-                            me<img src="assets/icons/arrow-down.svg" alt="" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="js-scroll-trigger" href="#projects" tabindex="-1"><i class="lni lni-layers-1"></i>
-                            Projects<img src="assets/icons/arrow-down.svg" alt="" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="js-scroll-trigger" href="#experience" tabindex="-1"><i
-                                class="lni lni-buildings-1"></i> Experience<img src="assets/icons/arrow-down.svg"
-                                alt="" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="js-scroll-trigger" href="#education" tabindex="-1"><i
-                                class="lni lni-certificate-badge-1"></i> Education<img src="assets/icons/arrow-down.svg"
-                                alt="" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="js-scroll-trigger" href="#contact" tabindex="-1"><i
-                                class="lni lni-comment-1-text"></i> Contact<img src="assets/icons/arrow-down.svg"
-                                alt="" /></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu-footer">
-                <div>
-                    <a href="index.html" target="_self" class="bitem" tabindex="-1">
-                        <i class="lni lni-world icon_medium"></i>
-                        <p>ENG - Ver en Español</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <nav class="nav-menu">
-            <ul class="hide-responsive">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about" tabindex="-1"><i class="lni lni-rocket-5"></i>
-                        About
-                        me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#projects" tabindex="-1"><i
-                            class="lni lni-layers-1"></i> Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience" tabindex="-1"><i
-                            class="lni lni-buildings-1"></i> Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education" tabindex="-1"><i
-                            class="lni lni-certificate-badge-1"></i> Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact" tabindex="-1"><i
-                            class="lni lni-comment-1-text"></i>
-                        Contact</a>
-                </li>
-            </ul>
-
-            <div class="social display-responsive">
-                <ul class="list-inline list-social-icons mb-0">
-                    <li class="list-inline-item">
-                        <a href="https://www.behance.net/yeilpz" target="_blank" tabindex="-1"><img
-                                src="assets/icons/behance.svg" alt="Behance" /></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" tabindex="-1"><img
-                                src="assets/icons/linkedin.svg" alt="Linkedin" /></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="mailto:yeilopez.design@gmail.com?subject=Contact from the website" target="_blank"
-                            tabindex="-1"><img src="assets/icons/message.svg" alt="send message" /></a>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="btn btn-prim">
-                <a href="https://yeilopez.github.io/me/assets/pdf/resume_yeison-bedoya-lopez.pdf" target="_blank"
-                    download="CV Yeison Bedoya Lopez - Product Ux Ui Motion Designer"><i
-                        class="lni lni-cloud-download"></i><span class="hide-mobile"></span>Resume
-                </a>
-            </button>
-        </nav>
-
-        <main>
-            <section class="hero-section">
-                <i class="lni lni-aistudio hero-icon"></i>
-                <h2 class="hero-title">I design digital products with impact on business and people.</h2>
-                <p class="hero-subtitle">
-                    I do it with <span class="typed"
-                        data-typed-items="a comprehensive vision, from strategy to code.| AI to clarify data and speed up deliveries.| metrics that validate every decision.| flexibility to iterate and adjust course.| micro-interactions that elevate the experience."></span>
-                </p>
+        <main class="grid-container">
+            <section class="card hero">
+                <span class="material-symbols-outlined icon-dark">magic_button</span>
+                <h1>I design digital products with impact on business and people.</h1>
+                <p class="typewriter-container">I do it with <span id="typewriter-text" aria-hidden="true"></span><span
+                        class="cursor">|</span></p>
+                <p class="sr-only">I achieve it with a comprehensive vision, from strategy to code. AI to clarify data
+                    and speed up delivery. metrics that validate every decision. flexibility to iterate and adjust
+                    course. micro-interactions that elevate experience.</p>
             </section>
 
-            <section class="section-pills">
-                <div class="pills-section">
-                    <span class="pill">Product Strategy</span>
-                    <span class="pill">AI Data Insights</span>
-                    <span class="pill">Business & Metrics</span>
-                    <span class="pill">Vibe Coding</span>
-                    <span class="pill">Design Systems</span>
-                    <span class="pill">Lottifiles & Motion</span>
+            <section class="card photo-box">
+                <img src="assets/avatar.png" alt="Profile">
+            </section>
+
+            <section class="card projects-sidebar">
+                <div id="project-list"></div>
+            </section>
+
+            <section class="card statement">
+                <p>I act as a <strong>bridge between strategic vision and technical execution</strong>, communicating
+                    with business and engineering.</p>
+                <div class="pills-container" id="pills-container" aria-hidden="true">
+                    <!-- Pills injected via JS -->
                 </div>
             </section>
 
-            <section id="about-me">
-                <div class="section-name hsticky">
-                    <h2>ABOUT ME</h2>
-                    <img src="assets/icons/arrow-down.svg" alt="" />
+            <section class="card footer-card">
+                <div class="contact-sec">
+                    <span class="small-title">Let's talk</span>
+                    <a href="mailto:yeilopez.design@gmail.com?subject=Contact%20from%20website"
+                        class="big-link hover-underline">Send message</a>
                 </div>
-
-                <div class="section-content">
-                    <h3>Governance, feasibility, and adaptability.</h3>
-                    <p><strong>My role is to understand business challenges and translate them into high-impact
-                            products.</strong></p>
-                    <p>I act as a <strong>bridge between strategic vision and technical execution</strong>, engaging
-                        with engineering to build efficiently. I don't design in stone: I test and iterate with the
-                        necessary flexibility to adjust course and <strong>empower the best possible solution.</strong>
-                    </p>
-                </div>
-            </section>
-
-            <section id="projects">
-                <div class="section-name hsticky">
-                    <h2>PROJECTS</h2>
-                    <img src="assets/icons/arrow-down.svg" alt="" />
-                </div>
-
-                <div class="section-content">
-                    <h3 class="mb-5">Ux Ui Product</h3>
-
-                    <div class="projects mb-5">
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card no-hover">
-                                <div class="card-body">
-                                    <div class="card-top">
-                                        <span id="tower">CONTROL TOWER</span>
-                                    </div>
-                                    <p>
-                                        Update in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card no-hover">
-                                <div class="card-body">
-                                    <div class="card-top">
-                                        <span id="console">MONITORING CONSOLE</span>
-                                    </div>
-                                    <p>
-                                        Update in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card no-hover">
-                                <div class="card-body">
-                                    <div class="card-top">
-                                        <span id="centaurus">CENTAURUS 2.0</span>
-                                    </div>
-                                    <p>
-                                        Update in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/check.png">
-                                <a href="https://www.behance.net/gallery/198780083/App-Check-by-Hubbing-Latam"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="check">APP CHECK</span>
-                                            <button class="card-btn" aria-labelledby="check">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Check and certify <br>
-                                            your vehicle.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/finder.png">
-                                <a href="https://www.behance.net/gallery/199260547/App-Finder-by-Hubbing-Latam"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="finder">APP FINDER</span>
-                                            <button class="card-btn" aria-labelledby="finder">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Earn money by <br>
-                                            recommending drivers.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/pass.png">
-                                <a href="https://www.behance.net/gallery/198926237/App-Pass-by-Hubbing-Latam"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="pass">APP PASS</span>
-                                            <button class="card-btn" aria-labelledby="pass">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Accept and manage <br>
-                                            your trips.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/driver.png">
-                                <a href="https://www.behance.net/gallery/199343443/App-Driver-by-Hubbing-Latam"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="driver">APP DRIVER</span>
-                                            <button class="card-btn" aria-labelledby="driver">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Manage and control <br>
-                                            your trips.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
+                <div class="footer-links">
+                    <div class="social">
+                        <a href="https://www.behance.net/yeilpz" target="_blank" class="hover-underline">BEHANCE</a>
+                        <a href="https://lottiefiles.com/yeilpz" target="_blank" class="hover-underline">LOTTIEFILES
+                            (PUBLIC)</a>
+                        <a href="https://www.linkedin.com/in/yeilpz/" target="_blank"
+                            class="hover-underline">LINKEDIN</a>
                     </div>
-
-                    <h3 class="mar-top mb-5">Animations and visual design</h3>
-                    <div class="projects">
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/suitable.png">
-                                <a href="https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="suitable1">SUITABLE PART 1</span>
-                                            <button class="card-btn" aria-labelledby="suitable1">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Logistic process animation <br>
-                                            for the web.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/suitable4.png">
-                                <a href="https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="suitable2">SUITABLE PART 2</span>
-                                            <button class="card-btn" aria-labelledby="suitable2">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            4 animations <br>
-                                            about their services.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area" data-cursor-image="assets/previews/mateclub.png">
-                                <a href="https://www.behance.net/gallery/113799217/Rediseno-MateClub-de-conversacion"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="mateclub">MATECLUB OF LANGUAGES</span>
-                                            <button class="card-btn" aria-labelledby="mateclub">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            A new way <br>
-                                            to learn languages.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 mb-3 crd">
-                            <div class="project-card hover-area"
-                                data-cursor-image="assets/previews/teatro_argentino.png">
-                                <a href="https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
-                                    target="_blank" tabindex="-1">
-                                    <div class="card-body">
-                                        <div class="card-top">
-                                            <span id="teatro">GRAPHIC IDENTITY</span>
-                                            <button class="card-btn" aria-labelledby="teatro">
-                                                <img src="assets/icons/arrow-up.svg" alt="View project" />
-                                            </button>
-                                        </div>
-                                        <p>
-                                            Graphic identity for the <br>
-                                            Teatro Argentino.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="experience">
-                <div class="section-name hsticky">
-                    <h2>EXPERIENCE</h2>
-                    <img src="assets/icons/arrow-down.svg" alt="" />
-                </div>
-
-                <div class="section-content">
-                    <h3 class="mb-5">Employment History</h3>
-
-                    <div class="timeline-container">
-
-                        <div class="bsb-timeline-1">
-                            <div class="container">
-                                <ul class="timeline">
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <p>June 2024 - Present</p>
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Product Designer</span>
-                                                            <div class="logo-desc">
-                                                                <span>DETECTA SECURITY</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <p>February 2023 - May 2024</p>
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Product Designer</span>
-                                                            <div class="logo-desc">
-                                                                <span>BELOG IT</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <p>May 2021 - November 2022</p>
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Ux Ui Motion</span>
-                                                            <div class="logo-desc">
-                                                                <span>FIERA STUDIO</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <p>November 2017 - May 2021</p>
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Web Content Administrator,
-                                                                Graphic/Web Design</span>
-                                                            <div class="logo-desc">
-                                                                <span>EDUCAEDU</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <p>July 2015 - November 2017</p>
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Junior Web Designer</span>
-                                                            <div class="logo-desc">
-                                                                <span>POTENCIAL DIGITAL</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="modes">
+                        <span class="mode-item" data-tooltip="Ver en español">
+                            <span class="material-symbols-outlined">language</span>
+                            <a href="index.html" onclick="localStorage.setItem('language', 'es')"
+                                class="hover-underline">ENG</a>
+                        </span>
+                        <span class="mode-item" id="themeToggleBtn" onclick="toggleTheme()"
+                            data-tooltip="View in dark mode">
+                            <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+                            <span id="themeText" class="hover-underline">DRK</span>
+                        </span>
                     </div>
                 </div>
             </section>
-
-            <section id="education">
-                <div class="section-name hsticky">
-                    <h2>EDUCATION</h2>
-                    <img src="assets/icons/arrow-down.svg" alt="" />
-                </div>
-
-                <div class="section-content">
-
-                    <h3 class="mb-5">Higher education</h3>
-
-                    <div class="timeline-container">
-
-                        <div class="bsb-timeline-1">
-                            <div class="container">
-                                <ul class="timeline">
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Diploma in Product
-                                                                Management</span>
-                                                            <div class="logo-desc">
-                                                                <span>UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2025</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Postgraduate in Project
-                                                                Management</span>
-                                                            <div class="logo-desc">
-                                                                <span>UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2023</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Diploma, UX and
-                                                                Accessibility</span>
-                                                            <div class="logo-desc">
-                                                                <span>UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2019</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Bachelor's Degree in Graphic
-                                                                Design</span>
-                                                            <div class="logo-desc">
-                                                                <span>UNIVERSIDAD DE BUENOS AIRES (UBA)</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2018</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3 class=" mar-top mb-5">Courses</h3>
-
-                    <div class="timeline-container">
-
-
-                        <div class="bsb-timeline-1">
-                            <div class="container">
-
-                                <ul class="timeline">
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">AI for Designers</span>
-                                                            <div class="logo-desc">
-                                                                <span>SOL MESZ</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2026</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Metrics and Design</span>
-                                                            <div class="logo-desc">
-                                                                <span>NELSON RODRÍGUEZ-PEÑA</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2024</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">Product Designer</span>
-                                                            <div class="logo-desc">
-                                                                <span>SOL MESZ</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2022</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="timeline-item">
-                                        <div class="timeline-body">
-                                            <div class="timeline-content">
-                                                <div class="border-0">
-                                                    <div class="timeline-section p-0">
-                                                        <div class="timeline-section-body">
-                                                            <span class="lh-100 mb-1">English - All Levels</span>
-                                                            <div class="logo-desc">
-                                                                <span>CENTRO UNIVERSITARIO DE IDIOMAS (CUI)</span>
-                                                            </div>
-                                                        </div>
-                                                        <p>Completed in 2022</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section id="contact">
-                <div class="section-name hsticky">
-                    <h2>CONTACT</h2>
-                    <img src="assets/icons/arrow-down.svg" alt="" />
-                </div>
-
-                <div class="section-content">
-                    <h3 class="mb-5">Let's talk</h3>
-                    <div class="subheading">
-                        For job opportunities or collaborations, please
-                        feel free to contact me.
-                    </div>
-                    <div class="contact mt-4">
-                        <button class="btn btn-secon mb-3">
-                            <a href="mailto:yeilopez.design@gmail.com?subject=Contact from the website" target="_blank">
-                                Send message
-                            </a>
-                        </button>
-                        <div>yeilopez.design@gmail.com</div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="settings-bar hide-responsive">
-                <div>
-                    <a href="index.html" target="_self" class="bitem" tabindex="-1" data-tooltip="Ver en Español">
-                        <i class="lni lni-world icon_medium"></i>
-                        <p>ENG</p>
-                    </a>
-                </div>
-                <div class="a">
-                    <div class="bitem theme-toggle-container" id="moveElement" data-tooltip="Dark mode">
-                        <label class="theme-icon-toggle" for="checkbox">
-                            <input type="checkbox" id="checkbox" />
-                            <i id="theme-icon" class="lni lni-night"></i>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <footer>
-                <div class="credits">
-                    <i class="lni lni-heart"></i> Website created pixel by pixel, by me.
-                </div>
-            </footer>
         </main>
     </div>
 
-    <button class="btn-scroll-top" data-tooltip="Go up">
-        <i class="lni lni-arrow-upward"></i>
-    </button>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="modal-sticky-title" class="modal-sticky-title"></span>
+                <button class="close-x" onclick="closeModal()"><span
+                        class="material-symbols-outlined">close</span></button>
+            </div>
+            <div id="modal-section-banner" class="modal-section-banner"></div>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
-    <div id="cursor-image"></div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        const preloader = document.querySelector(".preloader");
-        const fadeEffect = setInterval(() => {
-            if (!preloader.style.opacity) {
-                preloader.style.opacity = 1;
-            }
-            if (preloader.style.opacity > 0) {
-                preloader.style.opacity -= 0.1;
-            } else {
-                clearInterval(fadeEffect);
-            }
-        }, 100);
-        window.addEventListener("load", fadeEffect);
-    </script>
+    <script src="js/data.js?v=1.2"></script>
+    <script src="js/main.js?v=1.2"></script>
 </body>
 
 </html>
