@@ -66,7 +66,7 @@ const DB_ES = {
                 {
                     title: "Conclusión: Resultados e Impacto",
                     description: "De la suposición a la data estructurada y confiable.",
-                    image: "projects/centaurus/impacto-final.png",
+                    image: "projects/app-centaurus/impacto-final.png",
                     detail: "Centaurus transformó la ceguera operativa en <b>evidencia real</b>. Al digitalizar el terreno, logramos métricas que impactaron directamente en la rentabilidad del negocio: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Eficiencia Operativa</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>mensuales ahorradas en revisión de chats de WhatsApp y transcripción manual.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Data</span><span class='kpi-value'>90%</span><span class='kpi-desc'>de reducción en el ruido informativo y errores de reporte en canales internos.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfacción (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>de mejora en el sentimiento del custodio gracias a la visibilidad de sus evidencias de pago.</span></div></div> Para entender el ecosistema completo, te invito a revisar el detalle del proyecto de la <b>Consola de monitoreo</b>."
                 }
             ]
@@ -241,7 +241,7 @@ const DB_EN = {
                 {
                     title: "Conclusion: The Value of Evidence",
                     description: "From assumption to structured and reliable data.",
-                    image: "projects/centaurus/impacto-final.png",
+                    image: "projects/app-centaurus/impacto-final.png",
                     detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>monthly saved in WhatsApp chat review and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Precision</span><span class='kpi-value'>90%</span><span class='kpi-desc'>reduction in information noise and reporting errors in internal channels.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to visibility of their payment evidence.</span></div></div> To understand the full ecosystem, I invite you to review the details of the <b>Monitoring Console</b> project."
                 }
             ]

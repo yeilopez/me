@@ -357,7 +357,7 @@ function openProject(id) {
                         <p class="section-desc">${sec.description}</p>
                     </div>
                     
-                    <img src="${sec.image}" class="section-full-img" alt="${sec.title}" onerror="this.style.display='none'">
+                    ${sec.image ? `<img src="${sec.image}" class="section-full-img" alt="${sec.title}" onerror="this.style.display='none'">` : ''}
                     
                     ${lottieHTML}
                     
