@@ -532,7 +532,10 @@ body.modal-open {
     cursor: pointer;
 }
 
-.modes a, .modes a:visited, .modes a:hover, .modes a:active {
+.modes a,
+.modes a:visited,
+.modes a:hover,
+.modes a:active {
     color: inherit;
     text-decoration: none;
 }
@@ -1278,21 +1281,23 @@ body.modal-open {
 .lottie-item {
     width: 100%;
     max-width: 500px;
-    background: var(--card-bg);
+    background: var(--white);
     border-radius: 16px;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-card);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.lottie-item dotlottie-player {
+.lottie-item lottie-player {
+    display: block;
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-    max-width: 480px; /* Leave space for padding */
+    max-width: 480px;
+    /* Leave space for padding */
 }
 
 @media (max-width: 768px) {
@@ -1300,7 +1305,7 @@ body.modal-open {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
-    
+
     .lottie-item {
         padding: 5px;
     }

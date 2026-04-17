@@ -343,7 +343,7 @@ function openProject(id) {
                         <div class="lottie-grid">
                             ${sec.lotties.map(url => `
                                 <div class="lottie-item">
-                                    <dotlottie-player src="${url}" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                                    <lottie-player src="${url}" background="transparent" speed="1" loop autoplay></lottie-player>
                                 </div>
                             `).join('')}
                         </div>
