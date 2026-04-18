@@ -963,12 +963,6 @@ body.modal-open {
     transition: all 0.3s ease;
 }
 
-.kpi-card:hover {
-    transform: translateY(-4px);
-    background: var(--white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
 .kpi-label {
     display: block;
     font-size: 12px;
