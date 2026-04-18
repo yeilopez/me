@@ -611,7 +611,7 @@ body.modal-open {
     font-size: 14px;
     font-weight: 500;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     border: none;
 }
 
@@ -1159,23 +1159,38 @@ body.modal-open {
 @media (max-width: 768px) {
     .header-nav {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 20px;
         text-align: center;
+        padding: 20px 15px;
     }
 
     .brand {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 4px;
+    }
+
+    .brand .dot {
+        display: none;
     }
 
     .loc {
         display: none;
     }
 
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
     .menu .nav-btn {
-        margin-left: 0;
-        margin-right: 15px;
+        margin: 0;
+        padding: 8px 12px;
+        font-size: 11px;
     }
 
     .grid-container {
