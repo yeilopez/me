@@ -5,7 +5,7 @@ const DB_ES = {
             title: "App Centaurus 2.0",
             category: "product",
             tagline: "Visibilidad total y control operativo de sucesos en ruta.",
-            tags: ["Logística de Seguridad", "Eficiencia Operativa", "Animaciones", "App para celulares"],
+            tags: ["Logística de Seguridad", "Eficiencia Operativa", "Animaciones", "App para celulares", "Figma"],
             image: "projects/app-centaurus/hero.png",
             challenge: "La falta de visibilidad en terreno de las custodias físicas de camiones que impedía conocer el estado real de los servicios, limitando la respuesta ante <b>sucesos en ruta</b> y generando una ceguera informativa que impactaba directamente en la facturación y seguridad.",
             description: "Desarrollamos una experiencia <b>End-to-End</b> proactiva integrada a la consola de monitoreo, donde el sistema sugiere e inicia acciones automáticamente para garantizar la trazabilidad total mediante una interfaz de alta eficiencia y con soporte sin conexión.",
@@ -75,7 +75,7 @@ const DB_ES = {
             title: "Hubbing Latam",
             category: "product",
             tagline: "Web Platform & Mobile Apps para logística internacional.",
-            tags: ["Logística Internacional", "SaaS", "Cross-border"],
+            tags: ["Logística Internacional", "SaaS", "Cross-border", "Figma"],
             image: "projects/hubbing/hero.png",
             externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
@@ -86,7 +86,7 @@ const DB_ES = {
             tagline: "En construcción",
             isConstruction: true,
             image: "projects/monitoring/hero.png",
-            tags: ["Logística", "Dashboard"],
+            tags: ["Logística", "Dashboard", "Figma"],
             description: "En construcción"
         },
         {
@@ -96,7 +96,7 @@ const DB_ES = {
             tagline: "En construcción",
             isConstruction: true,
             image: "projects/tower/hero.png",
-            tags: ["Logística", "Monitoreo"],
+            tags: ["Logística", "Monitoreo", "Figma"],
             description: "En construcción"
         },
         {
@@ -104,6 +104,7 @@ const DB_ES = {
             title: "Suitable - Animación de proceso logístico",
             category: "animation",
             tagline: "Proceso logístico animado",
+            tags: ["Figma"],
             image: "projects/suitable/hero.png",
             externalLink: "https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
         },
@@ -112,6 +113,7 @@ const DB_ES = {
             title: "Suitable - 4 animaciones",
             category: "animation",
             tagline: "Set de 4 animaciones Lottie",
+            tags: ["Figma"],
             image: "projects/suitable/4-a.png",
             externalLink: "https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
         },
@@ -120,6 +122,7 @@ const DB_ES = {
             title: "Identidad visual - Teatro Argentino de la plata",
             category: "animation",
             tagline: "Diseño de identidad visual",
+            tags: ["Figma"],
             image: "projects/ta/hero.png",
             externalLink: "https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
         }
@@ -209,7 +212,7 @@ const DB_EN = {
             title: "Centaurus App 2.0",
             category: "product",
             tagline: "Full visibility and operational control of route events.",
-            tags: ["Security Logistics", "Operational Efficiency", "Animations", "Mobile App"],
+            tags: ["Security Logistics", "Operational Efficiency", "Animations", "Mobile App", "Figma"],
             image: "projects/app-centaurus/hero.png",
             challenge: "The lack of field visibility in physical truck escorts prevented knowing the real status of services, limiting response to <b>route events</b> and generating information blindness that directly impacted billing and security.",
             description: "We developed a proactive <b>End-to-End</b> experience integrated into the monitoring console, where the system automatically suggests and initiates actions to ensure total traceability through a high-efficiency interface with offline support.",
@@ -279,7 +282,7 @@ const DB_EN = {
             title: "Hubbing Latam",
             category: "product",
             tagline: "Web Platform & Mobile Apps for international logistics.",
-            tags: ["International Logistics", "SaaS", "Cross-border"],
+            tags: ["International Logistics", "SaaS", "Cross-border", "Figma"],
             image: "projects/hubbing/hero.png",
             externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
@@ -290,7 +293,7 @@ const DB_EN = {
             tagline: "Under construction",
             isConstruction: true,
             image: "projects/monitoring/hero.png",
-            tags: ["Logistics", "Dashboard"],
+            tags: ["Logistics", "Dashboard", "Figma"],
             description: "Under construction"
         },
         {
@@ -300,7 +303,7 @@ const DB_EN = {
             tagline: "Under construction",
             isConstruction: true,
             image: "projects/tower/hero.png",
-            tags: ["Logistics", "Monitoring"],
+            tags: ["Logistics", "Monitoring", "Figma"],
             description: "Under construction"
         },
         {
@@ -308,6 +311,7 @@ const DB_EN = {
             title: "Suitable - Logistic process animation",
             category: "animation",
             tagline: "Animated logistic process",
+            tags: ["Figma"],
             image: "projects/suitable/hero.png",
             externalLink: "https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
         },
@@ -316,6 +320,7 @@ const DB_EN = {
             title: "Suitable - 4 animations",
             category: "animation",
             tagline: "Set of 4 Lottie animations",
+            tags: ["Figma"],
             image: "projects/suitable/4-a.png",
             externalLink: "https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
         },
@@ -324,6 +329,7 @@ const DB_EN = {
             title: "Visual Identity - Teatro Argentino de la plata",
             category: "animation",
             tagline: "Visual identity design",
+            tags: ["Figma"],
             image: "projects/ta/hero.png",
             externalLink: "https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
         }
