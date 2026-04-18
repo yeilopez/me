@@ -685,7 +685,8 @@ body.modal-open {
 
 /* Estilo del Modal (Referencia Desktop modal.jpg) */
 .modal {
-    display: flex; /* Cambiado de none para manejar transiciones con opacity/visibility */
+    display: flex;
+    /* Cambiado de none para manejar transiciones con opacity/visibility */
     visibility: hidden;
     opacity: 0;
     position: fixed;
@@ -694,7 +695,8 @@ body.modal-open {
     backdrop-filter: blur(0px);
     z-index: 100;
     transition: opacity 0.4s ease, visibility 0.4s ease, backdrop-filter 0.4s ease;
-    align-items: center; /* Centrado vertical para animar mejor el scale */
+    align-items: center;
+    /* Centrado vertical para animar mejor el scale */
     justify-content: center;
 }
 
@@ -714,7 +716,7 @@ body.modal-open {
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
-    
+
     /* Animación de entrada */
     transform: scale(0.95) translateY(20px);
     transition: transform 0.5s var(--expo-out), opacity 0.5s ease;
@@ -723,6 +725,11 @@ body.modal-open {
 .modal.active .modal-content {
     transform: scale(1) translateY(0);
     opacity: 1;
+}
+
+/* Modales pequeños (Educación/Experiencia) */
+#project-modal.modal-small .modal-content {
+    max-width: 800px;
 }
 
 .modal-header {
@@ -879,7 +886,7 @@ body.modal-open {
 /* Rediseño Modal: Secciones de Detalle */
 .modal-section {
     border-top: 1px solid var(--border-row);
-    padding: 64px 0;
+    padding: 48px 0;
 }
 
 .modal-section:first-of-type {
@@ -1196,48 +1203,52 @@ body.modal-open {
     }
 }
 
-/* Timeline Styles */
+
 /* Timeline Styles */
 .timeline-container {
-    position: relative;
-    padding: 20px 0;
+    max-width: 850px;
+    margin: 50px auto 60px auto;
+    padding: 0 40px;
 }
 
 .edu-group-header {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--black);
-    margin: 40px 0 20px 0;
+    margin: 60px 0 30px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.edu-group-header::before {
-    content: 'school';
-    font-family: 'Material Symbols Outlined';
-    font-size: 28px;
-}
-
-.timeline-container {
-    padding: 20px 0 60px 0;
     width: 100%;
+    padding-right: 15px;
 }
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 140px 40px 1fr;
+    grid-template-columns: 110px 30px 1fr;
     align-items: start;
     margin-bottom: 0;
     position: relative;
     width: 100%;
 }
 
+/* Animación de entrada escalonada */
+.animate-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: timelineEntry 0.6s var(--expo-out) forwards;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes timelineEntry {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .timeline-date {
-    text-align: left;
-    padding-right: 15px;
+    text-align: right;
+    padding-right: 12px;
     font-size: 14px;
     font-weight: 700;
     color: var(--gray);
@@ -1247,7 +1258,7 @@ body.modal-open {
 }
 
 .timeline-marker {
-    width: 40px;
+    width: 30px;
     height: 100%;
     position: relative;
     display: flex;
@@ -1262,7 +1273,7 @@ body.modal-open {
     background: #EBEBEB;
     position: absolute;
     top: 24px;
-    left: 19px;
+    left: 14px;
 }
 
 .dark .timeline-marker::after {
@@ -1297,7 +1308,7 @@ body.modal-open {
     border-radius: 24px;
     border: 1px solid rgba(0, 0, 0, 0.01);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    width: 100%;
+    max-width: fit-content;
 }
 
 .dark .timeline-card {
@@ -1326,17 +1337,12 @@ body.modal-open {
     font-weight: 500;
 }
 
+/* Hover eliminado por petición del usuario */
 .timeline-item:hover .timeline-card {
-    transform: translateX(8px);
-    background: var(--white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s var(--expo-out);
+    transform: none;
+    box-shadow: none;
 }
 
-.dark .timeline-item:hover .timeline-card {
-    background: #2E2E33;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-}
 
 @media (max-width: 768px) {
     .timeline-item {

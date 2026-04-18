@@ -127,7 +127,7 @@ const DB_ES = {
     experience: [
         {
             company: "DETECTA SECURITY",
-            period: "2024 - Actualidad",
+            period: "2024 - 2026",
             role: "Product designer",
             location: "Remoto (México)"
         },
@@ -159,43 +159,43 @@ const DB_ES = {
     education: [
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
-            year: "2023",
+            year: "Fin. 2023",
             degree: "Posgrado en Gestión de Proyectos",
             type: "superior"
         },
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
-            year: "2019",
+            year: "Fin. 2019",
             degree: "Diplomatura, UX y Accesibilidad",
             type: "superior"
         },
         {
             institution: "UNIVERSIDAD DE BUENOS AIRES (UBA)",
-            year: "2018",
+            year: "Fin. 2018",
             degree: "Carrera de Diseño Gráfico",
             type: "superior"
         },
         {
             institution: "NELSON RODRÍGUEZ-PEÑA",
-            year: "2024",
+            year: "Fin. 2024",
             degree: "IA para Diseñadores",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "2024",
+            year: "Fin. 2024",
             degree: "Métricas y Diseño",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "2022",
+            year: "Fin. 2022",
             degree: "Product Designer",
             type: "curso"
         },
         {
             institution: "CENTRO UNIVERSITARIO DE IDIOMAS (CUI)",
-            year: "2022",
+            year: "Fin. 2022",
             degree: "Inglés",
             type: "curso"
         }
@@ -331,7 +331,7 @@ const DB_EN = {
     experience: [
         {
             company: "DETECTA SECURITY",
-            period: "2024 - Present",
+            period: "2024 - 2026",
             role: "Product designer",
             location: "Remote (Mexico)"
         },
@@ -363,43 +363,43 @@ const DB_EN = {
     education: [
         {
             institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
-            year: "2023",
+            year: "End. 2023",
             degree: "Postgraduate in Project Management",
             type: "superior"
         },
         {
             institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
-            year: "2019",
+            year: "End. 2019",
             degree: "Diploma, UX and Accessibility",
             type: "superior"
         },
         {
             institution: "UNIVERSITY OF BUENOS AIRES (UBA)",
-            year: "2018",
+            year: "End. 2018",
             degree: "Bachelor of Graphic Design",
             type: "superior"
         },
         {
             institution: "NELSON RODRÍGUEZ-PEÑA",
-            year: "2024",
+            year: "End. 2024",
             degree: "AI for Designers",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "2024",
+            year: "End. 2024",
             degree: "Metrics & Design",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "2022",
+            year: "End. 2022",
             degree: "Product Designer",
             type: "curso"
         },
         {
             institution: "LANGUAGES UNIVERSITY CENTER (CUI)",
-            year: "2022",
+            year: "End. 2022",
             degree: "English",
             type: "curso"
         }

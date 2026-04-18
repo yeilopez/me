@@ -40,14 +40,15 @@ const TRANSLATIONS = {
             focus: "Enfoque Estratégico",
             challenge: "Desafío / Contexto",
             solution: "Solución UX/UI",
-            exp: "Experiencia",
+            exp: "Empleadores",
             edu: "Educación",
             eduSuperior: "ESTUDIOS SUPERIORES",
             eduCursos: "CURSOS",
             themeLight: "Ver en modo claro",
             themeDark: "Ver en modo oscuro",
             toggleDark: "OSC",
-            toggleLight: "CLA"
+            toggleLight: "CLA",
+            eduEnd: "Fin."
         }
     },
     en: {
@@ -82,14 +83,15 @@ const TRANSLATIONS = {
             focus: "Strategic Focus",
             challenge: "Challenge / Context",
             solution: "UX/UI Solution",
-            exp: "Experience",
+            exp: "Employers",
             edu: "Education",
             eduSuperior: "HIGHER EDUCATION",
             eduCursos: "CERTIFICATIONS & COURSES",
             themeLight: "View in light mode",
             themeDark: "View in dark mode",
             toggleDark: "DRK",
-            toggleLight: "LIG"
+            toggleLight: "LIG",
+            eduEnd: "End."
         }
     }
 };
@@ -186,7 +188,7 @@ function renderProjects() {
         div.className = 'project-row' + (p.category === 'product' && index === 0 ? ' open' : '');
 
         let linkHTML = `<a href="#" class="blue-link" style="margin:0; padding:0; font-weight:500; font-size:14px;" onclick="openProject('${p.id}'); event.stopPropagation(); return false;">${T.ui.viewProject}</a>`;
-        
+
         if (p.isConstruction) {
             linkHTML = ``; // The tagline will say "En construcción" / "Under construction"
         } else if (p.externalLink) {
@@ -232,7 +234,7 @@ function openProject(id) {
     const modalHeader = document.querySelector('.modal-header');
 
     if (stickyTitle) stickyTitle.textContent = p.title;
-    
+
     // Banner de sección dinámico
     const sectionBanner = document.getElementById('modal-section-banner');
     if (sectionBanner) {
@@ -240,56 +242,12 @@ function openProject(id) {
         sectionBanner.textContent = '';
     }
 
-    if (modalContent) {
-        modalContent.scrollTop = 0;
-        modalContent.onscroll = () => {
-            if (modalContent.scrollTop > 10) {
-                modalHeader.classList.add('scrolled');
-            } else {
-                modalHeader.classList.remove('scrolled');
-            }
+    attachModalScrollBehavior(modalContent, modalHeader, sectionBanner);
 
-            // Banner de sección dinámico: detectar título oculto
-            if (sectionBanner) {
-                const sections = document.querySelectorAll('.modal-section');
-                const modalRect = modalContent.getBoundingClientRect();
-                const modalTop = modalRect.top;
-                
-                let activeSection = null;
-                let anyTitleVisible = false;
-
-                sections.forEach(sec => {
-                    const titleEl = sec.querySelector('.section-title');
-                    if (!titleEl) return;
-                    
-                    const titleRect = titleEl.getBoundingClientRect();
-
-                    // 1. ¿Este título ya pasó el sticky header (80px)?
-                    if (titleRect.bottom < modalTop + 80) {
-                        activeSection = sec;
-                    }
-                    
-                    // 2. ¿Este título está visible y claro en la pantalla (debajo del header)?
-                    if (titleRect.top >= modalTop + 80 && titleRect.top < modalTop + 500) {
-                        anyTitleVisible = true;
-                    }
-                });
-
-                if (activeSection && !anyTitleVisible) {
-                    const titleStr = activeSection.querySelector('.section-title').textContent;
-                    sectionBanner.textContent = titleStr;
-                    sectionBanner.classList.add('visible');
-                } else {
-                    sectionBanner.classList.remove('visible');
-                }
-            }
-        };
-
-        // Eliminar observer anterior si existía
-        if (window.modalObserver) {
-            window.modalObserver.disconnect();
-            window.modalObserver = null;
-        }
+    // Eliminar observer anterior si existía
+    if (window.modalObserver) {
+        window.modalObserver.disconnect();
+        window.modalObserver = null;
     }
 
     let metaHTML = '';
@@ -341,9 +299,9 @@ function openProject(id) {
 
         <div id="modal-project-sections">
             ${(p.sections || []).map(sec => {
-                let lottieHTML = '';
-                if (sec.lotties && sec.lotties.length > 0) {
-                    lottieHTML = `
+        let lottieHTML = '';
+        if (sec.lotties && sec.lotties.length > 0) {
+            lottieHTML = `
                         <div class="lottie-grid">
                             ${sec.lotties.map(url => `
                                 <div class="lottie-item">
@@ -352,9 +310,9 @@ function openProject(id) {
                             `).join('')}
                         </div>
                     `;
-                }
+        }
 
-                return `
+        return `
                 <div class="modal-section">
                     <div class="section-header">
                         <h4 class="section-title">${sec.title}</h4>
@@ -368,10 +326,11 @@ function openProject(id) {
                     <div class="section-detail">${sec.detail}</div>
                 </div>
                 `;
-            }).join('')}
+    }).join('')}
         </div>
     `;
     const modal = document.getElementById('project-modal');
+    modal.classList.remove('modal-small');
     modal.classList.add('active');
     document.body.classList.add('modal-open');
 }
@@ -389,9 +348,11 @@ function openTab(section) {
     if (stickyTitle) stickyTitle.textContent = title;
 
     let itemsHTML = '';
+    let globalIndex = 0; // Para animación escalonada
+
     if (section === 'exp') {
-        itemsHTML = (DB.experience || []).map(item => `
-            <div class="timeline-item">
+        const content = (DB.experience || []).map((item, idx) => `
+            <div class="timeline-item animate-in" style="--i: ${idx}">
                 <div class="timeline-date">${item.period}</div>
                 <div class="timeline-marker">
                     <div class="timeline-dot"></div>
@@ -405,29 +366,42 @@ function openTab(section) {
                 </div>
             </div>
         `).join('');
+
+        itemsHTML = `
+            <div class="modal-section" style="margin-top:0;">
+                <h4 class="section-title sr-only">${T.ui.exp}</h4>
+                ${content}
+            </div>
+        `;
     } else if (section === 'edu') {
         const superior = (DB.education || []).filter(e => e.type === 'superior');
         const cursos = (DB.education || []).filter(e => e.type === 'curso');
 
         const renderGroup = (groupTitle, items) => {
             if (items.length === 0) return '';
-            return `
-                <div class="edu-group-header">${groupTitle}</div>
-                ${items.map(item => `
-                    <div class="timeline-item">
-                        <div class="timeline-date">${item.year}</div>
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-card">
-                                <h4>${item.degree}</h4>
-                                <p>${item.institution}</p>
+            const html = `
+                <div class="modal-section group-section">
+                    <div class="edu-group-header section-title">${groupTitle}</div>
+                    ${items.map(item => {
+                const s = `
+                        <div class="timeline-item animate-in" style="--i: ${globalIndex}">
+                            <div class="timeline-date">${item.year}</div>
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
                             </div>
-                        </div>
-                    </div>
-                `).join('')}
+                            <div class="timeline-content">
+                                <div class="timeline-card">
+                                    <h4>${item.degree}</h4>
+                                    <p>${item.institution}</p>
+                                </div>
+                            </div>
+                        </div>`;
+                globalIndex++;
+                return s;
+            }).join('')}
+                </div>
             `;
+            return html;
         };
 
         itemsHTML = renderGroup(T.ui.eduSuperior, superior) + renderGroup(T.ui.eduCursos, cursos);
@@ -441,15 +415,95 @@ function openTab(section) {
     `;
 
     const modal = document.getElementById('project-modal');
+    modal.classList.add('modal-small');
     modal.classList.add('active');
     document.body.classList.add('modal-open');
+
+    // Inicializar scroll behavior
+    const modalContent = document.querySelector('.modal-content');
+    const modalHeader = document.querySelector('.modal-header');
+    const sectionBanner = document.getElementById('modal-section-banner');
+
+    if (sectionBanner) {
+        sectionBanner.classList.remove('visible');
+        sectionBanner.textContent = '';
+    }
+
+    // Pasar null al banner para estos modales por petición del usuario
+    attachModalScrollBehavior(modalContent, modalHeader, null);
+}
+
+// HELPER: Inicializar comportamiento de scroll en modales
+function attachModalScrollBehavior(modalContent, modalHeader, sectionBanner) {
+    if (!modalContent) return;
+
+    modalContent.scrollTop = 0;
+    modalContent.onscroll = () => {
+        if (modalContent.scrollTop > 10) {
+            modalHeader.classList.add('scrolled');
+        } else {
+            modalHeader.classList.remove('scrolled');
+        }
+
+        // Banner de sección dinámico
+        if (sectionBanner) {
+            const sections = modalContent.querySelectorAll('.modal-section');
+            const modalRect = modalContent.getBoundingClientRect();
+            const modalTop = modalRect.top;
+            
+            let activeSec = null;
+            let showBanner = false;
+
+            // 1. Encontrar la sección "bajo la cabecera" (línea de 81px)
+            sections.forEach(sec => {
+                const secRect = sec.getBoundingClientRect();
+                if (secRect.top < modalTop + 81) {
+                    activeSec = sec;
+                }
+            });
+
+            if (activeSec) {
+                const titleEl = activeSec.querySelector('.section-title');
+                if (titleEl) {
+                    const titleRect = titleEl.getBoundingClientRect();
+                    // Si el título ya pasó el header, mostrar banner
+                    if (titleRect.bottom < modalTop + 80) {
+                        showBanner = true;
+                        sectionBanner.textContent = titleEl.textContent;
+                    }
+                }
+
+                // 2. Ocultar si el SIGUIENTE título está por aparecer (buffer de 280px)
+                let nextSec = activeSec.nextElementSibling;
+                while(nextSec && !nextSec.classList.contains('modal-section')) {
+                    nextSec = nextSec.nextElementSibling;
+                }
+
+                if (nextSec) {
+                    const nextTitle = nextSec.querySelector('.section-title');
+                    if (nextTitle) {
+                        const nextTitleRect = nextTitle.getBoundingClientRect();
+                        if (nextTitleRect.top < modalTop + 280) {
+                            showBanner = false;
+                        }
+                    }
+                }
+            }
+
+            if (showBanner) {
+                sectionBanner.classList.add('visible');
+            } else {
+                sectionBanner.classList.remove('visible');
+            }
+        }
+    };
 }
 
 function closeModal() {
     if (window.modalObserver) window.modalObserver.disconnect();
     const sectionBanner = document.getElementById('modal-section-banner');
     if (sectionBanner) sectionBanner.classList.remove('visible');
-    
+
     const modal = document.getElementById('project-modal');
     modal.classList.remove('active');
     document.body.classList.remove('modal-open');
