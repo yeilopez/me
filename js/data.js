@@ -85,7 +85,7 @@ const DB_ES = {
             category: "product",
             tagline: "En construcción",
             isConstruction: true,
-            image: "projects/saphiro.jpg",
+            image: "projects/monitoring/hero.png",
             tags: ["Logística", "Dashboard"],
             description: "En construcción"
         },
@@ -95,7 +95,7 @@ const DB_ES = {
             category: "product",
             tagline: "En construcción",
             isConstruction: true,
-            image: "projects/app-finder.jpg",
+            image: "projects/tower/hero.png",
             tags: ["Logística", "Monitoreo"],
             description: "En construcción"
         },
@@ -104,7 +104,7 @@ const DB_ES = {
             title: "Suitable - Animación de proceso logístico",
             category: "animation",
             tagline: "Proceso logístico animado",
-            image: "projects/suitable.jpg",
+            image: "projects/suitable/hero.png",
             externalLink: "https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
         },
         {
@@ -112,7 +112,7 @@ const DB_ES = {
             title: "Suitable - 4 animaciones",
             category: "animation",
             tagline: "Set de 4 animaciones Lottie",
-            image: "projects/suitable.jpg",
+            image: "projects/suitable/4-a.png",
             externalLink: "https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
         },
         {
@@ -120,7 +120,7 @@ const DB_ES = {
             title: "Identidad visual - Teatro Argentino de la plata",
             category: "animation",
             tagline: "Diseño de identidad visual",
-            image: "projects/suitable.jpg",
+            image: "projects/ta/hero.png",
             externalLink: "https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
         }
     ],
@@ -289,7 +289,7 @@ const DB_EN = {
             category: "product",
             tagline: "Under construction",
             isConstruction: true,
-            image: "projects/saphiro.jpg",
+            image: "projects/monitoring/hero.png",
             tags: ["Logistics", "Dashboard"],
             description: "Under construction"
         },
@@ -299,7 +299,7 @@ const DB_EN = {
             category: "product",
             tagline: "Under construction",
             isConstruction: true,
-            image: "projects/app-finder.jpg",
+            image: "projects/tower/hero.png",
             tags: ["Logistics", "Monitoring"],
             description: "Under construction"
         },
@@ -308,7 +308,7 @@ const DB_EN = {
             title: "Suitable - Logistic process animation",
             category: "animation",
             tagline: "Animated logistic process",
-            image: "projects/suitable.jpg",
+            image: "projects/suitable/hero.png",
             externalLink: "https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
         },
         {
@@ -316,7 +316,7 @@ const DB_EN = {
             title: "Suitable - 4 animations",
             category: "animation",
             tagline: "Set of 4 Lottie animations",
-            image: "projects/suitable.jpg",
+            image: "projects/suitable/4-a.png",
             externalLink: "https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
         },
         {
@@ -324,7 +324,7 @@ const DB_EN = {
             title: "Visual Identity - Teatro Argentino de la plata",
             category: "animation",
             tagline: "Visual identity design",
-            image: "projects/suitable.jpg",
+            image: "projects/ta/hero.png",
             externalLink: "https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
         }
     ],
