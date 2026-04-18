@@ -42,6 +42,8 @@ const TRANSLATIONS = {
             solution: "Solución UX/UI",
             exp: "Experiencia",
             edu: "Educación",
+            eduSuperior: "ESTUDIOS SUPERIORES",
+            eduCursos: "CURSOS",
             themeLight: "Ver en modo claro",
             themeDark: "Ver en modo oscuro",
             toggleDark: "OSC",
@@ -82,6 +84,8 @@ const TRANSLATIONS = {
             solution: "UX/UI Solution",
             exp: "Experience",
             edu: "Education",
+            eduSuperior: "HIGHER EDUCATION",
+            eduCursos: "CERTIFICATIONS & COURSES",
             themeLight: "View in light mode",
             themeDark: "View in dark mode",
             toggleDark: "DRK",
@@ -367,7 +371,8 @@ function openProject(id) {
             }).join('')}
         </div>
     `;
-    document.getElementById('project-modal').style.display = 'block';
+    const modal = document.getElementById('project-modal');
+    modal.classList.add('active');
     document.body.classList.add('modal-open');
 }
 
@@ -395,36 +400,48 @@ function openTab(section) {
                     <div class="timeline-card">
                         <h4>${item.company}</h4>
                         <p>${item.role}</p>
+                        ${item.location ? `<p class="timeline-location">${item.location}</p>` : ''}
                     </div>
                 </div>
             </div>
         `).join('');
     } else if (section === 'edu') {
-        itemsHTML = (DB.education || []).map(item => `
-            <div class="timeline-item">
-                <div class="timeline-date">${item.year}</div>
-                <div class="timeline-marker">
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-card">
-                        <h4>${item.institution}</h4>
-                        <p>${item.degree}</p>
+        const superior = (DB.education || []).filter(e => e.type === 'superior');
+        const cursos = (DB.education || []).filter(e => e.type === 'curso');
+
+        const renderGroup = (groupTitle, items) => {
+            if (items.length === 0) return '';
+            return `
+                <div class="edu-group-header">${groupTitle}</div>
+                ${items.map(item => `
+                    <div class="timeline-item">
+                        <div class="timeline-date">${item.year}</div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <h4>${item.degree}</h4>
+                                <p>${item.institution}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        `).join('');
+                `).join('')}
+            `;
+        };
+
+        itemsHTML = renderGroup(T.ui.eduSuperior, superior) + renderGroup(T.ui.eduCursos, cursos);
     }
 
     body.innerHTML = `
-        <span style="color:var(--muted-text); font-size:12px; font-weight:600;">${T.ui.section}</span>
         <h2 style="font-size:48px; margin:10px 0;">${title}</h2>
         <div class="timeline-container">
             ${itemsHTML}
         </div>
     `;
 
-    document.getElementById('project-modal').style.display = 'block';
+    const modal = document.getElementById('project-modal');
+    modal.classList.add('active');
     document.body.classList.add('modal-open');
 }
 
@@ -433,7 +450,8 @@ function closeModal() {
     const sectionBanner = document.getElementById('modal-section-banner');
     if (sectionBanner) sectionBanner.classList.remove('visible');
     
-    document.getElementById('project-modal').style.display = 'none';
+    const modal = document.getElementById('project-modal');
+    modal.classList.remove('active');
     document.body.classList.remove('modal-open');
 }
 

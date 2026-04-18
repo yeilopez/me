@@ -126,50 +126,78 @@ const DB_ES = {
     ],
     experience: [
         {
+            company: "DETECTA SECURITY",
+            period: "2024 - Actualidad",
+            role: "Product designer",
+            location: "Remoto (México)"
+        },
+        {
             company: "BELOG IT",
             period: "2023 - 2024",
-            role: "Product Designer"
+            role: "Product designer",
+            location: "Híbrido (Argentina)"
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
-            role: "Ux Ui Motion"
+            role: "UX UI Motion",
+            location: "Híbrido (Argentina)"
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "Diseñador Web / de Contenidos"
+            role: "Contenido web / Ui design",
+            location: "Presencial (Argentina)"
         },
         {
             company: "POTENCIAL DIGITAL",
             period: "2015 - 2017",
-            role: "Diseñador Web Junior"
+            role: "Diseñador web junior",
+            location: "Presencial (Argentina)"
         }
     ],
     education: [
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
-            year: "2025",
-            degree: "Diplomatura en Product Management",
-            status: "Finalizado"
-        },
-        {
-            institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
             year: "2023",
             degree: "Posgrado en Gestión de Proyectos",
-            status: "Finalizado"
+            type: "superior"
         },
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
             year: "2019",
             degree: "Diplomatura, UX y Accesibilidad",
-            status: "Finalizado"
+            type: "superior"
         },
         {
             institution: "UNIVERSIDAD DE BUENOS AIRES (UBA)",
             year: "2018",
-            degree: "Licenciatura en Diseño Gráfico",
-            status: "Finalizado"
+            degree: "Carrera de Diseño Gráfico",
+            type: "superior"
+        },
+        {
+            institution: "NELSON RODRÍGUEZ-PEÑA",
+            year: "2024",
+            degree: "IA para Diseñadores",
+            type: "curso"
+        },
+        {
+            institution: "SOL MESZ",
+            year: "2024",
+            degree: "Métricas y Diseño",
+            type: "curso"
+        },
+        {
+            institution: "SOL MESZ",
+            year: "2022",
+            degree: "Product Designer",
+            type: "curso"
+        },
+        {
+            institution: "CENTRO UNIVERSITARIO DE IDIOMAS (CUI)",
+            year: "2022",
+            degree: "Inglés",
+            type: "curso"
         }
     ]
 };
@@ -242,7 +270,7 @@ const DB_EN = {
                     title: "Conclusion: The Value of Evidence",
                     description: "From assumption to structured and reliable data.",
                     image: "projects/app-centaurus/sc-6.png",
-                    detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>monthly saved in WhatsApp chat review and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Precision</span><span class='kpi-value'>90%</span><span class='kpi-desc'>reduction in information noise and reporting errors in internal channels.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to visibility of their payment evidence.</span></div></div> To understand the full ecosystem, I invite you to review the details of the <b>Monitoring Console</b> project."
+                    detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>monthly saved in WhatsApp chat review and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Precision</span><span class='kpi-value'>90%</span><span class='kpi-desc'>reduction in information noise and reporting errors in internal channels.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to visibility of their payment evidence.</span></div></div> Para entender the full ecosystem, I invite you to review the details of the <b>Monitoring Console</b> project."
                 }
             ]
         },
@@ -302,50 +330,78 @@ const DB_EN = {
     ],
     experience: [
         {
+            company: "DETECTA SECURITY",
+            period: "2024 - Present",
+            role: "Product designer",
+            location: "Remote (Mexico)"
+        },
+        {
             company: "BELOG IT",
             period: "2023 - 2024",
-            role: "Product Designer"
+            role: "Product designer",
+            location: "Hybrid (Argentina)"
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
-            role: "Ux Ui Motion"
+            role: "UX UI Motion",
+            location: "Hybrid (Argentina)"
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "Diseñador Web / de Contenidos"
+            role: "Web Content / Ui design",
+            location: "On-site (Argentina)"
         },
         {
             company: "POTENCIAL DIGITAL",
             period: "2015 - 2017",
-            role: "Diseñador Web Junior"
+            role: "Junior Web Designer",
+            location: "On-site (Argentina)"
         }
     ],
     education: [
         {
             institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
-            year: "2025",
-            degree: "Product Management Diploma",
-            status: "Completed"
-        },
-        {
-            institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
             year: "2023",
             degree: "Postgraduate in Project Management",
-            status: "Completed"
+            type: "superior"
         },
         {
             institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
             year: "2019",
             degree: "Diploma, UX and Accessibility",
-            status: "Completed"
+            type: "superior"
         },
         {
             institution: "UNIVERSITY OF BUENOS AIRES (UBA)",
             year: "2018",
             degree: "Bachelor of Graphic Design",
-            status: "Completed"
+            type: "superior"
+        },
+        {
+            institution: "NELSON RODRÍGUEZ-PEÑA",
+            year: "2024",
+            degree: "AI for Designers",
+            type: "curso"
+        },
+        {
+            institution: "SOL MESZ",
+            year: "2024",
+            degree: "Metrics & Design",
+            type: "curso"
+        },
+        {
+            institution: "SOL MESZ",
+            year: "2022",
+            degree: "Product Designer",
+            type: "curso"
+        },
+        {
+            institution: "LANGUAGES UNIVERSITY CENTER (CUI)",
+            year: "2022",
+            degree: "English",
+            type: "curso"
         }
     ]
 };
