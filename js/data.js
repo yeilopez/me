@@ -76,6 +76,7 @@ const DB_ES = {
             category: "product",
             tagline: "Web Platform & Mobile Apps para logística internacional.",
             tags: ["Logística Internacional", "SaaS", "Cross-border"],
+            image: "projects/hubbing/hero.png",
             externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
@@ -251,6 +252,7 @@ const DB_EN = {
             category: "product",
             tagline: "Web Platform & Mobile Apps for international logistics.",
             tags: ["International Logistics", "SaaS", "Cross-border"],
+            image: "projects/hubbing/hero.png",
             externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
