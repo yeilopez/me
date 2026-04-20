@@ -517,13 +517,13 @@ function initTheme() {
 
     if (storedTheme === 'dark') {
         document.documentElement.classList.add('dark');
-        document.getElementById('themeText').textContent = T.ui.toggleLight;
-        document.getElementById('themeIcon').textContent = 'light_mode';
+        document.getElementById('themeText').textContent = T.ui.toggleDark;
+        document.getElementById('themeIcon').textContent = 'dark_mode';
         btn.setAttribute('data-tooltip', T.ui.themeLight);
     } else {
         document.documentElement.classList.remove('dark');
-        document.getElementById('themeText').textContent = T.ui.toggleDark;
-        document.getElementById('themeIcon').textContent = 'dark_mode';
+        document.getElementById('themeText').textContent = T.ui.toggleLight;
+        document.getElementById('themeIcon').textContent = 'light_mode';
         btn.setAttribute('data-tooltip', T.ui.themeDark);
     }
 }
@@ -537,14 +537,14 @@ function toggleTheme() {
         if (newThemeDark) {
             document.documentElement.classList.add('dark');
             localStorage.setItem('theme', 'dark');
-            document.getElementById('themeText').textContent = T.ui.toggleLight;
-            document.getElementById('themeIcon').textContent = 'light_mode';
+            document.getElementById('themeText').textContent = T.ui.toggleDark;
+            document.getElementById('themeIcon').textContent = 'dark_mode';
             btn.setAttribute('data-tooltip', T.ui.themeLight);
         } else {
             document.documentElement.classList.remove('dark');
             localStorage.setItem('theme', 'light');
-            document.getElementById('themeText').textContent = T.ui.toggleDark;
-            document.getElementById('themeIcon').textContent = 'dark_mode';
+            document.getElementById('themeText').textContent = T.ui.toggleLight;
+            document.getElementById('themeIcon').textContent = 'light_mode';
             btn.setAttribute('data-tooltip', T.ui.themeDark);
         }
     }

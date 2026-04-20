@@ -63,31 +63,83 @@ const DB_ES = {
                     detail: "Reforcé secciones clave con <b>microinteracciones realizadas en Lottie</b>. Estas animaciones no solo mejoran la estética, sino que sirven como confirmación visual inmediata de acciones exitosas y estados de carga, humanizando la tecnología y guiando al custodio de forma intuitiva durante su jornada."
                 },
                 {
+                    title: "Prototipo",
+                    description: "Navegación interactiva de la App Centaurus 2.0.",
+                    detail: "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video en construcción — Próximamente se agregará un prototipo interactivo en Vimeo.</div>"
+                },
+                {
                     title: "Conclusión: Resultados e Impacto",
                     description: "De la suposición a la data estructurada y confiable.",
                     image: "projects/centaurus/impacto-final.png",
-                    detail: "Centaurus transformó la ceguera operativa en <b>evidencia real</b>. Al digitalizar el terreno, logramos métricas que impactaron directamente en la rentabilidad del negocio: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Eficiencia Operativa</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>mensuales ahorradas en revisión de chats y transcripción manual.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Data</span><span class='kpi-value'>98%</span><span class='kpi-desc'>de efectividad en el registro de sucesos, reduciendo drásticamente el ruido informativo.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfacción (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>de mejora en el sentimiento del custodio gracias al registro sin conexión y la visibilidad de sus evidencias de gastos.</span></div></div> Para entender el ecosistema completo, te invito a revisar el detalle del proyecto de la <b>Consola de monitoreo</b>."
+                    detail: "Centaurus transformó la ceguera operativa en <b>evidencia real</b>. Al digitalizar el terreno, logramos métricas que impactaron directamente en la rentabilidad del negocio: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Eficiencia Operativa</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>mensuales ahorradas en revisión de chats y transcripción manual.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Data</span><span class='kpi-value'>98%</span><span class='kpi-desc'>de efectividad en el registro de sucesos, reduciendo drásticamente el ruido informativo.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfacción (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>de mejora en el sentimiento del custodio gracias al registro sin conexión y la visibilidad de sus evidencias de gastos.</span></div></div> Para entender el ecosistema completo, te invito a revisar el detalle del proyecto de la <a href='#' class='blue-link' onclick='openProject(\"detecta-monitoring-console\"); return false;'>Consola de Monitoreo</a>."
                 }
             ]
         },
         {
-            id: "hubbing-latam",
-            title: "Hubbing Latam",
-            category: "product",
-            tagline: "Web Platform & Mobile Apps para logística internacional.",
-            tags: ["Logística Internacional", "SaaS", "Cross-border", "Figma"],
-            image: "projects/hubbing/hero.png",
-            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
-        },
-        {
-            id: "consola-monitoreo",
-            title: "Consola de monitoreo",
-            category: "product",
-            tagline: "En construcción",
-            isConstruction: true,
-            image: "projects/monitoring/hero.png",
-            tags: ["Logística", "Dashboard", "Figma"],
-            description: "En construcción"
+            "id": "detecta-monitoring-console",
+            "title": "Consola de Monitoreo",
+            "category": "product",
+            "tagline": "De la reactividad al control proactivo: Cumpliendo promesas de seguridad logística.",
+            "tags": ["Control Tower", "SLA Strategy", "Product Strategy", "Crisis Management"],
+            "image": "projects/monitoring/hero.png",
+            "challenge": "Garantizar el cumplimiento del compromiso de reporte cada 25 minutos y eliminar la brecha de información que permitía que los clientes detectaran incidentes antes que el equipo interno.",
+            "description": "Rediseño integral del centro de control operativo. Transformamos un ecosistema fragmentado (WhatsApp/Excel) en una plataforma unificada que integra telemetría, comunicaciones VoIP y protocolos de emergencia automatizados.",
+            "details": {
+                "role": "Lead Product Designer",
+                "client": "Detecta Security",
+                "pillar": "Business Impact & Operational Reliability",
+                "platform": "Web (Desktop-First)",
+                "focus": "SaaS / Control Tower / Emergency Response"
+            },
+            "sections": [
+                {
+                    "title": "Contexto: La promesa de Detecta Security",
+                    "description": "El modelo de negocio basado en la seguridad preventiva.",
+                    "image": "projects/monitoring/sc-1.png",
+                    "detail": "Detecta Security ofrece custodia física para transporte de carga pesada. <b>Nuestro valor diferencial es la seguridad preventiva</b>. <ul><li><b>El Compromiso (SLA):</b> La empresa garantiza por contrato un reporte de estado cada 25 minutos por cada servicio en ruta.</li><li><b>El Caos Inicial:</b> Antes de mi intervención, los monitoristas operaban con Excels manuales y grupos de WhatsApp, lo que impedía medir el tiempo real transcurrido entre reportes y causaba que el cliente detectara anomalías antes que la propia central.</li></ul>"
+                },
+                {
+                    "title": "Diagnóstico y Lógica de Priorización Temporal",
+                    "description": "Definiendo el algoritmo visual basado en la visibilidad del tiempo.",
+                    "image": "projects/monitoring/sc-2.png",
+                    "detail": "Tras auditar el proceso, establecimos que el diseño debía dictar el orden de atención basándose estrictamente en el <b>tiempo de vida del reporte</b>: <ul><li><b>Priorización por Antigüedad:</b> El sistema ordena automáticamente los servicios que llevan más tiempo sin reportar en la parte superior.</li><li><b>Visibilidad del Contador:</b> Al completar un reporte, el contador se reinicia a cero y el servicio se desplaza al final del listado. Esto permite un flujo circular de atención constante para asegurar el cumplimiento del compromiso de 25 minutos.</li><li><b>Excepciones Críticas:</b> Las alertas de seguridad rompen esta cola temporal, posicionándose arriba de todo para una intervención inmediata.</li></ul>"
+                },
+                {
+                    "title": "Iteración y Pivot: El aprendizaje del fallo",
+                    "description": "Cómo el testeo de usabilidad redefinió la arquitectura.",
+                    "image": "projects/monitoring/sc-3.png",
+                    "detail": "Nuestra primera propuesta separaba la interfaz en dos columnas (servicios y alertas). <b>Los tests revelaron una confusión crítica</b>: los monitoristas no percibían la urgencia del panel lateral. <blockquote>'Pensé que la derecha era un buzón de mensajes secundarios, no alertas de seguridad críticas'.</blockquote> <ul><li><b>El Cambio:</b> Eliminamos la división de columnas para unificar el flujo. Ahora, las alertas se ubican arriba de todo, forzando la atención inmediata.</li><li><b>Feedback Clave:</b> Integramos un botón de 'Copiar coordenadas' con un solo clic, permitiendo informar a autoridades de forma instantánea bajo presión.</li></ul>"
+                },
+                {
+                    "title": "Comunicaciones y Continuidad Operativa",
+                    "description": "Centralizando la evidencia y eliminando teléfonos externos.",
+                    "image": "projects/monitoring/sc-4.png",
+                    "detail": "Centralizamos la operación para eliminar la dispersión de información: <ul><li><b>Contexto en < 2 Minutos:</b> Gracias al historial, un monitorista entrante puede entender todo lo ocurrido en un servicio en menos de 2 minutos, eliminando la fricción con el cliente por pérdida de información en cambios de turno.</li><li><b>Auditoría Total:</b> Las evidencias registradas en terreno se vinculan automáticamente al historial del servicio, centralizando la 'verdad' de la operación y eliminando el uso de múltiples plataformas de información.</li></ul>"
+                },
+                {
+                    "title": "Protocolo de Emergencia y Voz IP",
+                    "description": "Diseño para el estrés con comunicaciones integradas.",
+                    "image": "projects/monitoring/sc-5.png",
+                    "detail": "Diseñamos un <b>asistente de emergencia paso a paso</b> que integra telefonía VoIP para una respuesta letal: <ul><li><b>Llamadas Tripartitas:</b> El monitorista puede enlazar simultáneamente al custodio, al 911 y al coordinador desde la misma interfaz sin perder el hilo del protocolo.</li><li><b>Automatización de Alertas:</b> Mientras el monitorista sigue el flujo guiado, el sistema llama automáticamente a los líderes de seguridad en orden jerárquico.</li><li><b>Cierre de Crisis:</b> La emergencia la inicia el monitorista pero la documentación final y el cierre técnico lo realiza el Coordinador, asegurando una bitácora profesional y completa.</li></ul>"
+                },
+                {
+                    "title": "Gobernanza Macro, Feedback Sonoro y Portal del Cliente",
+                    "description": "Ecosistema para coordinadores y transparencia para el cliente.",
+                    "image": "projects/monitoring/sc-6.png",
+                    "detail": "Cerramos el ecosistema con dos herramientas clave: <ul><li><b>Vista de Coordinador:</b> Permite supervisar el cumplimiento de tiempos de todo el equipo y reasignar servicios dinámicamente si un operador está saturado.</li><li><b>Alertas Sonoras Inteligentes:</b> Implementamos un sistema de notificaciones de audio para monitoristas y coordinadores. Los sonidos varían en intensidad (sutiles para reportes de rutina e incrementales para alertas críticas), permitiendo reaccionar a incidentes sin necesidad de estar mirando la pantalla constantemente.</li><li><b>Portal del Cliente:</b> Los clientes pueden visualizar sus reportes y 'Solicitar Reporte' bajo demanda, lo que mueve automáticamente su servicio al <b>Top 1 de la lista</b> en la consola de monitoreo.</li></ul>"
+                },
+                {
+                    "title": "Prototipo",
+                    "description": "Navegación interactiva de la consola de monitoreo.",
+                    "detail": "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video en construcción — Próximamente se agregará un prototipo interactivo detallando el flujo de emergencia y llamadas.</div>"
+                },
+                {
+                    "title": "Impacto y Resultados (KPIs)",
+                    "description": "Resultados tangibles de la implementación del sistema.",
+                    "image": "projects/monitoring/sc-7.png",
+                    "detail": "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Tiempo de Respuesta</span><span class='kpi-value'>15 min</span><span class='kpi-desc'>Promedio de reporte alcanzado tras la optimización, superando el compromiso inicial de 25 min.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Datos</span><span class='kpi-value'>98%</span><span class='kpi-desc'>En trazabilidad histórica y facturación gracias a la validación de detenciones.</span></div><div class='kpi-card'><span class='kpi-label'>SLA Compliance</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Cumplimiento medible y auditable del compromiso de reporte con el cliente.</span></div></div>"
+                }
+            ]
         },
         {
             id: "torre-control",
@@ -270,31 +322,83 @@ const DB_EN = {
                     detail: "I reinforced key sections with <b>Lottie microinteractions</b>. These animations not only improve aesthetics but serve as immediate visual confirmation of successful actions and loading states, humanizing technology and guiding the escort intuitively during their day."
                 },
                 {
+                    title: "Prototype",
+                    description: "Interactive walkthrough of Centaurus App 2.0.",
+                    detail: "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video under construction — An interactive Vimeo prototype will be added soon.</div>"
+                },
+                {
                     title: "Conclusion: Results and Impact",
                     description: "From guesswork to structured and reliable data.",
                     image: "projects/centaurus/impacto-final.png",
-                    detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>saved monthly in chat reviews and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>effectiveness in event logging, drastically reducing informational noise.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to offline logging and the visibility of their expense evidence.</span></div></div> To understand the complete ecosystem, I invite you to review the details of the <b>Monitoring Console</b> project."
+                    detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>saved monthly in chat reviews and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>effectiveness in event logging, drastically reducing informational noise.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to offline logging and the visibility of their expense evidence.</span></div></div> To understand the complete ecosystem, I invite you to review the details of the <a href='#' class='blue-link' onclick='openProject(\"detecta-monitoring-console\"); return false;'>Monitoring Console</a> project."
                 }
             ]
         },
         {
-            id: "hubbing-latam",
-            title: "Hubbing Latam",
-            category: "product",
-            tagline: "Web Platform & Mobile Apps for international logistics.",
-            tags: ["International Logistics", "SaaS", "Cross-border", "Figma"],
-            image: "projects/hubbing/hero.png",
-            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
-        },
-        {
-            id: "consola-monitoreo",
-            title: "Monitoring Console",
-            category: "product",
-            tagline: "Under construction",
-            isConstruction: true,
-            image: "projects/monitoring/hero.png",
-            tags: ["Logistics", "Dashboard", "Figma"],
-            description: "Under construction"
+            "id": "detecta-monitoring-console",
+            "title": "Monitoring Console",
+            "category": "product",
+            "tagline": "From reactivity to proactive control: Fulfilling logistics security promises.",
+            "tags": ["Control Tower", "SLA Strategy", "Product Strategy", "Crisis Management"],
+            "image": "projects/monitoring/hero.png",
+            "challenge": "Ensuring compliance with the 25-minute reporting commitment and eliminating the information gap that allowed clients to detect incidents before the internal team.",
+            "description": "End-to-end redesign of the operational control center. We transformed a fragmented ecosystem (WhatsApp/Excel) into a unified platform integrating telemetry, VoIP communications, and automated emergency protocols.",
+            "details": {
+                "role": "Lead Product Designer",
+                "client": "Detecta Security",
+                "pillar": "Business Impact & Operational Reliability",
+                "platform": "Web (Desktop-First)",
+                "focus": "SaaS / Control Tower / Emergency Response"
+            },
+            "sections": [
+                {
+                    "title": "Context: Detecta Security's Promise",
+                    "description": "The business model built on preventive security.",
+                    "image": "projects/monitoring/sc-1.png",
+                    "detail": "Detecta Security provides physical escort for heavy cargo transportation. <b>Our differentiator is preventive security</b>. <ul><li><b>The Commitment (SLA):</b> The company contractually guarantees a status report every 25 minutes for each service in transit.</li><li><b>The Initial Chaos:</b> Before my intervention, monitors operated with manual Excel spreadsheets and WhatsApp groups, making it impossible to measure the actual time elapsed between reports and causing clients to detect anomalies before the control center itself.</li></ul>"
+                },
+                {
+                    "title": "Diagnosis and Temporal Prioritization Logic",
+                    "description": "Defining the visual algorithm based on time visibility.",
+                    "image": "projects/monitoring/sc-2.png",
+                    "detail": "After auditing the process, we established that the design had to dictate the order of attention based strictly on <b>report lifetime</b>: <ul><li><b>Age-based Prioritization:</b> The system automatically sorts the services that have gone the longest without reporting to the top.</li><li><b>Counter Visibility:</b> Upon completing a report, the counter resets to zero and the service moves to the bottom of the list. This enables a circular flow of constant attention to ensure compliance with the 25-minute commitment.</li><li><b>Critical Exceptions:</b> Security alerts break this temporal queue, positioning themselves at the very top for immediate intervention.</li></ul>"
+                },
+                {
+                    "title": "Iteration and Pivot: Learning from Failure",
+                    "description": "How usability testing redefined the architecture.",
+                    "image": "projects/monitoring/sc-3.png",
+                    "detail": "Our first proposal separated the interface into two columns (services and alerts). <b>Testing revealed a critical confusion</b>: monitors didn't perceive the urgency of the side panel. <blockquote>'I thought the right side was a secondary message inbox, not critical security alerts.'</blockquote> <ul><li><b>The Change:</b> We eliminated the column division to unify the flow. Now, alerts are placed at the very top, forcing immediate attention.</li><li><b>Key Feedback:</b> We integrated a one-click 'Copy coordinates' button, enabling instant reporting to authorities under pressure.</li></ul>"
+                },
+                {
+                    "title": "Communications and Operational Continuity",
+                    "description": "Centralizing evidence and eliminating external phones.",
+                    "image": "projects/monitoring/sc-4.png",
+                    "detail": "We centralized operations to eliminate information dispersion: <ul><li><b>Context in < 2 Minutes:</b> Thanks to the history log, an incoming monitor can understand everything that occurred in a service in under 2 minutes, eliminating client friction from information loss during shift changes.</li><li><b>Total Audit Trail:</b> Field evidence is automatically linked to the service history, centralizing the operational 'truth' and eliminating the use of multiple information platforms.</li></ul>"
+                },
+                {
+                    "title": "Emergency Protocol and VoIP",
+                    "description": "Designing for stress with integrated communications.",
+                    "image": "projects/monitoring/sc-5.png",
+                    "detail": "We designed a <b>step-by-step emergency assistant</b> integrating VoIP telephony for a lethal response: <ul><li><b>Three-way Calls:</b> The monitor can simultaneously connect the escort, 911, and the coordinator from the same interface without losing track of the protocol.</li><li><b>Alert Automation:</b> While the monitor follows the guided flow, the system automatically calls security leaders in hierarchical order.</li><li><b>Crisis Closure:</b> The emergency is initiated by the monitor but the final documentation and technical closure is performed by the Coordinator, ensuring a professional and complete log.</li></ul>"
+                },
+                {
+                    "title": "Macro Governance, Audio Feedback, and Client Portal",
+                    "description": "Ecosystem for coordinators and transparency for clients.",
+                    "image": "projects/monitoring/sc-6.png",
+                    "detail": "We closed the ecosystem with two key tools: <ul><li><b>Coordinator View:</b> Enables supervision of the entire team's time compliance and dynamic reassignment of services if an operator is overloaded.</li><li><b>Smart Audio Alerts:</b> We implemented an audio notification system for monitors and coordinators. Sounds vary in intensity (subtle for routine reports and escalating for critical alerts), enabling reaction to incidents without needing to constantly watch the screen.</li><li><b>Client Portal:</b> Clients can view their reports and 'Request Report' on demand, which automatically moves their service to the <b>Top 1 of the list</b> in the monitoring console.</li></ul>"
+                },
+                {
+                    "title": "Prototype",
+                    "description": "Interactive walkthrough of the monitoring console.",
+                    "detail": "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video under construction — An interactive prototype detailing the emergency and call flow will be added soon.</div>"
+                },
+                {
+                    "title": "Impact and Results (KPIs)",
+                    "description": "Tangible results from the system implementation.",
+                    "image": "projects/monitoring/sc-7.png",
+                    "detail": "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Response Time</span><span class='kpi-value'>15 min</span><span class='kpi-desc'>Average reporting time achieved after optimization, surpassing the initial 25 min commitment.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>In historical traceability and billing thanks to stop validation.</span></div><div class='kpi-card'><span class='kpi-label'>SLA Compliance</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Measurable and auditable compliance of the reporting commitment with the client.</span></div></div>"
+                }
+            ]
         },
         {
             id: "torre-control",

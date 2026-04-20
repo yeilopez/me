@@ -322,6 +322,15 @@ body.modal-open {
     transform: scale(0.96);
 }
 
+.section-detail .blue-link {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.accordion-content .blue-link {
+    font-weight: 400;
+}
+
 .hover-underline {
     cursor: pointer;
 }
@@ -672,8 +681,7 @@ body.modal-open {
     color: var(--gray);
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin: 64px 0 12px 0;
-    /* Más separado de lo anterior, más pegado a sus items */
+    margin: 52px 0 0 0;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border-row);
     width: 100%;
