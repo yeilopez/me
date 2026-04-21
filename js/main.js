@@ -22,7 +22,8 @@ const TRANSLATIONS = {
             "Métricas y Negocio",
             "Vibe Coding",
             "Design Systems",
-            "Lottifiles y Animaciones"
+            "Lottifiles y Animaciones",
+            "Experto en Figma"
         ],
         categories: {
             'product': 'Ux Ui Producto',
@@ -65,7 +66,8 @@ const TRANSLATIONS = {
             "Metrics & Business",
             "Vibe Coding",
             "Design Systems",
-            "Lottifiles & Animations"
+            "Lottifiles & Animations",
+            "Figma expert"
         ],
         categories: {
             'product': 'UX UI Product',
@@ -450,7 +452,7 @@ function attachModalScrollBehavior(modalContent, modalHeader, sectionBanner) {
             const sections = modalContent.querySelectorAll('.modal-section');
             const modalRect = modalContent.getBoundingClientRect();
             const modalTop = modalRect.top;
-            
+
             let activeSec = null;
             let showBanner = false;
 
@@ -475,7 +477,7 @@ function attachModalScrollBehavior(modalContent, modalHeader, sectionBanner) {
 
                 // 2. Ocultar si el SIGUIENTE título está por aparecer (buffer de 280px)
                 let nextSec = activeSec.nextElementSibling;
-                while(nextSec && !nextSec.classList.contains('modal-section')) {
+                while (nextSec && !nextSec.classList.contains('modal-section')) {
                     nextSec = nextSec.nextElementSibling;
                 }
 
