@@ -173,7 +173,7 @@ const DB_ES = {
                     title: "Diagnóstico y Hipótesis de Diseño",
                     description: "Definiendo la estrategia basada en la Gestión por Excepción.",
                     image: "projects/control-tower/sc-1.png",
-                    detail: "Partimos de la premisa de que el valor del diseño no es mostrar datos, sino facilitar decisiones bajo estrés. Establecimos tres hipótesis críticas: <ul><li><b>H1 (Centralización):</b> Unificar proveedores en una fuente única de verdad reduciría el tiempo de detección de incidentes en un 80%.</li><li><b>H2 (Eficiencia Operativa):</b> Priorizar visualmente solo lo que requiere acción (alertas) liberaría el 70% del ancho de banda del operador.</li><li><b>H3 (Diseño Sensorial):</b> Sonidos de alerta desde leves hasta intensos permitiría una atención inmediata sin dependencia visual absoluta.</li></ul>"
+                    detail: "Partimos de la premisa de que el valor del diseño no es mostrar datos, sino facilitar decisiones bajo estrés. Establecimos tres hipótesis críticas: <ul><li><b>Centralización:</b> Unificar proveedores en una fuente única de verdad reduciría el tiempo de detección de incidentes en un 80%.</li><li><b>Eficiencia Operativa:</b> Priorizar visualmente solo lo que requiere acción (alertas) liberaría el 70% del ancho de banda del operador.</li><li><b>Diseño Sensorial:</b> Sonidos de alerta desde leves hasta intensos permitiría una atención inmediata sin dependencia visual absoluta.</li></ul>"
                 },
                 {
                     title: "Diseño para el Estado de Flujo: Flexibilidad de Vistas",
@@ -498,7 +498,7 @@ const DB_EN = {
                     title: "Diagnosis and Design Hypotheses",
                     description: "Defining the strategy based on Exception Management.",
                     image: "projects/control-tower/sc-1.png",
-                    detail: "We started from the premise that the value of design is not to display data, but to facilitate decisions under stress. We established three critical hypotheses: <ul><li><b>H1 (Centralization):</b> Unifying providers into a single source of truth would reduce incident detection time by 80%.</li><li><b>H2 (Operational Efficiency):</b> Visually prioritizing only what requires action (alerts) would free up 70% of the operator's bandwidth.</li><li><b>H3 (Sensory Design):</b> Alert sounds ranging from mild to intense would allow immediate attention without absolute visual dependency.</li></ul>"
+                    detail: "We started from the premise that the value of design is not to display data, but to facilitate decisions under stress. We established three critical hypotheses: <ul><li><b>Centralization:</b> Unifying providers into a single source of truth would reduce incident detection time by 80%.</li><li><b>Operational Efficiency:</b> Visually prioritizing only what requires action (alerts) would free up 70% of the operator's bandwidth.</li><li><b>Sensory Design:</b> Alert sounds ranging from mild to intense would allow immediate attention without absolute visual dependency.</li></ul>"
                 },
                 {
                     title: "Designing for Flow State: View Flexibility",
