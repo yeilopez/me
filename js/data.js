@@ -145,11 +145,72 @@ const DB_ES = {
             id: "torre-control",
             title: "Torre de control",
             category: "product",
-            tagline: "En construcción",
-            isConstruction: true,
-            image: "projects/tower/hero.png",
-            tags: ["Logística", "Monitoreo", "Figma"],
-            description: "En construcción"
+            tagline: "Centralización y automatización de flotas logísticas.",
+            isConstruction: false,
+            image: "projects/control-tower/hero.png",
+            tags: ["Logística de Seguridad", "Eficiencia Operativa", "SASS", "Figma"],
+            challenge: "La fragmentación de datos causada por múltiples proveedores de GPS obligaba a los clientes a monitorear hasta <b>300 cuentas espejo independientes</b>. Esta dispersión generaba una ceguera operativa crítica, donde la detección de un incidente ocurría cuando la recuperación del activo ya era irreversible.",
+            description: "Diseñamos un <b>Hub de centralización agnóstico</b> que unifica APIs de rastreo en una sola interfaz proactiva. El sistema transforma la vigilancia manual en una gestión por excepción, utilizando algoritmos visuales y alertas sonoras para garantizar una respuesta inmediata ante riesgos en ruta.",
+            details: {
+                role: "Lead Product Designer",
+                client: "Detecta Security",
+                pillar: "Interoperabilidad y Eficiencia Operativa",
+                platform: "Web (Desktop-First)",
+                focus: "SaaS / Torre de Control / Respuesta ante Emergencias"
+            },
+            sections: [
+                {
+                    title: "Introducción: El Costo del Silencio y la Fragmentación",
+                    description: "Contexto de seguridad logística y el desafío de las Cuentas Espejo.",
+                    detail: "<div class='context-stats'><div class='context-stat-card'><span class='context-stat-value'>$7,000 MDP</span><span class='context-stat-label'>pérdidas anuales por robo al transporte de carga en México</span></div><div class='context-stat-card'><span class='context-stat-value'>300</span><span class='context-stat-label'>Cuentas Espejo individuales que cada cliente gestionaba manualmente</span></div><div class='context-stat-card'><span class='context-stat-value'>3 horas</span><span class='context-stat-label'>de ciclos de revisión manual, permitiendo que los incidentes fueran ya irreversibles</span></div></div><ul><li><b>El Caos Inicial:</b> Revisar manualmente cada unidad tomaba ciclos de hasta 3 horas, permitiendo que un incidente fuera detectado cuando ya era irreversible.</li><li><b>La Transformación:</b> Diseñamos <b>Torre de Control</b>, un Hub que unifica APIs de rastreo en una interfaz proactiva para eliminar el 'gap' de tiempo entre el evento y la reacción.</li></ul>"
+                },
+                {
+                    title: "Diagnóstico y Hipótesis de Diseño",
+                    description: "Definiendo la estrategia basada en la Gestión por Excepción.",
+                    image: "projects/control-tower/sc-1.png",
+                    detail: "Partimos de la premisa de que el valor del diseño no es mostrar datos, sino facilitar decisiones bajo estrés. Establecimos tres hipótesis críticas: <ul><li><b>H1 (Centralización):</b> Unificar proveedores en una fuente única de verdad reduciría el tiempo de detección de incidentes en un 80%.</li><li><b>H2 (Eficiencia Operativa):</b> Priorizar visualmente solo lo que requiere acción (alertas) liberaría el 70% del ancho de banda del operador.</li><li><b>H3 (Diseño Sensorial):</b> Sonidos de alerta desde leves hasta intensos permitiría una atención inmediata sin dependencia visual absoluta.</li></ul>"
+                },
+                {
+                    title: "Diseño para el Estado de Flujo: Flexibilidad de Vistas",
+                    description: "Equilibrando simplicidad y densidad de datos según el contexto.",
+                    image: "projects/control-tower/sc-2.png",
+                    detail: "Entendimos que el operador alterna entre el monitoreo general y el análisis profundo. Diseñamos dos modos de visualización: <ul><li><b>Vista de Tarjetas (Cards):</b> Una interfaz minimalista con información mínima viable, ideal para una supervisión rápida de alertas y estados generales.</li><li><b>Vista de Lista (Data Grid):</b> Diseñada para la máxima eficiencia operativa, permitiendo gestionar detalles críticos (ID, Origen, Destino, ETA) de múltiples servicios sin navegar individualmente.</li></ul>"
+                },
+                {
+                    title: "Alertas Sonoras y Accesibilidad Cognitiva",
+                    description: "Diseño sensorial para la reducción del tiempo de reacción.",
+                    image: "projects/control-tower/sc-3.png",
+                    detail: "Para liberar la vista del operador y reducir el estrés, implementamos un <b>Ecosistema de Notificaciones Sonoras Inteligentes</b>: <ul><li><b>Nivel Informativo:</b> Tonos tenues para hitos de rutina (Llegada a origen, punto de detención o destino).</li><li><b>Nivel Medio:</b> Alertas como detención prolongada o exceso de velocidad.</li><li><b>Nivel Crítico:</b> Alarmas de alta frecuencia para emergencias, botones de pánico o desviaciones de ruta.</li><li><b>Valor:</b> El operador puede reaccionar a un incidente crítico de forma inmediata, incluso si no está fijando la vista en la pantalla en ese instante.</li></ul>"
+                },
+                {
+                    title: "Detalle del Servicio: Arquitectura de Información Proactiva",
+                    description: "Visibilidad total del viaje y trazabilidad telemétrica.",
+                    image: "projects/control-tower/sc-4.png",
+                    detail: "Al profundizar en un servicio, la interfaz se adapta a la capacidad técnica del dispositivo: <ul><li><b>Control de Ruta y Geocercas:</b> Visualización del trazado planeado vs. real para detección inmediata de desvíos.</li><li><b>Timeline de Detenciones:</b> Registro preciso de paradas autorizadas y no autorizadas.</li><li><b>Telemetría Adaptativa:</b> Integración dinámica de datos (velocidad, coordenadas, sensores) según el proveedor del GPS.</li></ul>"
+                },
+                {
+                    title: "Gobernanza y Ecosistema de Seguridad",
+                    description: "Definiendo flujos de trabajo para múltiples stakeholders.",
+                    image: "projects/control-tower/sc-5.png",
+                    detail: "Torre de Control escala el acceso según el rol para mantener la integridad del negocio: <ul><li><b>Operadores:</b> Foco en respuesta rápida a alertas e incidentes.</li><li><b>Transportes:</b> Autogestión de flotas y carga masiva de cuentas espejo.</li><li><b>Administradores:</b> Auditoría total de logs y configuración de reglas de negocio personalizadas.</li></ul>"
+                },
+                {
+                    title: "Prototipo",
+                    description: "Video del flujo en construcción.",
+                    detail: "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video del flujo en construcción — Próximamente se agregará un prototipo interactivo detallando el flujo completo de la Torre de Control.</div>"
+                },
+                {
+                    title: "Impacto y Resultados (KPIs)",
+                    description: "Resultados tangibles de la implementación del Hub.",
+
+                    detail: "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Centralización</span><span class='kpi-value'>100%</span><span class='kpi-desc'>De las cuentas espejo unificadas en un solo comando central.</span></div><div class='kpi-card'><span class='kpi-label'>Tiempo de Reacción</span><span class='kpi-value'>Inmediato</span><span class='kpi-desc'>Reducción drástica del gap de respuesta gracias a la jerarquía sonora y visual.</span></div><div class='kpi-card'><span class='kpi-label'>Carga Cognitiva</span><span class='kpi-value'>Mínima</span><span class='kpi-desc'>Optimización del bienestar del operador al eliminar el monitoreo de 300 pestañas.</span></div></div>"
+                },
+                {
+                    title: "Conclusión: Escalabilidad y Automatización",
+                    description: "Visión de producto y colaboración técnica.",
+                    detail: "El éxito de Torre de Control radica en su capacidad de adaptación. Trabajamos intensamente con el <b>equipo técnico</b> para preparar un ecosistema capaz de automatizar flujos críticos mediante reglas de negocio dinámicas. <ul><li><b>Personalización Operativa:</b> Cada cliente puede definir qué eventos son críticos para su operación, transformando una herramienta de monitoreo en un motor de automatización inteligente.</li><li><b>Diseño Estratégico:</b> Esta colaboración asegura que el producto no solo resuelva el problema actual, sino que esté listo para escalar hacia una gestión autónoma de la seguridad logística.</li></ul>"
+                }
+            ]
         },
         {
             id: "suitable-1",
@@ -404,11 +465,72 @@ const DB_EN = {
             id: "torre-control",
             title: "Control Tower",
             category: "product",
-            tagline: "Under construction",
-            isConstruction: true,
-            image: "projects/tower/hero.png",
-            tags: ["Logistics", "Monitoring", "Figma"],
-            description: "Under construction"
+            tagline: "Centralization and automation of logistics fleets.",
+            isConstruction: false,
+            image: "projects/control-tower/hero.png",
+            tags: ["Security Logistics", "Operational Efficiency", "SASS", "Figma"],
+            challenge: "Data fragmentation caused by multiple GPS providers forced clients to monitor up to <b>300 independent mirror accounts</b>. This dispersion created critical operational blindness, where incident detection occurred when asset recovery was already irreversible.",
+            description: "We designed an <b>agnostic centralization Hub</b> that unifies tracking APIs into a single proactive interface. The system transforms manual surveillance into exception-based management, using visual algorithms and audio alerts to guarantee an immediate response to route risks.",
+            details: {
+                role: "Lead Product Designer",
+                client: "Detecta Security",
+                pillar: "Interoperability & Operational Efficiency",
+                platform: "Web (Desktop-First)",
+                focus: "SaaS / Control Tower / Emergency Response"
+            },
+            sections: [
+                {
+                    title: "Introduction: The Cost of Silence and Fragmentation",
+                    description: "Logistics security context and the Mirror Accounts challenge.",
+                    detail: "<div class='context-stats'><div class='context-stat-card'><span class='context-stat-value'>$7,000 MDP</span><span class='context-stat-label'>annual losses from freight theft in Mexico alone</span></div><div class='context-stat-card'><span class='context-stat-value'>300</span><span class='context-stat-label'>individual Mirror Accounts each client manually managed</span></div><div class='context-stat-card'><span class='context-stat-value'>3 hours</span><span class='context-stat-label'>manual review cycles, letting incidents become irreversible before detection</span></div></div><ul><li><b>The Initial Chaos:</b> Manually reviewing each unit took up to 3-hour cycles, allowing an incident to be detected only when it was already irreversible.</li><li><b>The Transformation:</b> We designed <b>Control Tower</b>, a Hub that unifies tracking APIs into a proactive interface to eliminate the time gap between the event and the reaction.</li></ul>"
+                },
+                {
+                    title: "Diagnosis and Design Hypotheses",
+                    description: "Defining the strategy based on Exception Management.",
+                    image: "projects/control-tower/sc-1.png",
+                    detail: "We started from the premise that the value of design is not to display data, but to facilitate decisions under stress. We established three critical hypotheses: <ul><li><b>H1 (Centralization):</b> Unifying providers into a single source of truth would reduce incident detection time by 80%.</li><li><b>H2 (Operational Efficiency):</b> Visually prioritizing only what requires action (alerts) would free up 70% of the operator's bandwidth.</li><li><b>H3 (Sensory Design):</b> Alert sounds ranging from mild to intense would allow immediate attention without absolute visual dependency.</li></ul>"
+                },
+                {
+                    title: "Designing for Flow State: View Flexibility",
+                    description: "Balancing simplicity and data density based on context.",
+                    image: "projects/control-tower/sc-2.png",
+                    detail: "We understood that the operator alternates between general monitoring and deep analysis. We designed two visualization modes: <ul><li><b>Card View:</b> A minimalist interface with minimum viable information, ideal for quick alert supervision and general status checks.</li><li><b>List View (Data Grid):</b> Designed for maximum operational efficiency, allowing management of critical details (ID, Origin, Destination, ETA) of multiple services without individual navigation.</li></ul>"
+                },
+                {
+                    title: "Audio Alerts and Cognitive Accessibility",
+                    description: "Sensory design for reaction time reduction.",
+                    image: "projects/control-tower/sc-3.png",
+                    detail: "To free the operator's attention and reduce stress, we implemented an <b>Intelligent Sound Notification Ecosystem</b>: <ul><li><b>Informational Level:</b> Subtle tones for routine milestones (Arrival at origin, stopover, or destination).</li><li><b>Medium Level:</b> Alerts such as prolonged stops or speeding.</li><li><b>Critical Level:</b> High-frequency alarms for emergencies, panic buttons, or route deviations.</li><li><b>Value:</b> The operator can react to a critical incident immediately, even if they are not looking at the screen at that moment.</li></ul>"
+                },
+                {
+                    title: "Service Detail: Proactive Information Architecture",
+                    description: "Total journey visibility and telemetric traceability.",
+                    image: "projects/control-tower/sc-4.png",
+                    detail: "When diving into a service, the interface adapts to the technical capability of the device: <ul><li><b>Route Control and Geofencing:</b> Visualization of planned vs. actual route for immediate deviation detection.</li><li><b>Stop Timeline:</b> Precise log of authorized and unauthorized stops.</li><li><b>Adaptive Telemetry:</b> Dynamic integration of data (speed, coordinates, sensors) based on the GPS provider.</li></ul>"
+                },
+                {
+                    title: "Governance and Security Ecosystem",
+                    description: "Defining workflows for multiple stakeholders.",
+                    image: "projects/control-tower/sc-5.png",
+                    detail: "Control Tower scales access by role to maintain business integrity: <ul><li><b>Operators:</b> Focus on rapid response to alerts and incidents.</li><li><b>Carriers:</b> Fleet self-management and bulk uploading of mirror accounts.</li><li><b>Administrators:</b> Full log auditing and configuration of custom business rules.</li></ul>"
+                },
+                {
+                    title: "Prototype",
+                    description: "Flow video under construction.",
+                    detail: "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Flow video under construction — An interactive prototype detailing the full Control Tower flow will be added soon.</div>"
+                },
+                {
+                    title: "Impact and Results (KPIs)",
+                    description: "Tangible results from the Hub implementation.",
+
+                    detail: "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Centralization</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Of mirror accounts unified in a single central command.</span></div><div class='kpi-card'><span class='kpi-label'>Reaction Time</span><span class='kpi-value'>Immediate</span><span class='kpi-desc'>Dramatic reduction of the response gap thanks to the sound and visual hierarchy.</span></div><div class='kpi-card'><span class='kpi-label'>Cognitive Load</span><span class='kpi-value'>Minimal</span><span class='kpi-desc'>Optimization of operator wellbeing by eliminating the monitoring of 300 tabs.</span></div></div>"
+                },
+                {
+                    title: "Conclusion: Scalability and Automation",
+                    description: "Product vision and technical collaboration.",
+                    detail: "The success of Control Tower lies in its adaptability. We worked intensively with the <b>technical team</b> to prepare an ecosystem capable of automating critical flows through dynamic business rules. <ul><li><b>Operational Customization:</b> Each client can define which events are critical to their operation, transforming a monitoring tool into an intelligent automation engine.</li><li><b>Strategic Design:</b> This collaboration ensures that the product not only solves the current problem, but is ready to scale toward autonomous logistics security management.</li></ul>"
+                }
+            ]
         },
         {
             id: "suitable-1",
