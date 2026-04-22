@@ -138,6 +138,11 @@ const DB_ES = {
                     "description": "Resultados tangibles de la implementación del sistema.",
                     "image": "projects/monitoring/sc-7.png",
                     "detail": "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Tiempo de Respuesta</span><span class='kpi-value'>15 min</span><span class='kpi-desc'>Promedio de reporte alcanzado tras la optimización, superando el compromiso inicial de 25 min.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Datos</span><span class='kpi-value'>98%</span><span class='kpi-desc'>En trazabilidad histórica y facturación gracias a la validación de detenciones.</span></div><div class='kpi-card'><span class='kpi-label'>SLA Compliance</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Cumplimiento medible y auditable del compromiso de reporte con el cliente.</span></div></div>"
+                },
+                {
+                    "title": "Conclusión: De la reactividad a la cultura operativa",
+                    "description": "Un sistema que transformó el cómo trabaja el equipo, no solo las herramientas.",
+                    "detail": "La Consola de Monitoreo no fue solo un rediseño de interfaz: fue el catalizador de un cambio cultural dentro del equipo operativo. Al estructurar el trabajo alrededor de <b>datos en tiempo real y protocolos claros</b>, transformamos la intuición individual en un proceso reproducible y auditable. <ul><li><b>Impacto en el equipo:</b> Los monitoristas pasaron de operar con ansiedad y herramientas dispersas a trabajar con certeza, sabiendo exactamente a qué atender y cuándo.</li><li><b>Impacto en el negocio:</b> Cumplir el SLA de 25 minutos de forma consistente fortaleció la confianza del cliente y posicionó a Detecta Security como un referente de seguridad preventiva en el mercado.</li><li><b>Base para escalar:</b> La arquitectura del sistema está diseñada para crecer: nuevas reglas, nuevos roles y nuevas integraciones pueden incorporarse sin romper el flujo existente.</li></ul>"
                 }
             ]
         },
@@ -458,6 +463,11 @@ const DB_EN = {
                     "description": "Tangible results from the system implementation.",
                     "image": "projects/monitoring/sc-7.png",
                     "detail": "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Response Time</span><span class='kpi-value'>15 min</span><span class='kpi-desc'>Average reporting time achieved after optimization, surpassing the initial 25 min commitment.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>In historical traceability and billing thanks to stop validation.</span></div><div class='kpi-card'><span class='kpi-label'>SLA Compliance</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Measurable and auditable compliance of the reporting commitment with the client.</span></div></div>"
+                },
+                {
+                    "title": "Conclusion: From Reactivity to Operational Culture",
+                    "description": "A system that transformed how the team works, not just the tools they use.",
+                    "detail": "The Monitoring Console was not just an interface redesign: it was the catalyst for a cultural shift within the operational team. By structuring work around <b>real-time data and clear protocols</b>, we transformed individual intuition into a reproducible, auditable process. <ul><li><b>Team impact:</b> Monitors went from operating with anxiety and scattered tools to working with certainty — knowing exactly what to attend to and when.</li><li><b>Business impact:</b> Consistently meeting the 25-minute SLA strengthened client trust and positioned Detecta Security as a benchmark for preventive security in the market.</li><li><b>Foundation to scale:</b> The system architecture is designed to grow: new rules, new roles, and new integrations can be incorporated without breaking the existing flow.</li></ul>"
                 }
             ]
         },
