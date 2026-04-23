@@ -301,6 +301,7 @@ body.modal-open {
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .blue-link::after {
@@ -324,11 +325,16 @@ body.modal-open {
 
 .section-detail .blue-link {
     font-size: inherit;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .accordion-content .blue-link {
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2px;
+    align-self: flex-start;
 }
 
 .hover-underline {

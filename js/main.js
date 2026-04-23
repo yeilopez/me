@@ -189,12 +189,12 @@ function renderProjects() {
         const div = document.createElement('div');
         div.className = 'project-row' + (p.category === 'product' && index === 0 ? ' open' : '');
 
-        let linkHTML = `<a href="#" class="blue-link" style="margin:0; padding:0; font-weight:500; font-size:14px;" onclick="openProject('${p.id}'); event.stopPropagation(); return false;">${T.ui.viewProject}</a>`;
+        let linkHTML = `<a href="#" class="blue-link" onclick="openProject('${p.id}'); event.stopPropagation(); return false;">${T.ui.viewProject}</a>`;
 
         if (p.isConstruction) {
             linkHTML = ``; // The tagline will say "En construcción" / "Under construction"
         } else if (p.externalLink) {
-            linkHTML = `<a href="${p.externalLink}" target="_blank" class="blue-link" style="margin:0; padding:0; font-weight:500; font-size:14px;" onclick="event.stopPropagation();">${T.ui.viewBehance}</a>`;
+            linkHTML = `<a href="${p.externalLink}" target="_blank" class="blue-link" onclick="event.stopPropagation();">${T.ui.viewBehance}</a>`;
         }
 
         div.innerHTML = `
