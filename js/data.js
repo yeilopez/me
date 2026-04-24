@@ -63,7 +63,7 @@ const DB_ES = {
                     detail: "Reforcé secciones clave con <b>microinteracciones realizadas en Lottie</b>. Estas animaciones no solo mejoran la estética, sino que sirven como confirmación visual inmediata de acciones exitosas y estados de carga, humanizando la tecnología y guiando al custodio de forma intuitiva durante su jornada."
                 },
                 {
-                    title: "Diseño Sistémico: Dark Mode & Tokens",
+                    title: "Sistema de diseño: Modo oscuro, Variables y Tokens",
                     description: "Construcción de un ecosistema visual flexible y accesible para todas las plataformas.",
                     image: "projects/app-centaurus/sc-7.png",
                     detail: "Para garantizar una experiencia óptima en cualquier condición de iluminación, construí un <b>sistema de diseño con soporte nativo para Modo Oscuro</b>. <br><br><b>Puntos clave del desarrollo:</b> <br><ul><li><b>Gestión de Fatiga Visual:</b> Diseñamos el modo oscuro específicamente para reducir el cansancio visual de los custodios durante servicios nocturnos o en cabinas de baja luz.</li><li><b>Alineación Técnica (Design Tokens):</b> Colaboré estrechamente con el equipo de tecnología para definir una nomenclatura uniforme de variables, asegurando que el nombre de los colores fuera idéntico en diseño y desarrollo.</li><li><b>Accesibilidad Garantizada:</b> Auditamos cada contraste para asegurar que todos los componentes fueran legibles y accesibles en ambos modos, cumpliendo con estándares de usabilidad para entornos críticos.</li></ul>"
@@ -394,7 +394,7 @@ const DB_EN = {
                     detail: "I reinforced key sections with <b>Lottie microinteractions</b>. These animations not only improve aesthetics but serve as immediate visual confirmation of successful actions and loading states, humanizing technology and guiding the escort intuitively during their day."
                 },
                 {
-                    title: "Systemic Design: Dark Mode & Tokens",
+                    title: "Design System: Dark Mode, Variables & Tokens",
                     description: "Building a flexible and accessible visual ecosystem for all platforms.",
                     image: "projects/app-centaurus/sc-7.png",
                     detail: "To ensure an optimal experience in any lighting condition, I built a <b>design system with native Dark Mode support</b>. <br><br><b>Key development highlights:</b> <br><ul><li><b>Visual Fatigue Management:</b> We designed dark mode specifically to reduce eye strain for escorts during night shifts or in low-light cab environments.</li><li><b>Technical Alignment (Design Tokens):</b> I collaborated closely with the engineering team to define a unified variable naming convention, ensuring color names were identical in design and development.</li><li><b>Guaranteed Accessibility:</b> We audited every contrast ratio to ensure all components were readable and accessible in both modes, meeting usability standards for critical environments.</li></ul>"
