@@ -71,7 +71,7 @@ const DB_ES = {
                 {
                     title: "Prototipo",
                     description: "Navegación interactiva de la App Centaurus 2.0.",
-                    detail: "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video en construcción — Próximamente se agregará un prototipo interactivo en Vimeo.</div>"
+                    detail: "<iframe src='https://player.vimeo.com/video/1186110597?title=0&byline=0&portrait=0' width='100%' style='aspect-ratio: 16/9; border-radius: 16px;' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
                 },
                 {
                     title: "Conclusión: Resultados e Impacto",
@@ -402,7 +402,7 @@ const DB_EN = {
                 {
                     title: "Prototype",
                     description: "Interactive walkthrough of Centaurus App 2.0.",
-                    detail: "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video under construction — An interactive Vimeo prototype will be added soon.</div>"
+                    detail: "<iframe src='https://player.vimeo.com/video/1186110597?title=0&byline=0&portrait=0' width='100%' style='aspect-ratio: 16/9; border-radius: 16px;' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
                 },
                 {
                     title: "Conclusion: Results and Impact",
