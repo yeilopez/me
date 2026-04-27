@@ -3,7 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     initTypewriter();
     initPills();
     renderProjects();
+    handleRouting(); // Manejar carga inicial con hash
 });
+
+window.addEventListener('popstate', handleRouting);
+
+function handleRouting() {
+    const hash = window.location.hash.substring(1);
+    if (!hash) {
+        closeModal(true);
+        return;
+    }
+
+    if (hash === 'exp' || hash === 'edu') {
+        openTab(hash, true);
+    } else {
+        // Intentar abrir como proyecto
+        openProject(hash, true);
+    }
+}
 
 const LANG = document.documentElement.lang || 'es';
 
@@ -226,9 +244,17 @@ function renderProjects() {
 }
 
 // MODAL CONTROLLERS
-function openProject(id) {
+function openProject(id, fromRouting = false) {
     const p = DB.projects.find(x => x.id === id);
-    if (!p) return;
+    if (!p) {
+        if (fromRouting) closeModal(true);
+        return;
+    }
+
+    // Actualizar hash si no viene de routing
+    if (!fromRouting) {
+        window.history.pushState(null, null, `#${id}`);
+    }
 
     const body = document.getElementById('modal-body');
     const stickyTitle = document.getElementById('modal-sticky-title');
@@ -337,11 +363,15 @@ function openProject(id) {
     document.body.classList.add('modal-open');
 }
 
-function openTab(section) {
+function openTab(section, fromRouting = false) {
     const titleMap = {
         'exp': T.ui.exp,
         'edu': T.ui.edu
     };
+
+    if (!fromRouting) {
+        window.history.pushState(null, null, `#${section}`);
+    }
 
     const title = titleMap[section] || section;
     const body = document.getElementById('modal-body');
@@ -501,12 +531,18 @@ function attachModalScrollBehavior(modalContent, modalHeader, sectionBanner) {
     };
 }
 
-function closeModal() {
+function closeModal(fromRouting = false) {
     if (window.modalObserver) window.modalObserver.disconnect();
     const sectionBanner = document.getElementById('modal-section-banner');
     if (sectionBanner) sectionBanner.classList.remove('visible');
 
     const modal = document.getElementById('project-modal');
+    
+    // Solo limpiar hash si no viene de routing y el hash actual no está vacío
+    if (!fromRouting && window.location.hash !== "") {
+        window.history.pushState(null, null, window.location.pathname + window.location.search);
+    }
+
     modal.classList.remove('active');
     document.body.classList.remove('modal-open');
 }
