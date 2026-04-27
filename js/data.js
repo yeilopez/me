@@ -47,7 +47,7 @@ const DB_ES = {
                     detail: "Diseñamos una arquitectura <b>sin conexión</b> que permite el registro ininterrumpido de eventos en zonas sin señal. Esta solución eliminó la ansiedad del custodio por la pérdida de datos y garantizó que la consola de monitoreo recibiera información precisa de forma asincrónica, reduciendo la fricción operativa en un 70%."
                 },
                 {
-                    title: "Proactividad: Push Automation y Voz",
+                    title: "Proactividad: Push Automation y Comandos de Voz",
                     description: "Un asistente pasivo que prioriza la seguridad y la respuesta rápida.",
                     image: "projects/app-centaurus/sc-5.png",
                     detail: "Implementamos un motor de reglas que activa <b>notificaciones Push proactivas</b>: si el custodio no responde, el sistema actúa automáticamente. Además, integramos comandos de voz para una operación <b>hands-free</b>, permitiendo reportar hitos críticos sin desviar la vista del camino, minimizando riesgos de accidentes y optimizando la atención en ruta."
@@ -378,7 +378,7 @@ const DB_EN = {
                     detail: "We designed an <b>offline-first</b> architecture that allows uninterrupted event logging in signal-free areas. This solution eliminated escort anxiety about data loss and guaranteed the monitoring console received precise information asynchronously, reducing operational friction by 70%."
                 },
                 {
-                    title: "Proactivity: Push Automation and Voice",
+                    title: "Proactivity: Push Automation and Voice Commands",
                     description: "A passive assistant that prioritizes security and quick response.",
                     image: "projects/app-centaurus/sc-5.png",
                     detail: "We implemented a rules engine that triggers <b>proactive Push notifications</b>: if the escort doesn't respond, the system acts automatically. Additionally, we integrated voice commands for <b>hands-free</b> operation, allowing reporting of critical milestones without taking eyes off the road, minimizing accident risks."
