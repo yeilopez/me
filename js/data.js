@@ -135,6 +135,12 @@ const DB_ES = {
                     "detail": "Cerramos el ecosistema con dos herramientas clave: <ul><li><b>Vista de Coordinador:</b> Permite supervisar el cumplimiento de tiempos de todo el equipo y reasignar servicios dinámicamente si un operador está saturado.</li><li><b>Alertas Sonoras Inteligentes:</b> Implementamos un sistema de notificaciones de audio para monitoristas y coordinadores. Los sonidos varían en intensidad (sutiles para reportes de rutina e incrementales para alertas críticas), permitiendo reaccionar a incidentes sin necesidad de estar mirando la pantalla constantemente.</li><li><b>Portal del Cliente:</b> Los clientes pueden visualizar sus reportes y 'Solicitar Reporte' bajo demanda, lo que mueve automáticamente su servicio al <b>Top 1 de la lista</b> en la consola de monitoreo.</li></ul>"
                 },
                 {
+                    "title": "Sistema de diseño: Accesibilidad y Componentización",
+                    "description": "Ampliación del sistema de diseño de Detecta para la nueva consola de monitoreo.",
+                    "image": "projects/monitoring/sc-7.png",
+                    "detail": "Para este proyecto, extendí el sistema de diseño existente enfocándome en la eficiencia operativa y la claridad visual bajo estrés. <br><br><b>Puntos clave:</b> <br><ul><li><b>Legibilidad y Contraste:</b> Implementamos estándares de accesibilidad AA, asegurando que cada componente fuera legible incluso en jornadas de monitoreo prolongadas y bajo diferentes condiciones lumínicas de oficina.</li><li><b>Variables y Tokens:</b> Construí una librería de variables semánticas que alinean perfectamente el diseño con el código, permitiendo que el equipo de desarrollo implementara componentes complejos de forma ágil y sin fricciones.</li><li><b>Eficiencia Técnica:</b> La creación de componentes modulares y reutilizables redujo significativamente el tiempo de construcción de la plataforma, garantizando una consistencia visual absoluta en todo el ecosistema de Detecta.</li></ul>"
+                },
+                {
                     "title": "Prototipo",
                     "description": "Navegación interactiva de la consola de monitoreo.",
                     "detail": "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video en construcción — Próximamente se agregará un prototipo interactivo detallando el flujo de emergencia y llamadas.</div>"
@@ -142,7 +148,6 @@ const DB_ES = {
                 {
                     "title": "Impacto y Resultados (KPIs)",
                     "description": "Resultados tangibles de la implementación del sistema.",
-                    "image": "projects/monitoring/sc-7.png",
                     "detail": "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Tiempo de Respuesta</span><span class='kpi-value'>15 min</span><span class='kpi-desc'>Promedio de reporte alcanzado tras la optimización, superando el compromiso inicial de 25 min.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Datos</span><span class='kpi-value'>98%</span><span class='kpi-desc'>En trazabilidad histórica y facturación gracias a la validación de detenciones.</span></div><div class='kpi-card'><span class='kpi-label'>SLA Compliance</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Cumplimiento medible y auditable del compromiso de reporte con el cliente.</span></div></div>"
                 },
                 {
@@ -466,6 +471,12 @@ const DB_EN = {
                     "detail": "We closed the ecosystem with two key tools: <ul><li><b>Coordinator View:</b> Enables supervision of the entire team's time compliance and dynamic reassignment of services if an operator is overloaded.</li><li><b>Smart Audio Alerts:</b> We implemented an audio notification system for monitors and coordinators. Sounds vary in intensity (subtle for routine reports and escalating for critical alerts), enabling reaction to incidents without needing to constantly watch the screen.</li><li><b>Client Portal:</b> Clients can view their reports and 'Request Report' on demand, which automatically moves their service to the <b>Top 1 of the list</b> in the monitoring console.</li></ul>"
                 },
                 {
+                    "title": "Design System: Accessibility & Componentization",
+                    "description": "Expanding the Detecta design system for the new monitoring console.",
+                    "image": "projects/monitoring/sc-7.png",
+                    "detail": "For this project, I extended the existing design system focusing on operational efficiency and visual clarity under stress. <br><br><b>Key highlights:</b> <br><ul><li><b>Readability & Contrast:</b> We implemented AA accessibility standards, ensuring every component was legible even during long monitoring shifts and under varying office lighting conditions.</li><li><b>Variables & Tokens:</b> I built a library of semantic variables that perfectly align design with code, allowing the development team to implement complex components quickly and smoothly.</li><li><b>Technical Efficiency:</b> The creation of modular, reusable components significantly reduced the platform's build time, ensuring absolute visual consistency across the entire Detecta ecosystem.</li></ul>"
+                },
+                {
                     "title": "Prototype",
                     "description": "Interactive walkthrough of the monitoring console.",
                     "detail": "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video under construction — An interactive prototype detailing the emergency and call flow will be added soon.</div>"
@@ -473,7 +484,6 @@ const DB_EN = {
                 {
                     "title": "Impact and Results (KPIs)",
                     "description": "Tangible results from the system implementation.",
-                    "image": "projects/monitoring/sc-7.png",
                     "detail": "<div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Response Time</span><span class='kpi-value'>15 min</span><span class='kpi-desc'>Average reporting time achieved after optimization, surpassing the initial 25 min commitment.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>In historical traceability and billing thanks to stop validation.</span></div><div class='kpi-card'><span class='kpi-label'>SLA Compliance</span><span class='kpi-value'>100%</span><span class='kpi-desc'>Measurable and auditable compliance of the reporting commitment with the client.</span></div></div>"
                 },
                 {
