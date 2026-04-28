@@ -132,7 +132,7 @@ const DB_ES = {
                     "title": "Gobernanza Macro, Feedback Sonoro y Portal del Cliente",
                     "description": "Ecosistema para coordinadores y transparencia para el cliente.",
                     "image": "projects/monitoring/sc-6.png",
-                    "detail": "Cerramos el ecosistema con dos herramientas clave: <ul><li><b>Vista de Coordinador:</b> Permite supervisar el cumplimiento de tiempos de todo el equipo y reasignar servicios dinámicamente si un operador está saturado.</li><li><b>Alertas Sonoras Inteligentes:</b> Implementamos un sistema de notificaciones de audio para monitoristas y coordinadores. Los sonidos varían en intensidad (sutiles para reportes de rutina e incrementales para alertas críticas), permitiendo reaccionar a incidentes sin necesidad de estar mirando la pantalla constantemente.</li><li><b>Portal del Cliente:</b> Los clientes pueden visualizar sus reportes y 'Solicitar Reporte' bajo demanda, lo que mueve automáticamente su servicio al <b>Top 1 de la lista</b> en la consola de monitoreo.</li></ul>"
+                    "detail": "Cerramos el ecosistema con dos herramientas clave: <ul><li><b>Vista de Coordinador:</b> Permite supervisar el cumplimiento de tiempos de todo el equipo y reasignar servicios manualmente si un operador está saturado.</li><li><b>Alertas Sonoras Inteligentes:</b> Implementamos un sistema de notificaciones de audio para monitoristas y coordinadores. Los sonidos varían en intensidad (sutiles para reportes de rutina e incrementales para alertas críticas), permitiendo reaccionar a incidentes sin necesidad de estar mirando la pantalla constantemente.</li><li><b>Portal del Cliente:</b> Los clientes pueden visualizar sus reportes y 'Solicitar Reporte' bajo demanda, lo que mueve automáticamente su servicio al <b>Top 1 de la lista</b> en la consola de monitoreo.</li></ul>"
                 },
                 {
                     "title": "Sistema de diseño: Accesibilidad y Componentización",
@@ -143,7 +143,7 @@ const DB_ES = {
                 {
                     "title": "Prototipo",
                     "description": "Navegación interactiva de la consola de monitoreo.",
-                    "detail": "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video en construcción — Próximamente se agregará un prototipo interactivo detallando el flujo de emergencia y llamadas.</div>"
+                    "detail": "<iframe src='https://player.vimeo.com/video/1187143635?title=0&byline=0&portrait=0' width='100%' style='aspect-ratio: 16/9; border-radius: 16px;' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
                 },
                 {
                     "title": "Impacto y Resultados (KPIs)",
@@ -468,7 +468,7 @@ const DB_EN = {
                     "title": "Macro Governance, Audio Feedback, and Client Portal",
                     "description": "Ecosystem for coordinators and transparency for clients.",
                     "image": "projects/monitoring/sc-6.png",
-                    "detail": "We closed the ecosystem with two key tools: <ul><li><b>Coordinator View:</b> Enables supervision of the entire team's time compliance and dynamic reassignment of services if an operator is overloaded.</li><li><b>Smart Audio Alerts:</b> We implemented an audio notification system for monitors and coordinators. Sounds vary in intensity (subtle for routine reports and escalating for critical alerts), enabling reaction to incidents without needing to constantly watch the screen.</li><li><b>Client Portal:</b> Clients can view their reports and 'Request Report' on demand, which automatically moves their service to the <b>Top 1 of the list</b> in the monitoring console.</li></ul>"
+                    "detail": "We closed the ecosystem with two key tools: <ul><li><b>Coordinator View:</b> Enables supervision of the entire team's time compliance and manual reassignment of services if an operator is overloaded.</li><li><b>Smart Audio Alerts:</b> We implemented an audio notification system for monitors and coordinators. Sounds vary in intensity (subtle for routine reports and escalating for critical alerts), enabling reaction to incidents without needing to constantly watch the screen.</li><li><b>Client Portal:</b> Clients can view their reports and 'Request Report' on demand, which automatically moves their service to the <b>Top 1 of the list</b> in the monitoring console.</li></ul>"
                 },
                 {
                     "title": "Design System: Accessibility & Componentization",
@@ -479,7 +479,7 @@ const DB_EN = {
                 {
                     "title": "Prototype",
                     "description": "Interactive walkthrough of the monitoring console.",
-                    "detail": "<div style='padding:40px 0; text-align:center; color:var(--muted-text); font-style:italic;'>🚧 Video under construction — An interactive prototype detailing the emergency and call flow will be added soon.</div>"
+                    "detail": "<iframe src='https://player.vimeo.com/video/1187143635?title=0&byline=0&portrait=0' width='100%' style='aspect-ratio: 16/9; border-radius: 16px;' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
                 },
                 {
                     "title": "Impact and Results (KPIs)",
