@@ -339,10 +339,24 @@ body.modal-open {
 
 .hover-underline {
     cursor: pointer;
+    position: relative;
+    text-decoration: none !important;
+    display: inline-block;
 }
 
-.hover-underline:hover {
-    text-decoration: underline !important;
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s var(--expo-out);
+}
+
+.hover-underline:hover::after {
+    width: 100%;
 }
 
 /* El Grid que pone proyectos a la derecha */
@@ -476,7 +490,7 @@ body.modal-open {
 }
 
 .projects-sidebar::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
 }
 
 .projects-sidebar::-webkit-scrollbar-track {
@@ -484,12 +498,25 @@ body.modal-open {
 }
 
 .projects-sidebar::-webkit-scrollbar-thumb {
-    background: #E0E0E0;
+    background: transparent;
     border-radius: 10px;
+    transition: background 0.3s ease;
 }
 
-.projects-sidebar::-webkit-scrollbar-thumb:hover {
+.projects-sidebar:hover::-webkit-scrollbar-thumb {
+    background: #D0D0D0;
+}
+
+.projects-sidebar:hover::-webkit-scrollbar-thumb:hover {
     background: var(--gray);
+}
+
+.dark .projects-sidebar:hover::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+.dark .projects-sidebar:hover::-webkit-scrollbar-thumb:hover {
+    background: #666;
 }
 
 .scrollable-content {
@@ -730,6 +757,7 @@ body.modal-open {
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
+    overflow-x: hidden;
 
     /* Animación de entrada */
     transform: scale(0.95) translateY(20px);
@@ -1063,6 +1091,7 @@ body.modal-open {
 
     .modal-header {
         margin: 0 -40px;
+        padding: 0 40px;
     }
 }
 
@@ -1270,6 +1299,23 @@ body.modal-open {
 
     .hero h1 {
         font-size: 24px;
+    }
+
+    .modal-content {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 24px 24px 0 0;
+        padding: 0 20px 40px 20px;
+        max-height: 95vh;
+    }
+
+    .modal-header {
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+    .modal {
+        align-items: flex-end;
     }
 }
 
