@@ -2,257 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeison Bedoya Lopez | Product Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0" />
-    <!-- Theme Preload Script -->
-    <script>
-        (function () {
-            const storedTheme = localStorage.getItem('theme');
-            if (storedTheme === 'dark') {
-                document.documentElement.classList.add('dark');
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeison Bedoya Lopez | Senior Product Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0" />
+  <!-- Theme Preload Script -->
+  <script>
+    (function () {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
 
-            // Language detection and redirection
-            const storedLang = localStorage.getItem('language');
-            const path = window.location.pathname;
-            const isEnPage = path.includes('en.html');
+      // Language detection and redirection
+      const storedLang = localStorage.getItem('language');
+      const path = window.location.pathname;
+      const isEnPage = path.includes('en.html');
 
-            if (storedLang) {
-                if (storedLang === 'en' && !isEnPage) window.location.replace('en.html');
-                if (storedLang === 'es' && isEnPage) window.location.replace('index.html');
-            } else {
-                const browserLang = (navigator.language || 'en').split('-')[0];
-                if (browserLang === 'en' && !isEnPage) {
-                    window.location.replace('en.html');
-                }
-            }
-        })();
-    </script>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script type="application/ld+json">
+      if (storedLang) {
+        if (storedLang === 'en' && !isEnPage) window.location.replace('en.html');
+        if (storedLang === 'es' && isEnPage) window.location.replace('index.html');
+      } else {
+        const browserLang = (navigator.language || 'en').split('-')[0];
+        if (browserLang === 'en' && !isEnPage) {
+          window.location.replace('en.html');
+        }
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Yeison Bedoya Lopez",
-      "jobTitle": "Product Designer",
+      "jobTitle": "Senior Product Designer",
       "url": "https://yeilopez.github.io/me/"
     }
     </script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="card header-nav">
-            <div class="brand">
-                <span class="name">YEISON BEDOYA LOPEZ</span>
-                <span class="dot">•</span>
-                <span class="role">PRODUCT DESIGNER</span>
-                <div class="loc">
-                    <span class="material-symbols-outlined">globe_location_pin</span>
-                    <span>MANIZALES • COLOMBIA</span>
-                </div>
-            </div>
-            <nav class="menu">
-                <button class="nav-btn" onclick="openTab('exp')"><span class="material-symbols-outlined">badge</span>
-                    EXPERIENCE</button>
-                <button class="nav-btn" onclick="openTab('edu')"><span class="material-symbols-outlined">school</span>
-                    EDUCATION</button>
-                <div class="dropdown">
-                    <button class="nav-btn"><span class="material-symbols-outlined">download</span> CV</button>
-                    <div class="dropdown-content">
-                        <a href="assets/pdf/resume_yeison-bedoya-lopez.pdf"
-                            download="resume_yeison-bedoya-lopez.pdf"><span
-                                class="material-symbols-outlined">download</span> Download CV</a>
-                        <a href="assets/pdf/resume-ats_yeison-bedoya-lopez.pdf"><span
-                                class="material-symbols-outlined">download</span> Download CV AI-friendly
-                            (ATS)</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="grid-container">
-            <section class="card hero">
-                <span class="material-symbols-outlined icon-dark">magic_button</span>
-                <h1>I design digital products with impact on business and people.</h1>
-                <p class="typewriter-container">I do it with <span id="typewriter-text" aria-hidden="true"></span><span
-                        class="cursor">|</span></p>
-                <p class="sr-only">I achieve it with a comprehensive vision, from strategy to code. AI to clarify data
-                    and speed up delivery. metrics that validate every decision. flexibility to iterate and adjust
-                    course. micro-interactions that elevate experience.</p>
-            </section>
-
-            <section class="card photo-box">
-                <img src="assets/avatar.png" alt="Profile">
-            </section>
-
-            <section class="card projects-sidebar">
-                <div id="project-list"></div>
-            </section>
-
-            <section class="card statement">
-                <p>I act as a <strong>bridge between strategic vision and technical execution</strong>, communicating
-                    with business and engineering.</p>
-                <div class="pills-container" id="pills-container" aria-hidden="true">
-                    <!-- Pills injected via JS -->
-                </div>
-            </section>
-
-            <section class="card footer-card">
-                <div class="contact-sec">
-                    <span class="small-title">Let's talk</span>
-                    <a href="mailto:yeilopez.design@gmail.com?subject=Contact%20from%20website"
-                        class="big-link hover-underline">Send message</a>
-                </div>
-                <div class="footer-links">
-                    <div class="social">
-                        <a href="https://www.behance.net/yeilpz" target="_blank" class="hover-underline">BEHANCE</a>
-                        <a href="https://lottiefiles.com/yeilpz" target="_blank" class="hover-underline">LOTTIEFILES
-                            (PUBLIC)</a>
-                        <a href="https://www.linkedin.com/in/yeilpz/" target="_blank"
-                            class="hover-underline">LINKEDIN</a>
-                    </div>
-                    <div class="modes">
-                        <span class="mode-item" data-tooltip="Ver en español">
-                            <span class="material-symbols-outlined">language</span>
-                            <a href="index.html" onclick="localStorage.setItem('language', 'es')"
-                                class="hover-underline">ENG</a>
-                        </span>
-                        <span class="mode-item" id="themeToggleBtn" onclick="toggleTheme()"
-                            data-tooltip="View in dark mode">
-                            <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
-                            <span id="themeText" class="hover-underline">DRK</span>
-                        </span>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span id="modal-sticky-title" class="modal-sticky-title"></span>
-                <button class="close-x" onclick="closeModal()"><span
-                        class="material-symbols-outlined">close</span></button>
-            </div>
-            <div id="modal-section-banner" class="modal-section-banner"></div>
-            <div id="modal-body"></div>
+  <div class="wrapper">
+    <header class="card header-nav">
+      <div class="brand">
+        <span class="name">YEISON BEDOYA LOPEZ</span>
+        <span class="dot">•</span>
+        <span class="role">SENIOR PRODUCT DESIGNER</span>
+        <div class="loc">
+          <span class="material-symbols-outlined">globe_location_pin</span>
+          <span>MANIZALES • COLOMBIA</span>
         </div>
+      </div>
+      <nav class="menu">
+        <button class="nav-btn" onclick="openTab('exp')"><span class="material-symbols-outlined">badge</span>
+          EXPERIENCE</button>
+        <button class="nav-btn" onclick="openTab('edu')"><span class="material-symbols-outlined">school</span>
+          EDUCATION</button>
+        <div class="dropdown">
+          <button class="nav-btn"><span class="material-symbols-outlined">download</span> CV</button>
+          <div class="dropdown-content">
+            <a href="assets/pdf/resume_yeison-bedoya-lopez.pdf" download="resume_yeison-bedoya-lopez.pdf"><span
+                class="material-symbols-outlined">download</span> Download CV</a>
+            <a href="assets/pdf/resume-ats_yeison-bedoya-lopez.pdf"><span
+                class="material-symbols-outlined">download</span> Download CV AI-friendly
+              (ATS)</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="grid-container">
+      <section class="card hero">
+        <span class="material-symbols-outlined icon-dark">magic_button</span>
+        <h1>I design digital products with impact on business and people.</h1>
+        <p class="typewriter-container">I do it with <span id="typewriter-text" aria-hidden="true"></span><span
+            class="cursor">|</span></p>
+        <p class="sr-only">I achieve it with a comprehensive vision, from strategy to code. AI to clarify data
+          and speed up delivery. metrics that validate every decision. flexibility to iterate and adjust
+          course. micro-interactions that elevate experience.</p>
+      </section>
+
+      <section class="card photo-box">
+        <img src="assets/avatar.png" alt="Profile">
+      </section>
+
+      <section class="card projects-sidebar">
+        <div id="project-list"></div>
+      </section>
+
+      <section class="card statement">
+        <p>I act as a <strong>bridge between strategic vision and technical execution</strong>, communicating
+          with business and engineering.</p>
+        <div class="pills-container" id="pills-container" aria-hidden="true">
+          <!-- Pills injected via JS -->
+        </div>
+      </section>
+
+      <section class="card footer-card">
+        <div class="contact-sec">
+          <span class="small-title">Let's talk</span>
+          <a href="mailto:yeilopez.design@gmail.com?subject=Contact%20from%20website"
+            class="big-link hover-underline">Send message</a>
+        </div>
+        <div class="footer-links">
+          <div class="social">
+            <a href="https://www.behance.net/yeilpz" target="_blank" class="hover-underline">BEHANCE</a>
+            <a href="https://lottiefiles.com/yeilpz" target="_blank" class="hover-underline">LOTTIEFILES
+              (PUBLIC)</a>
+            <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" class="hover-underline">LINKEDIN</a>
+          </div>
+          <div class="modes">
+            <span class="mode-item" data-tooltip="Ver en español">
+              <span class="material-symbols-outlined">language</span>
+              <a href="index.html" onclick="localStorage.setItem('language', 'es')" class="hover-underline">ENG</a>
+            </span>
+            <span class="mode-item" id="themeToggleBtn" onclick="toggleTheme()" data-tooltip="View in dark mode">
+              <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+              <span id="themeText" class="hover-underline">DRK</span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="modal-sticky-title" class="modal-sticky-title"></span>
+        <button class="close-x" onclick="closeModal()"><span class="material-symbols-outlined">close</span></button>
+      </div>
+      <div id="modal-section-banner" class="modal-section-banner"></div>
+      <div id="modal-body"></div>
     </div>
+  </div>
 
-    <script src="js/data.js?v=1.2"></script>
-    <script src="js/main.js?v=1.2"></script>
+  <script src="js/data.js?v=1.2"></script>
+  <script src="js/main.js?v=1.2"></script>
 
-    <!-- Structured content for ATS systems and crawlers. Not visible to users. -->
-    <div class="sr-only" aria-hidden="true">
+  <!-- Structured content for ATS systems and crawlers. Not visible to users. -->
+  <div class="sr-only" aria-hidden="true">
 
-      <section>
-        <h1>Yeison Bedoya Lopez — Product Designer</h1>
-        <p>Product Designer with over 8 years of experience in UX/UI, design systems, motion design, and collaboration with engineering teams. Manizales, Colombia. Available for remote work.</p>
-        <p>Skills: Product Design, UX Research, Design Systems, Figma, Motion Design, Lottie, After Effects, Design Tokens, WCAG AA Accessibility, Prototyping, Metrics, SaaS, Mobile Android, Product Strategy, AI for Design.</p>
-        <p>Contact: yeilopez.design@gmail.com — linkedin.com/in/yeilpz — behance.net/yeilpz</p>
-      </section>
+    <section>
+      <h1>Yeison Bedoya Lopez — Senior Product Designer</h1>
+      <p>Senior Product Designer with over 8 years of experience in UX/UI, design systems, motion design, and
+        collaboration with engineering teams. Manizales, Colombia. Available for remote work.</p>
+      <p>Skills: Product Design, UX Research, Design Systems, Figma, Motion Design, Lottie, After Effects, Design
+        Tokens, WCAG AA Accessibility, Prototyping, Metrics, SaaS, Mobile Android, Product Strategy, AI for Design.</p>
+      <p>Contact: yeilopez.design@gmail.com — linkedin.com/in/yeilpz — behance.net/yeilpz</p>
+    </section>
 
-      <section>
-        <h2>Work Experience</h2>
-        <article>
-          <h3>Detecta Security — Product Designer</h3>
-          <p>2024 – 2026 · Remote (Mexico)</p>
-          <p>Lead / Senior Product Designer. Designed SaaS products for security logistics: Android mobile app, web monitoring console, and control tower. Design systems with tokens, dark mode, and AA accessibility.</p>
-        </article>
-        <article>
-          <h3>Belog IT — Product Designer</h3>
-          <p>2023 – 2024 · Hybrid (Argentina)</p>
-        </article>
-        <article>
-          <h3>Fiera Studio — UX UI Motion Designer</h3>
-          <p>2021 – 2022 · Hybrid (Argentina)</p>
-        </article>
-        <article>
-          <h3>Educaedu — Web Content / UI Designer</h3>
-          <p>2017 – 2021 · On-site (Argentina)</p>
-        </article>
-        <article>
-          <h3>Potencial Digital — Junior Web Designer</h3>
-          <p>2015 – 2017 · On-site (Argentina)</p>
-        </article>
-      </section>
+    <section>
+      <h2>Work Experience</h2>
+      <article>
+        <h3>Detecta Security — Senior Product Designer</h3>
+        <p>2024 – 2026 · Remote (Mexico)</p>
+        <p>Lead / Senior Product Designer. Designed SaaS products for security logistics: Android mobile app, web
+          monitoring console, and control tower. Design systems with tokens, dark mode, and AA accessibility.</p>
+      </article>
+      <article>
+        <h3>Belog IT — Product Designer</h3>
+        <p>2023 – 2024 · Hybrid (Argentina)</p>
+      </article>
+      <article>
+        <h3>Fiera Studio — UX UI Motion Designer</h3>
+        <p>2021 – 2022 · Hybrid (Argentina)</p>
+      </article>
+      <article>
+        <h3>Educaedu — Web Content / UI Designer</h3>
+        <p>2017 – 2021 · On-site (Argentina)</p>
+      </article>
+      <article>
+        <h3>Potencial Digital — Junior Web Designer</h3>
+        <p>2015 – 2017 · On-site (Argentina)</p>
+      </article>
+    </section>
 
-      <section>
-        <h2>Projects</h2>
-        <article>
-          <h3>Centaurus App 2.0 — Detecta Security</h3>
-          <p>Role: Senior Product / Motion Designer. Platform: Android Mobile App. Client: Detecta Security.</p>
-          <p>End-to-end redesign of a physical vehicle escort app. Offline-first architecture, hands-free voice commands, automatic push notifications, Lottie micro-interactions, design system with dark mode and design tokens.</p>
-          <p>Results: -120 hours/month in manual review, 98% event registration accuracy, +45% NPS improvement.</p>
-          <p>View on Google Play: https://play.google.com/store/apps/details?id=io.detectasecurity.centaurus</p>
-        </article>
-        <article>
-          <h3>Monitoring Console — Detecta Security</h3>
-          <p>Role: Lead Product Designer. Platform: SaaS Desktop Web. Client: Detecta Security.</p>
-          <p>Full redesign of the operational security control center. Replaced fragmented ecosystem (WhatsApp + Excel) with a unified platform featuring telemetry, VoIP, automated emergency protocols, and a client portal. 25-minute SLA per service.</p>
-          <p>Results: 15-minute average report time (25-min target), 100% auditable SLA compliance, 98% traceability accuracy.</p>
-        </article>
-        <article>
-          <h3>Control Tower — Detecta Security</h3>
-          <p>Role: Lead Product Designer. Platform: SaaS Desktop Web. Client: Detecta Security.</p>
-          <p>Agnostic centralization hub unifying GPS tracking APIs from multiple providers. Eliminates the need to monitor 300 individual mirror accounts. Multi-level sound alerts, card and data grid views, exception-based management, role-based access control.</p>
-          <p>Results: 100% accounts unified in a single command center, estimated 80% reduction in incident detection time.</p>
-        </article>
-        <article>
-          <h3>Suitable — Logistics Process Animation</h3>
-          <p>Motion Design. Figma. View on Behance: https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process</p>
-        </article>
-        <article>
-          <h3>Suitable — Set of 4 Lottie Animations</h3>
-          <p>Motion Design. Lottie, After Effects. View on Behance: https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations</p>
-        </article>
-        <article>
-          <h3>Visual Identity — Teatro Argentino de La Plata</h3>
-          <p>Branding, Visual Identity. View on Behance: https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata</p>
-        </article>
-      </section>
+    <section>
+      <h2>Projects</h2>
+      <article>
+        <h3>Centaurus App 2.0 — Detecta Security</h3>
+        <p>Role: Senior Product / Motion Designer. Platform: Android Mobile App. Client: Detecta Security.</p>
+        <p>End-to-end redesign of a physical vehicle escort app. Offline-first architecture, hands-free voice commands,
+          automatic push notifications, Lottie micro-interactions, design system with dark mode and design tokens.</p>
+        <p>Results: -120 hours/month in manual review, 98% event registration accuracy, +45% NPS improvement.</p>
+        <p>View on Google Play: https://play.google.com/store/apps/details?id=io.detectasecurity.centaurus</p>
+      </article>
+      <article>
+        <h3>Monitoring Console — Detecta Security</h3>
+        <p>Role: Lead Product Designer. Platform: SaaS Desktop Web. Client: Detecta Security.</p>
+        <p>Full redesign of the operational security control center. Replaced fragmented ecosystem (WhatsApp + Excel)
+          with a unified platform featuring telemetry, VoIP, automated emergency protocols, and a client portal.
+          25-minute SLA per service.</p>
+        <p>Results: 15-minute average report time (25-min target), 100% auditable SLA compliance, 98% traceability
+          accuracy.</p>
+      </article>
+      <article>
+        <h3>Control Tower — Detecta Security</h3>
+        <p>Role: Lead Product Designer. Platform: SaaS Desktop Web. Client: Detecta Security.</p>
+        <p>Agnostic centralization hub unifying GPS tracking APIs from multiple providers. Eliminates the need to
+          monitor 300 individual mirror accounts. Multi-level sound alerts, card and data grid views, exception-based
+          management, role-based access control.</p>
+        <p>Results: 100% accounts unified in a single command center, estimated 80% reduction in incident detection
+          time.</p>
+      </article>
+      <article>
+        <h3>Suitable — Logistics Process Animation</h3>
+        <p>Motion Design. Figma. View on Behance:
+          https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process</p>
+      </article>
+      <article>
+        <h3>Suitable — Set of 4 Lottie Animations</h3>
+        <p>Motion Design. Lottie, After Effects. View on Behance:
+          https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations</p>
+      </article>
+      <article>
+        <h3>Visual Identity — Teatro Argentino de La Plata</h3>
+        <p>Branding, Visual Identity. View on Behance:
+          https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata</p>
+      </article>
+    </section>
 
-      <section>
-        <h2>Education</h2>
-        <article>
-          <h3>National Technological University (UTN) — Postgraduate in Project Management</h3>
-          <p>Completed 2023</p>
-        </article>
-        <article>
-          <h3>National Technological University (UTN) — Diploma in UX and Accessibility</h3>
-          <p>Completed 2019</p>
-        </article>
-        <article>
-          <h3>University of Buenos Aires (UBA) — Graphic Design</h3>
-          <p>Completed 2018</p>
-        </article>
-        <article>
-          <h3>Nelson Rodríguez-Peña — AI for Designers</h3>
-          <p>Completed 2024</p>
-        </article>
-        <article>
-          <h3>Sol Mesz — Metrics and Design</h3>
-          <p>Completed 2024</p>
-        </article>
-        <article>
-          <h3>Sol Mesz — Product Designer</h3>
-          <p>Completed 2022</p>
-        </article>
-        <article>
-          <h3>Centro Universitario de Idiomas (CUI) — English</h3>
-          <p>Completed 2022</p>
-        </article>
-      </section>
+    <section>
+      <h2>Education</h2>
+      <article>
+        <h3>National Technological University (UTN) — Postgraduate in Project Management</h3>
+        <p>Completed 2023</p>
+      </article>
+      <article>
+        <h3>National Technological University (UTN) — Diploma in UX and Accessibility</h3>
+        <p>Completed 2019</p>
+      </article>
+      <article>
+        <h3>University of Buenos Aires (UBA) — Graphic Design</h3>
+        <p>Completed 2018</p>
+      </article>
+      <article>
+        <h3>Nelson Rodríguez-Peña — AI for Designers</h3>
+        <p>Completed 2024</p>
+      </article>
+      <article>
+        <h3>Sol Mesz — Metrics and Design</h3>
+        <p>Completed 2024</p>
+      </article>
+      <article>
+        <h3>Sol Mesz — Product Designer</h3>
+        <p>Completed 2022</p>
+      </article>
+      <article>
+        <h3>Centro Universitario de Idiomas (CUI) — English</h3>
+        <p>Completed 2022</p>
+      </article>
+    </section>
 
-    </div>
-    <!-- /ATS content -->
+  </div>
+  <!-- /ATS content -->
 </body>
 
 </html>
