@@ -82,6 +82,17 @@ const DB_ES = {
             ]
         },
         {
+            id: "hubbing",
+            title: "Hubbing",
+            category: "product",
+            tagline: "Plataforma web y apps móviles para gestión interna.",
+            tags: ["Sistema de Gestión", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
+            image: "projects/hubbing/hero.png",
+            challenge: "Diseño de una plataforma integral de gestión interna que centraliza operaciones, equipos y flujos de trabajo en una sola interfaz web y móvil.",
+            description: "Desarrollé la experiencia UX/UI de <b>Hubbing Latam</b>: un sistema de gestión interna con plataforma web y apps móviles nativas, enfocado en centralizar procesos operativos y mejorar la eficiencia de los equipos.",
+            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
+        },
+        {
             "id": "detecta-monitoring-console",
             "title": "Consola de Monitoreo",
             "category": "product",
@@ -416,6 +427,17 @@ const DB_EN = {
                     detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>saved monthly in chat reviews and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>effectiveness in event logging, drastically reducing informational noise.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to offline logging and the visibility of their expense evidence.</span></div></div><br><br>Want to see it in action? <a href='https://play.google.com/store/apps/details?id=io.detectasecurity.centaurus&hl=es' target='_blank' class='blue-link'>Download the Centaurus App on Google Play ↗</a>.<br>To understand the complete ecosystem, I invite you to review the details of the <a href='#' class='blue-link' onclick='openProject(\"detecta-monitoring-console\"); return false;'>Monitoring Console</a> project."
                 }
             ]
+        },
+        {
+            id: "hubbing",
+            title: "Hubbing",
+            category: "product",
+            tagline: "Web platform and mobile apps for internal management.",
+            tags: ["Management System", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
+            image: "projects/hubbing/hero.png",
+            challenge: "Design of a comprehensive internal management platform that centralizes operations, teams, and workflows in a single web and mobile interface.",
+            description: "I designed the UX/UI experience for <b>Hubbing Latam</b>: an internal management system with a web platform and native mobile apps, focused on centralizing operational processes and improving team efficiency.",
+            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             "id": "detecta-monitoring-console",
