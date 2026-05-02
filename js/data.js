@@ -9,7 +9,7 @@ const DB_ES = {
             image: "projects/ike/hero.png",
             challenge: "Digitalización de servicios mediante una webapp moderna que centraliza y simplifica la experiencia del usuario final.",
             description: "Diseñé la experiencia UX/UI de <b>Iké</b>: una webapp enfocada en la digitalización de servicios, llevando procesos tradicionales a un entorno digital ágil y accesible.",
-            externalLink: "https://www.behance.net/portfolio/editor?project_id=157329162"
+            externalLink: "https://www.behance.net/gallery/157329162/Webapp-Responsive"
         },
         {
             id: "centaurus",
@@ -367,7 +367,7 @@ const DB_EN = {
             image: "projects/ike/hero.png",
             challenge: "Service digitalization through a modern webapp that centralizes and simplifies the end-user experience.",
             description: "I designed the UX/UI experience for <b>Iké</b>: a webapp focused on service digitalization, bringing traditional processes into an agile and accessible digital environment.",
-            externalLink: "https://www.behance.net/portfolio/editor?project_id=157329162"
+            externalLink: "https://www.behance.net/gallery/157329162/Webapp-Responsive"
         },
         {
             id: "centaurus",
