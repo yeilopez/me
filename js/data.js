@@ -1,6 +1,17 @@
 const DB_ES = {
     projects: [
         {
+            id: "ike",
+            title: "Iké",
+            category: "product",
+            tagline: "Digitalización de servicios y webapp.",
+            tags: ["Digitalización", "Web App", "UX/UI", "Figma"],
+            image: "projects/ike/hero.png",
+            challenge: "Digitalización de servicios mediante una webapp moderna que centraliza y simplifica la experiencia del usuario final.",
+            description: "Diseñé la experiencia UX/UI de <b>Iké</b>: una webapp enfocada en la digitalización de servicios, llevando procesos tradicionales a un entorno digital ágil y accesible.",
+            externalLink: "https://www.behance.net/portfolio/editor?project_id=157329162"
+        },
+        {
             id: "centaurus",
             title: "App Centaurus 2.0",
             category: "product",
@@ -347,6 +358,17 @@ const DB_ES = {
 
 const DB_EN = {
     projects: [
+        {
+            id: "ike",
+            title: "Iké",
+            category: "product",
+            tagline: "Service digitalization and webapp.",
+            tags: ["Digitalization", "Web App", "UX/UI", "Figma"],
+            image: "projects/ike/hero.png",
+            challenge: "Service digitalization through a modern webapp that centralizes and simplifies the end-user experience.",
+            description: "I designed the UX/UI experience for <b>Iké</b>: a webapp focused on service digitalization, bringing traditional processes into an agile and accessible digital environment.",
+            externalLink: "https://www.behance.net/portfolio/editor?project_id=157329162"
+        },
         {
             id: "centaurus",
             title: "Centaurus App 2.0",
