@@ -207,12 +207,12 @@ function renderProjects() {
         const div = document.createElement('div');
         div.className = 'project-row' + (p.category === 'product' && index === 0 ? ' open' : '');
 
-        let linkHTML = `<a href="#" class="blue-link" onclick="openProject('${p.id}'); event.stopPropagation(); return false;">${T.ui.viewProject}</a>`;
+        let linkHTML = `<button class="accordion-btn accordion-btn-secondary" onclick="openProject('${p.id}'); event.stopPropagation();">${T.ui.viewProject}</button>`;
 
         if (p.isConstruction) {
             linkHTML = ``; // The tagline will say "En construcción" / "Under construction"
         } else if (p.externalLink) {
-            linkHTML = `<a href="${p.externalLink}" target="_blank" class="blue-link" onclick="event.stopPropagation();">${T.ui.viewBehance}</a>`;
+            linkHTML = `<a href="${p.externalLink}" target="_blank" class="accordion-btn accordion-btn-secondary" onclick="event.stopPropagation();">${T.ui.viewBehance}<span class="material-symbols-outlined">open_in_new</span></a>`;
         }
 
         div.innerHTML = `
@@ -221,8 +221,8 @@ function renderProjects() {
                 <span class="material-symbols-outlined chevron" style="color:var(--black);">chevron_right</span>
             </div>
             <div class="accordion-content">
-                <img src="${p.image}" style="width:100%; border-radius:16px; margin:5px 0 12px 0;" onerror="this.style.display='none'">
-                <p style="font-size:14px; color:var(--gray); line-height:1.4; margin-bottom:12px;">${p.tagline}</p>
+                <img src="${p.image}" style="width:100%; border-radius:16px; margin:5px 0 12px 0;" onerror="this.style.display='none'" class="accordion-clickable" onclick="${p.isConstruction ? '' : p.externalLink ? `window.open('${p.externalLink}','_blank')` : `openProject('${p.id}')`}">
+                <p style="font-size:14px; color:var(--gray); line-height:1.4; margin-bottom:12px;" class="${p.isConstruction ? '' : 'accordion-tagline-clickable'}" onclick="${p.isConstruction ? '' : p.externalLink ? `window.open('${p.externalLink}','_blank'); event.stopPropagation()` : `openProject('${p.id}'); event.stopPropagation()`}">${p.tagline}</p>
                 ${linkHTML}
             </div>
         `;

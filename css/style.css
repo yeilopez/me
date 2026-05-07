@@ -337,6 +337,78 @@ body.modal-open {
     align-self: flex-start;
 }
 
+/* Botón secondary para links de acordeón */
+.accordion-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s var(--expo-out);
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.accordion-btn-primary {
+    background: var(--black);
+    color: var(--bg);
+}
+
+.accordion-btn-primary:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.accordion-btn-primary:active {
+    transform: scale(0.96);
+}
+
+.accordion-btn-secondary {
+    background: var(--pill-bg);
+    color: var(--gray);
+    border: 1px solid var(--border-row);
+}
+
+.accordion-btn-secondary:hover {
+    background: var(--border-row);
+    color: var(--black);
+    transform: translateY(-2px);
+}
+
+.accordion-btn-secondary:active {
+    transform: scale(0.96);
+}
+
+.accordion-btn .material-symbols-outlined {
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Imagen y tagline del accordion son clickeables */
+.accordion-clickable {
+    cursor: pointer;
+    display: block;
+}
+
+.accordion-clickable:hover {
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.accordion-tagline-clickable {
+    cursor: pointer;
+}
+
+.accordion-tagline-clickable:hover {
+    color: var(--black) !important;
+    transition: color 0.2s ease;
+}
+
 .hover-underline {
     cursor: pointer;
     position: relative;
