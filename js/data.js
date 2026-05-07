@@ -188,7 +188,7 @@ const DB_ES = {
             image: "projects/control-tower/hero.png",
             tags: ["Logística de Seguridad", "Eficiencia Operativa", "SASS", "Figma"],
             challenge: "La fragmentación de datos causada por múltiples proveedores de GPS obligaba a los clientes a monitorear hasta <b>300 cuentas espejo independientes</b>. Esta dispersión generaba una ceguera operativa crítica, donde la detección de un incidente ocurría cuando la recuperación del activo ya era irreversible.",
-            description: "Diseñamos un <b>Hub de centralización agnóstico</b> que unifica APIs de rastreo en una sola interfaz proactiva. El sistema transforma la vigilancia manual en una gestión por excepción, utilizando algoritmos visuales y alertas sonoras para garantizar una respuesta inmediata ante riesgos en ruta.",
+            description: "Diseñamos una <b>plataforma de centralización</b> que unifica las APIs de los distintos proveedores GPS de cada cliente en una sola interfaz proactiva. El sistema transforma la vigilancia manual en una gestión por excepción, utilizando algoritmos visuales y alertas sonoras para garantizar una respuesta inmediata ante riesgos en ruta.",
             details: {
                 role: "Lead Product Designer",
                 client: "Detecta Security",
@@ -546,7 +546,7 @@ const DB_EN = {
             image: "projects/control-tower/hero.png",
             tags: ["Security Logistics", "Operational Efficiency", "SASS", "Figma"],
             challenge: "Data fragmentation caused by multiple GPS providers forced clients to monitor up to <b>300 independent mirror accounts</b>. This dispersion created critical operational blindness, where incident detection occurred when asset recovery was already irreversible.",
-            description: "We designed an <b>agnostic centralization Hub</b> that unifies tracking APIs into a single proactive interface. The system transforms manual surveillance into exception-based management, using visual algorithms and audio alerts to guarantee an immediate response to route risks.",
+            description: "We designed a <b>centralized platform</b> that unifies each client's GPS provider APIs into a single proactive interface, regardless of which provider they use. The system transforms manual surveillance into exception-based management, using visual algorithms and audio alerts to guarantee an immediate response to route risks.",
             details: {
                 role: "Lead Product Designer",
                 client: "Detecta Security",
