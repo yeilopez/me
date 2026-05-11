@@ -1519,6 +1519,15 @@ body.modal-open {
     color: var(--gray);
 }
 
+.timeline-date-mobile {
+    display: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
 .timeline-location {
     font-size: 12px;
     color: var(--muted-text);
@@ -1540,6 +1549,10 @@ body.modal-open {
 
     .timeline-date {
         display: none;
+    }
+
+    .timeline-date-mobile {
+        display: block;
     }
 
     .timeline-marker::after {

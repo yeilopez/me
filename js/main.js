@@ -391,6 +391,7 @@ function openTab(section, fromRouting = false) {
                 </div>
                 <div class="timeline-content">
                     <div class="timeline-card">
+                        <div class="timeline-date-mobile">${item.period}</div>
                         <h4>${item.company}</h4>
                         <p>${item.role}</p>
                         ${item.location ? `<p class="timeline-location">${item.location}</p>` : ''}
@@ -423,6 +424,7 @@ function openTab(section, fromRouting = false) {
                             </div>
                             <div class="timeline-content">
                                 <div class="timeline-card">
+                                    <div class="timeline-date-mobile">${item.year}</div>
                                     <h4>${item.degree}</h4>
                                     <p>${item.institution}</p>
                                 </div>
