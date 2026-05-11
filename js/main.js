@@ -258,7 +258,7 @@ function openProject(id, fromRouting = false) {
 
     const body = document.getElementById('modal-body');
     const stickyTitle = document.getElementById('modal-sticky-title');
-    const modalContent = document.querySelector('.modal-content');
+    const modalContent = document.getElementById('modal-body');
     const modalHeader = document.querySelector('.modal-header');
 
     if (stickyTitle) stickyTitle.textContent = p.title;
@@ -454,7 +454,7 @@ function openTab(section, fromRouting = false) {
     document.body.classList.add('modal-open');
 
     // Inicializar scroll behavior
-    const modalContent = document.querySelector('.modal-content');
+    const modalContent = document.getElementById('modal-body');
     const modalHeader = document.querySelector('.modal-header');
     const sectionBanner = document.getElementById('modal-section-banner');
 
@@ -468,12 +468,12 @@ function openTab(section, fromRouting = false) {
 }
 
 // HELPER: Inicializar comportamiento de scroll en modales
-function attachModalScrollBehavior(modalContent, modalHeader, sectionBanner) {
-    if (!modalContent) return;
+function attachModalScrollBehavior(scrollContainer, modalHeader, sectionBanner) {
+    if (!scrollContainer) return;
 
-    modalContent.scrollTop = 0;
-    modalContent.onscroll = () => {
-        if (modalContent.scrollTop > 10) {
+    scrollContainer.scrollTop = 0;
+    scrollContainer.onscroll = () => {
+        if (scrollContainer.scrollTop > 10) {
             modalHeader.classList.add('scrolled');
         } else {
             modalHeader.classList.remove('scrolled');
@@ -481,8 +481,8 @@ function attachModalScrollBehavior(modalContent, modalHeader, sectionBanner) {
 
         // Banner de sección dinámico
         if (sectionBanner) {
-            const sections = modalContent.querySelectorAll('.modal-section');
-            const modalRect = modalContent.getBoundingClientRect();
+            const sections = scrollContainer.querySelectorAll('.modal-section');
+            const modalRect = scrollContainer.getBoundingClientRect();
             const modalTop = modalRect.top;
 
             let activeSec = null;
