@@ -36,7 +36,7 @@ const TRANSLATIONS = {
         ],
         pills: [
             "Estrategia de Producto",
-            "AI Data Insights",
+            "AI-assisted workflows",
             "Métricas y Negocio",
             "Vibe Coding",
             "Design Systems",
@@ -80,7 +80,7 @@ const TRANSLATIONS = {
         ],
         pills: [
             "Product Strategy",
-            "AI Data Insights",
+            "AI-assisted workflows",
             "Metrics & Business",
             "Vibe Coding",
             "Design Systems",
