@@ -316,7 +316,7 @@ function openProject(id, fromRouting = false) {
 
     body.innerHTML = `
         <span style="color:var(--muted-text); font-size:12px; font-weight:600;">${T.ui.featuredProject}</span>
-        <h2 style="font-size:36px; margin:10px 0;">${p.title}</h2>
+        <h2 style="font-size:36px; margin:10px 0; line-height:1.2; padding-top:5px;">${p.title}</h2>
         <div style="margin-bottom:20px;">${(p.tags || []).map(t => `<span class="pill-modal">${t}</span>`).join('')}</div>
         
         <div class="modal-hero-split">
@@ -454,7 +454,7 @@ function openTab(section, fromRouting = false) {
     }
 
     body.innerHTML = `
-        <h2 style="font-size:48px; margin:10px 0;">${title}</h2>
+        <h2 style="font-size:48px; margin:10px 0; line-height:1.2; padding-top:5px;">${title}</h2>
         <div class="timeline-container">
             ${itemsHTML}
         </div>
