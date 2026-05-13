@@ -1556,6 +1556,20 @@ body.modal-open {
     color: var(--gray);
 }
 
+.timeline-card ul {
+    margin: 12px 0 0 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.4;
+}
+.timeline-card ul li {
+    margin-bottom: 6px;
+}
+.timeline-card ul li:last-child {
+    margin-bottom: 0;
+}
+
 .timeline-date-mobile {
     display: none;
     font-size: 13px;

@@ -405,8 +405,8 @@ function openTab(section, fromRouting = false) {
                     <div class="timeline-card">
                         <div class="timeline-date-mobile">${item.period}</div>
                         <h4>${item.company}</h4>
-                        <p>${item.role}</p>
-                        ${item.location ? `<p class="timeline-location">${item.location}</p>` : ''}
+                        <p>${item.role}${item.location ? ` - ${item.location}` : ''}</p>
+                        ${item.description ? `<ul>${item.description.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
                     </div>
                 </div>
             </div>

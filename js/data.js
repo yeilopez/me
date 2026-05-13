@@ -283,25 +283,44 @@ const DB_ES = {
             company: "DETECTA SECURITY",
             period: "2024 - 2026",
             role: "Product Designer",
-            location: "Remoto (México)"
+            location: "Remoto (México)",
+            description: [
+                "Rediseñé la App Centaurus 2.0 para Android, incluyendo arquitectura offline-first, comandos de voz y microinteracciones con Lottie. Resultado: 98% de efectividad en registros y 120 horas mensuales ahorradas.",
+                "Unifiqué la Consola de Monitoreo integrando telemetría, VoIP y protocolos automatizados. Resultado: tiempo de reporte reducido de 25 a 15 minutos y 100% de cumplimiento auditable.",
+                "Desarrollé la Torre de Control que integra +300 cuentas GPS en un solo lugar. Resultado: 80% más rápido en la detección de incidentes.",
+                "Implementé el Design System con design tokens y accesibilidad WCAG AA en 3 productos."
+            ]
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
             role: "Product Designer",
-            location: "Híbrido (Argentina)"
+            location: "Híbrido (Argentina)",
+            description: [
+                "Diseñé una plataforma y 6 aplicaciones de gestión interna y para proveedores en Flutter para iOS y Android en 14 meses.",
+                "Creé un Design System con base compartida y variaciones según la línea de negocio, lo que aceleró el desarrollo.",
+                "Estandaricé patrones de microinteracciones reutilizables en 7 productos."
+            ]
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
             role: "Diseñador UX/UI y Motion Designer",
-            location: "Híbrido (Argentina)"
+            location: "Híbrido (Argentina)",
+            description: [
+                "Extendí el sistema de marca de Iké Asistencia a un producto digital para más de 2 millones de usuarios.",
+                "Diseñé desde cero DemandCloud, un SaaS B2B (onboarding, dashboard, scheduling y reportes).",
+                "Creé ilustraciones para los diferentes productos de la webapp y animaciones para las acciones de usuario."
+            ]
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
             role: "Diseñador UX / UI",
-            location: "Híbrido (Argentina)"
+            location: "Híbrido (Argentina)",
+            description: [
+                "Rediseñé landings con estrategia de contenido y UI. Resultado: +20% en inscripciones."
+            ]
         }
     ],
     education: [
@@ -635,25 +654,44 @@ const DB_EN = {
             company: "DETECTA SECURITY",
             period: "2024 - 2026",
             role: "Product Designer",
-            location: "Remote (Mexico)"
+            location: "Remote (Mexico)",
+            description: [
+                "Led the redesign of Centaurus 2.0 Android App, including offline-first architecture, voice commands, and Lottie micro-interactions. Outcome: 98% logging accuracy and 120 hours saved per month.",
+                "Unified the Monitoring Console integrating telemetry, VoIP, and automated protocols. Outcome: reporting time reduced from 25 to 15 minutes and 100% audit compliance.",
+                "Built the Control Tower that integrates over 300 GPS accounts into a single hub. Outcome: 80% faster incident detection.",
+                "Implemented Design System with design tokens and WCAG AA accessibility across 3 products."
+            ]
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
             role: "Product Designer",
-            location: "Hybrid (Argentina)"
+            location: "Hybrid (Argentina)",
+            description: [
+                "Designed one platform and 6 internal management and supplier applications in Flutter for iOS and Android in 14 months.",
+                "Created a Design System with shared foundations and variations per business line, accelerating development speed.",
+                "Standardized reusable micro-interaction patterns across 7 products."
+            ]
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
             role: "UX/UI & Motion Designer",
-            location: "Hybrid (Argentina)"
+            location: "Hybrid (Argentina)",
+            description: [
+                "Extended Iké Asistencia’s brand system into a digital product for over 2 million users.",
+                "Designed DemandCloud from 0→1, a B2B SaaS (onboarding, dashboard, scheduling, and reports).",
+                "Created illustrations for the different webapp products and animations for user actions."
+            ]
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
             role: "UX / UI Designer",
-            location: "Hybrid (Argentina)"
+            location: "Hybrid (Argentina)",
+            description: [
+                "Redesigned landing pages with content and UI strategy. Outcome: +20% increase in enrollments."
+            ]
         }
     ],
     education: [
