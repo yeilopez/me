@@ -282,32 +282,26 @@ const DB_ES = {
         {
             company: "DETECTA SECURITY",
             period: "2024 - 2026",
-            role: "Product designer",
+            role: "Product Designer",
             location: "Remoto (México)"
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
-            role: "Product designer",
+            role: "Product Designer",
             location: "Híbrido (Argentina)"
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
-            role: "UX UI Motion",
+            role: "Diseñador UX/UI y Motion Designer",
             location: "Híbrido (Argentina)"
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "Contenido web / Ui design",
-            location: "Presencial (Argentina)"
-        },
-        {
-            company: "POTENCIAL DIGITAL",
-            period: "2015 - 2017",
-            role: "Diseñador web junior",
-            location: "Presencial (Argentina)"
+            role: "Diseñador UX / UI",
+            location: "Híbrido (Argentina)"
         }
     ],
     education: [
@@ -640,32 +634,26 @@ const DB_EN = {
         {
             company: "DETECTA SECURITY",
             period: "2024 - 2026",
-            role: "Product designer",
+            role: "Product Designer",
             location: "Remote (Mexico)"
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
-            role: "Product designer",
+            role: "Product Designer",
             location: "Hybrid (Argentina)"
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
-            role: "UX UI Motion",
+            role: "UX/UI & Motion Designer",
             location: "Hybrid (Argentina)"
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "Web Content / Ui design",
-            location: "On-site (Argentina)"
-        },
-        {
-            company: "POTENCIAL DIGITAL",
-            period: "2015 - 2017",
-            role: "Junior Web Designer",
-            location: "On-site (Argentina)"
+            role: "UX / UI Designer",
+            location: "Hybrid (Argentina)"
         }
     ],
     education: [

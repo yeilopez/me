@@ -36,12 +36,18 @@ const TRANSLATIONS = {
         ],
         pills: [
             "Estrategia de Producto",
-            "AI-assisted workflows",
+            "UX/UI",
+            "User Research",
             "Métricas y Negocio",
-            "Vibe Coding",
             "Design Systems",
-            "Lottifiles y Animaciones",
-            "Experto en Figma"
+            "Diseño Visual",
+            "WCAG AA",
+            "Motion Design",
+            "Agile/Scrum",
+            "AI-assisted workflows",
+            "Vibe Coding",
+            "Experto en Figma",
+            "Lottie"
         ],
         categories: {
             'product': 'Ux Ui Producto',
@@ -80,12 +86,18 @@ const TRANSLATIONS = {
         ],
         pills: [
             "Product Strategy",
-            "AI-assisted workflows",
+            "UX/UI",
+            "User Research",
             "Metrics & Business",
-            "Vibe Coding",
             "Design Systems",
-            "Lottifiles & Animations",
-            "Figma expert"
+            "Visual Design",
+            "WCAG AA Accessibility",
+            "Motion Design",
+            "Agile/Scrum",
+            "AI-assisted workflows",
+            "Vibe Coding",
+            "Figma Expert",
+            "Lottie"
         ],
         categories: {
             'product': 'UX UI Product',
