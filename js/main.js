@@ -561,6 +561,7 @@ function closeModal(fromRouting = false) {
     document.body.classList.remove('modal-open');
 }
 
+
 // THEME PERSISTENCE & INITIALIZATION
 function initTheme() {
     const storedTheme = localStorage.getItem('theme');
