@@ -73,7 +73,8 @@ const TRANSLATIONS = {
             themeDark: "Ver en modo oscuro",
             toggleDark: "OSC",
             toggleLight: "CLA",
-            eduEnd: "Fin."
+            eduEnd: "Fin.",
+            nextProject: "Siguiente proyecto"
         }
     },
     en: {
@@ -123,7 +124,8 @@ const TRANSLATIONS = {
             themeDark: "View in dark mode",
             toggleDark: "DRK",
             toggleLight: "LIG",
-            eduEnd: "End."
+            eduEnd: "End.",
+            nextProject: "Next project"
         }
     }
 };
@@ -368,6 +370,37 @@ function openProject(id, fromRouting = false) {
                 `;
     }).join('')}
         </div>
+
+        ${(() => {
+            const internalProjects = DB.projects.filter(proj => !proj.externalLink && !proj.isConstruction);
+            const currentIndex = internalProjects.findIndex(proj => proj.id === id);
+            if (currentIndex !== -1 && internalProjects.length > 1) {
+                const nextIndex = (currentIndex + 1) % internalProjects.length;
+                const nextProject = internalProjects[nextIndex];
+                const nextLabel = T.ui.nextProject;
+                return `
+                    <div class="modal-next-project-wrapper">
+                        <hr class="modal-divider">
+                        <div class="modal-next-project-card" onclick="openProject('${nextProject.id}')">
+                            <div class="next-project-content">
+                                <span class="next-project-pre">${nextLabel}</span>
+                                <h3 class="next-project-title">${nextProject.title}</h3>
+                                <p class="next-project-tagline">${nextProject.tagline}</p>
+                            </div>
+                            <div class="next-project-media">
+                                <div class="next-project-image">
+                                    <img src="${nextProject.image}" alt="${nextProject.title}" onerror="this.style.display='none'">
+                                </div>
+                                <div class="next-project-arrow">
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            return '';
+        })()}
     `;
     const modal = document.getElementById('project-modal');
     modal.classList.remove('modal-small');
