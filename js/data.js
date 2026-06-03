@@ -1,17 +1,6 @@
 const DB_ES = {
     projects: [
         {
-            id: "ike",
-            title: "Iké",
-            category: "product",
-            tagline: "Webapp que digitalizó al 100% la contratación de servicios: desde la solicitud hasta la confirmación, eliminando por completo la gestión manual.",
-            tags: ["Digitalización", "Web App", "UX/UI", "Figma"],
-            image: "projects/ike/hero.png",
-            challenge: "Digitalización de servicios mediante una webapp moderna que centraliza y simplifica la experiencia del usuario final.",
-            description: "Diseñé la experiencia UX/UI de <b>Iké</b>: una webapp enfocada en la digitalización de servicios, llevando procesos tradicionales a un entorno digital ágil y accesible.",
-            externalLink: "https://www.behance.net/gallery/157329162/Webapp-Responsive"
-        },
-        {
             id: "centaurus",
             title: "App Centaurus 2.0",
             category: "product",
@@ -91,17 +80,6 @@ const DB_ES = {
                     detail: "Centaurus transformó la ceguera operativa en <b>evidencia real</b>. Al digitalizar el terreno, logramos métricas que impactaron directamente en la rentabilidad del negocio: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Eficiencia Operativa</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>mensuales ahorradas en revisión de chats y transcripción manual.</span></div><div class='kpi-card'><span class='kpi-label'>Precisión de Data</span><span class='kpi-value'>98%</span><span class='kpi-desc'>de efectividad en el registro de sucesos, reduciendo drásticamente el ruido informativo.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfacción (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>de mejora en el sentimiento del custodio gracias al registro sin conexión y la visibilidad de sus evidencias de gastos.</span></div></div><br><br>¿Quieres verla en acción? <a href='https://play.google.com/store/apps/details?id=io.detectasecurity.centaurus&hl=es' target='_blank' class='blue-link'>Descarga la App Centaurus en Google Play ↗</a>.<br>Para entender el ecosistema completo, te invito a revisar el detalle del proyecto de la <a href='#' class='blue-link' onclick='openProject(\"detecta-monitoring-console\"); return false;'>Consola de Monitoreo</a>."
                 }
             ]
-        },
-        {
-            id: "hubbing",
-            title: "Hubbing",
-            category: "product",
-            tagline: "6 apps Flutter (iOS/Android) + plataforma web para gestión de rutas, flota, personal y controles de calidad en un ecosistema centralizado.",
-            tags: ["Sistema de Gestión", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
-            image: "projects/hubbing/hero.png",
-            challenge: "Diseño de una plataforma integral de gestión interna que centraliza operaciones, equipos y flujos de trabajo en una sola interfaz web y móvil.",
-            description: "Desarrollé la experiencia UX/UI de <b>Hubbing Latam</b>: un sistema de gestión interna con plataforma web y apps móviles nativas, enfocado en centralizar procesos operativos y mejorar la eficiencia de los equipos.",
-            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             "id": "detecta-monitoring-console",
@@ -251,6 +229,28 @@ const DB_ES = {
             ]
         },
         {
+            id: "ike",
+            title: "Iké",
+            category: "product",
+            tagline: "Webapp que digitalizó al 100% la contratación de servicios: desde la solicitud hasta la confirmación, eliminando por completo la gestión manual.",
+            tags: ["Digitalización", "Web App", "UX/UI", "Figma"],
+            image: "projects/ike/hero.png",
+            challenge: "Digitalización de servicios mediante una webapp moderna que centraliza y simplifica la experiencia del usuario final.",
+            description: "Diseñé la experiencia UX/UI de <b>Iké</b>: una webapp enfocada en la digitalización de servicios, llevando procesos tradicionales a un entorno digital ágil y accesible.",
+            externalLink: "https://www.behance.net/gallery/157329162/Webapp-Responsive"
+        },
+        {
+            id: "hubbing",
+            title: "Hubbing",
+            category: "product",
+            tagline: "6 apps Flutter (iOS/Android) + plataforma web para gestión de rutas, flota, personal y controles de calidad en un ecosistema centralizado.",
+            tags: ["Sistema de Gestión", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
+            image: "projects/hubbing/hero.png",
+            challenge: "Diseño de una plataforma integral de gestión interna que centraliza operaciones, equipos y flujos de trabajo en una sola interfaz web y móvil.",
+            description: "Desarrollé la experiencia UX/UI de <b>Hubbing Latam</b>: un sistema de gestión interna con plataforma web y apps móviles nativas, enfocado en centralizar procesos operativos y mejorar la eficiencia de los equipos.",
+            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
+        },
+        {
             id: "suitable-1",
             title: "Suitable - Animación de proceso logístico",
             category: "animation",
@@ -372,17 +372,6 @@ const DB_ES = {
 const DB_EN = {
     projects: [
         {
-            id: "ike",
-            title: "Iké",
-            category: "product",
-            tagline: "Webapp that digitized 100% of the service contracting process: from request to confirmation, eliminating all manual management.",
-            tags: ["Digitalization", "Web App", "UX/UI", "Figma"],
-            image: "projects/ike/hero.png",
-            challenge: "Service digitalization through a modern webapp that centralizes and simplifies the end-user experience.",
-            description: "I designed the UX/UI experience for <b>Iké</b>: a webapp focused on service digitalization, bringing traditional processes into an agile and accessible digital environment.",
-            externalLink: "https://www.behance.net/gallery/157329162/Webapp-Responsive"
-        },
-        {
             id: "centaurus",
             title: "Centaurus App 2.0",
             category: "product",
@@ -462,17 +451,6 @@ const DB_EN = {
                     detail: "Centaurus transformed operational blindness into <b>real evidence</b>. By digitizing the field, we achieved metrics that directly impacted business profitability: <div class='kpi-grid'><div class='kpi-card'><span class='kpi-label'>Operational Efficiency</span><span class='kpi-value'>-120h</span><span class='kpi-desc'>saved monthly in chat reviews and manual transcription.</span></div><div class='kpi-card'><span class='kpi-label'>Data Accuracy</span><span class='kpi-value'>98%</span><span class='kpi-desc'>effectiveness in event logging, drastically reducing informational noise.</span></div><div class='kpi-card'><span class='kpi-label'>Satisfaction (NPS)</span><span class='kpi-value'>+45%</span><span class='kpi-desc'>improvement in escort sentiment thanks to offline logging and the visibility of their expense evidence.</span></div></div><br><br>Want to see it in action? <a href='https://play.google.com/store/apps/details?id=io.detectasecurity.centaurus&hl=es' target='_blank' class='blue-link'>Download the Centaurus App on Google Play ↗</a>.<br>To understand the complete ecosystem, I invite you to review the details of the <a href='#' class='blue-link' onclick='openProject(\"detecta-monitoring-console\"); return false;'>Monitoring Console</a> project."
                 }
             ]
-        },
-        {
-            id: "hubbing",
-            title: "Hubbing",
-            category: "product",
-            tagline: "6 Flutter apps (iOS/Android) + web platform for route, fleet, personnel and quality control management in a centralized ecosystem.",
-            tags: ["Management System", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
-            image: "projects/hubbing/hero.png",
-            challenge: "Design of a comprehensive internal management platform that centralizes operations, teams, and workflows in a single web and mobile interface.",
-            description: "I designed the UX/UI experience for <b>Hubbing Latam</b>: an internal management system with a web platform and native mobile apps, focused on centralizing operational processes and improving team efficiency.",
-            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             "id": "detecta-monitoring-console",
@@ -620,6 +598,28 @@ const DB_EN = {
                     detail: "The success of Control Tower lies in its adaptability. We worked intensively with the <b>technical team</b> to prepare an ecosystem capable of automating critical flows through dynamic business rules. <ul><li><b>Operational Customization:</b> Each client can define which events are critical to their operation, transforming a monitoring tool into an intelligent automation engine.</li><li><b>Strategic Design:</b> This collaboration ensures that the product not only solves the current problem, but is ready to scale toward autonomous logistics security management.</li></ul>"
                 }
             ]
+        },
+        {
+            id: "ike",
+            title: "Iké",
+            category: "product",
+            tagline: "Webapp that digitized 100% of the service contracting process: from request to confirmation, eliminating all manual management.",
+            tags: ["Digitalization", "Web App", "UX/UI", "Figma"],
+            image: "projects/ike/hero.png",
+            challenge: "Service digitalization through a modern webapp that centralizes and simplifies the end-user experience.",
+            description: "I designed the UX/UI experience for <b>Iké</b>: a webapp focused on service digitalization, bringing traditional processes into an agile and accessible digital environment.",
+            externalLink: "https://www.behance.net/gallery/157329162/Webapp-Responsive"
+        },
+        {
+            id: "hubbing",
+            title: "Hubbing",
+            category: "product",
+            tagline: "6 Flutter apps (iOS/Android) + web platform for route, fleet, personnel and quality control management in a centralized ecosystem.",
+            tags: ["Management System", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
+            image: "projects/hubbing/hero.png",
+            challenge: "Design of a comprehensive internal management platform that centralizes operations, teams, and workflows in a single web and mobile interface.",
+            description: "I designed the UX/UI experience for <b>Hubbing Latam</b>: an internal management system with a web platform and native mobile apps, focused on centralizing operational processes and improving team efficiency.",
+            externalLink: "https://www.behance.net/gallery/198662859/Hubbing-Latam-Web-Platform-and-Mobile-Apps"
         },
         {
             id: "suitable-1",
