@@ -555,7 +555,8 @@ body.modal-open {
     grid-column: 10 / 13;
     grid-row: 1 / 3;
     overflow-y: auto;
-    padding-right: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
     display: flex;
     flex-direction: column;
 }
@@ -794,6 +795,16 @@ body.modal-open {
 .project-section-title:first-child,
 .project-section-title.first-visible {
     margin-top: 0;
+}
+
+/* ===== Sidebar Main Title ===== */
+.sidebar-main-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 /* ===== Filter Tabs ===== */
@@ -1632,9 +1643,11 @@ body.modal-open {
     color: var(--gray);
     line-height: 1.4;
 }
+
 .timeline-card ul li {
     margin-bottom: 6px;
 }
+
 .timeline-card ul li:last-child {
     margin-bottom: 0;
 }
