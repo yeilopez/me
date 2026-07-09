@@ -82,10 +82,8 @@
 
 .cursor {
     display: inline-block;
-    width: 2px;
-    background-color: var(--black);
     animation: blink 1s step-end infinite;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 
 @keyframes blink {
@@ -793,8 +791,75 @@ body.modal-open {
     width: 100%;
 }
 
-.project-section-title:first-child {
+.project-section-title:first-child,
+.project-section-title.first-visible {
     margin-top: 0;
+}
+
+/* ===== Filter Tabs ===== */
+.project-filter-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-tab {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray);
+    background: transparent;
+    border: 1.5px solid var(--border-row);
+    border-radius: 100px;
+    cursor: pointer;
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.2s var(--expo-out);
+}
+
+.filter-tab:hover {
+    color: var(--black);
+    border-color: var(--black);
+    transform: translateY(-1px);
+}
+
+.filter-tab.active {
+    color: var(--white, #fff);
+    background: var(--black);
+    border-color: var(--black);
+}
+
+/* Dark mode */
+.dark .filter-tab {
+    border-color: var(--border-row);
+    color: var(--muted-text);
+}
+
+.dark .filter-tab:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.dark .filter-tab.active {
+    color: #111111;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+/* Hidden state for filtering */
+.project-row.hidden {
+    display: none;
+}
+
+.project-section-title.hidden {
+    display: none;
 }
 
 /* Estilo del Modal (Referencia Desktop modal.jpg) */
@@ -918,16 +983,16 @@ body.modal-open {
     top: 0;
     left: 0;
     right: 0;
-    height: 40px;
+    height: auto;
     background: var(--white);
     backdrop-filter: none;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9;
-    margin: 0 -60px -40px -60px;
+    margin: 0 -60px -32px -60px;
     /* Negativo para no empujar contenido */
-    padding: 0 40px;
+    padding: 8px 40px;
     border-bottom: none;
     font-size: 11px;
     font-weight: 700;
@@ -1422,8 +1487,8 @@ body.modal-open {
     }
 
     .modal-section-banner {
-        margin: 0 -24px -40px -24px;
-        padding: 0 24px;
+        margin: 0 -24px -32px -24px;
+        padding: 8px 24px;
     }
 
     .modal {

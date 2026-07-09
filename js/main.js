@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initTypewriter();
     initPills();
     renderProjects();
+    initProjectFilter();
+    // Aplicar filtro inicial y expandir primer proyecto
+    filterProjects('product');
+    openFirstVisibleProject();
     handleRouting(); // Manejar carga inicial con hash
 });
 
@@ -219,7 +223,7 @@ function renderProjects() {
         }
 
         const div = document.createElement('div');
-        div.className = 'project-row' + (p.category === 'product' && index === 0 ? ' open' : '');
+        div.className = 'project-row';
 
         let linkHTML = `<button class="accordion-btn accordion-btn-secondary" onclick="openProject('${p.id}'); event.stopPropagation();">${T.ui.viewProject}</button>`;
 
@@ -253,7 +257,79 @@ function renderProjects() {
             if (!isOpen) { div.classList.add('open'); }
         });
 
+        div.dataset.category = p.category; // Store category for filtering
         list.appendChild(div);
+    });
+}
+
+// PROJECT FILTER TABS
+function initProjectFilter() {
+    const tabs = document.querySelectorAll('#project-filter-tabs .filter-tab');
+    if (!tabs.length) return;
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Update active tab
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+
+            const filter = tab.dataset.filter;
+            filterProjects(filter);
+            openFirstVisibleProject();
+        });
+    });
+}
+
+function openFirstVisibleProject() {
+    const list = document.getElementById('project-list');
+    if (!list) return;
+    const rows = list.querySelectorAll('.project-row:not(.hidden)');
+    // Close all first
+    list.querySelectorAll('.project-row').forEach(r => r.classList.remove('open'));
+    // Open the first visible one
+    if (rows.length > 0) rows[0].classList.add('open');
+}
+
+function filterProjects(filter) {
+    const list = document.getElementById('project-list');
+    if (!list) return;
+
+    const rows = list.querySelectorAll('.project-row');
+    const sectionTitles = list.querySelectorAll('.project-section-title');
+
+    rows.forEach(row => {
+        if (filter === 'all' || row.dataset.category === filter) {
+            row.classList.remove('hidden');
+        } else {
+            row.classList.add('hidden');
+            row.classList.remove('open'); // Collapse hidden items
+        }
+    });
+
+    // Show/hide section titles based on whether any visible rows follow them
+    let firstVisibleTitle = true;
+    sectionTitles.forEach(title => {
+        let hasVisibleSibling = false;
+        let next = title.nextElementSibling;
+        while (next && !next.classList.contains('project-section-title')) {
+            if (next.classList.contains('project-row') && !next.classList.contains('hidden')) {
+                hasVisibleSibling = true;
+                break;
+            }
+            next = next.nextElementSibling;
+        }
+        title.classList.toggle('hidden', !hasVisibleSibling);
+
+        // Mark the first visible title to reset its top margin
+        title.classList.remove('first-visible');
+        if (hasVisibleSibling && firstVisibleTitle) {
+            title.classList.add('first-visible');
+            firstVisibleTitle = false;
+        }
     });
 }
 
