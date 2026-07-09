@@ -245,8 +245,11 @@ function renderProjects() {
             </div>
         `;
 
-        // Accordion click specific to header area
-        div.querySelector('.project-header').addEventListener('click', () => {
+        // Accordion click on the whole row (except internal interactive elements)
+        div.addEventListener('click', (e) => {
+            // Ignore clicks on interactive elements inside the content area
+            if (e.target.closest('.accordion-content')) return;
+
             const allRows = list.querySelectorAll('.project-row');
             const isOpen = div.classList.contains('open');
 
