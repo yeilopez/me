@@ -1218,7 +1218,8 @@ body.modal-open {
     cursor: pointer;
     color: var(--black);
     transition: all 0.2s ease;
-    flex-shrink: 0; /* Nunca se encoge, siempre visible */
+    flex-shrink: 0;
+    /* Nunca se encoge, siempre visible */
 }
 
 .close-x:hover {
@@ -1691,7 +1692,7 @@ body.modal-open {
     }
 
     .timeline-container {
-        padding: 0 8px;
+        padding: 0 16px;
     }
 }
 
