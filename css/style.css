@@ -1692,7 +1692,7 @@ body.modal-open {
     }
 
     .timeline-container {
-        padding: 0 16px;
+        padding: 0 16px !important;
     }
 }
 
