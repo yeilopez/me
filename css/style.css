@@ -991,7 +991,7 @@ body.modal-open {
     border-radius: 40px;
     padding: 0;
     position: relative;
-    max-height: 90vh;
+    max-height: 90dvh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1648,7 +1648,7 @@ body.modal-open {
         margin: 0 auto;
         border-radius: 20px 20px 0 0;
         padding: 0;
-        max-height: 92vh;
+        max-height: 92dvh;
     }
 
     #modal-body {
@@ -1687,8 +1687,8 @@ body.modal-open {
 
     .modal {
         align-items: flex-end;
-        /* Espacio para la barra de URL de Chrome mobile */
-        padding-top: max(8px, env(safe-area-inset-top));
+        /* Espacio para la barra de URL de Chrome mobile (~56px) */
+        padding-top: max(60px, env(safe-area-inset-top));
     }
 
     .timeline-container {
