@@ -103,14 +103,19 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--black);
     padding: 20px;
-    height: 100vh;
-    overflow: hidden;
     transition: background 0.4s ease, color 0.4s ease;
     overflow-x: hidden;
 }
 
-/* Altura mínima en desktop: si el viewport es muy bajo, se habilita el scroll.
-   Se excluye mobile (max-width: 768px) para no interferir con sus propios estilos. */
+/* En desktop, el body ocupa exactamente el viewport y no hace scroll vertical */
+@media (min-width: 769px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+/* En desktop con viewport muy bajo, se habilita el scroll vertical */
 @media (min-width: 769px) and (max-height: 680px) {
     body {
         height: auto;
