@@ -1687,6 +1687,10 @@ body.modal-open {
     .modal {
         align-items: flex-end;
     }
+
+    .timeline-container {
+        padding: 0 8px;
+    }
 }
 
 
