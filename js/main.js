@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     filterProjects('product');
     openFirstVisibleProject();
     handleRouting(); // Manejar carga inicial con hash
+
+    // Cerrar modal al hacer clic fuera del contenido (en el overlay)
+    const modal = document.getElementById('project-modal');
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
 });
 
 window.addEventListener('popstate', handleRouting);
