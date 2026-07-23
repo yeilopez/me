@@ -283,22 +283,22 @@ const DB_ES = {
             company: "DETECTA SECURITY",
             period: "2024 - 2026",
             role: "Product Designer",
-            location: "Remoto (México)",
+            location: "Remoto (Para México)",
             description: [
-                "Rediseñé la App Centaurus 2.0 para Android, incluyendo arquitectura offline-first, comandos de voz y microinteracciones con Lottie. Resultado: 98% de efectividad en registros y 120 horas mensuales ahorradas.",
-                "Unifiqué la Consola de Monitoreo integrando telemetría, VoIP y protocolos automatizados. Resultado: tiempo de reporte reducido de 25 a 15 minutos y 100% de cumplimiento auditable.",
-                "Desarrollé la Torre de Control que integra +300 cuentas GPS en un solo lugar. Resultado: 80% más rápido en la detección de incidentes.",
-                "Implementé el Design System con design tokens y accesibilidad WCAG AA en 3 productos."
+                "Rediseñé la App Centaurus 2.0 para Android, incluyendo arquitectura offline-first, comandos de voz y microinteracciones con Lottie. Resultado: 98% de efectividad en registros y 120 horas mensuales ahorradas. El rediseño partió de detectar 40% de registros inconsistentes por falta de conexión.",
+                "Unifiqué la Consola de Monitoreo integrando telemetría, VoIP y protocolos automatizados trabajando junto a los desarrolladores y el área de operaciones. Resultado: tiempo de reporte reducido de 25 a 15 minutos y 100% de cumplimiento auditable.",
+                "Desarrollé la Torre de Control que integra +300 cuentas GPS en un solo lugar. Resultado: Detección de incidentes 80% más rápido mejorando el tiempo de respuesta.",
+                "Implementé el Design System con design tokens y accesibilidad WCAG AA en 3 productos, mejorando el contraste y jerarquía visual en los flujos críticos de monitoreo para así evitar errores involuntarios."
             ]
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
             role: "Product Designer",
-            location: "Híbrido (Argentina)",
+            location: "Híbrido (En Argentina)",
             description: [
                 "Diseñé una plataforma y 6 aplicaciones de gestión interna y para proveedores en Flutter para iOS y Android en 14 meses.",
-                "Creé un Design System con base compartida y variaciones según la línea de negocio, lo que aceleró el desarrollo.",
+                "Creé un Design System con base compartida y variaciones según la línea de negocio, lo que aceleró el desarrollo con componentes y estilos compartidos.",
                 "Estandaricé patrones de microinteracciones reutilizables en 7 productos."
             ]
         },
@@ -306,10 +306,10 @@ const DB_ES = {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
             role: "Diseñador UX/UI y Motion Designer",
-            location: "Híbrido (Argentina)",
+            location: "Híbrido (En Argentina)",
             description: [
                 "Extendí el sistema de marca de Iké Asistencia a un producto digital para más de 2 millones de usuarios.",
-                "Diseñé desde cero DemandCloud, un SaaS B2B (onboarding, dashboard, scheduling y reportes).",
+                "Diseñé desde cero DemandCloud, un SaaS B2B (onboarding, dashboard, scheduling y reportes) que permitía optimizar costos en servicios de cloud.",
                 "Creé ilustraciones para los diferentes productos de la webapp y animaciones para las acciones de usuario."
             ]
         },
@@ -317,9 +317,9 @@ const DB_ES = {
             company: "EDUCAEDU",
             period: "2017 - 2021",
             role: "Diseñador UX / UI",
-            location: "Híbrido (Argentina)",
+            location: "Híbrido (En Argentina)",
             description: [
-                "Rediseñé landings con estrategia de contenido y UI. Resultado: +20% en inscripciones."
+                "Rediseñé landings con estrategia de contenido y UI. Resultado: +20% en inscripciones tras identificar que en promedio el 60% de las visitas abandonaba antes de completar el formulario de inscripción."
             ]
         }
     ],
@@ -654,33 +654,33 @@ const DB_EN = {
             company: "DETECTA SECURITY",
             period: "2024 - 2026",
             role: "Product Designer",
-            location: "Remote (Mexico)",
+            location: "Remote (For Mexico)",
             description: [
-                "Led the redesign of Centaurus 2.0 Android App, including offline-first architecture, voice commands, and Lottie micro-interactions. Outcome: 98% logging accuracy and 120 hours saved per month.",
-                "Unified the Monitoring Console integrating telemetry, VoIP, and automated protocols. Outcome: reporting time reduced from 25 to 15 minutes and 100% audit compliance.",
-                "Built the Control Tower that integrates over 300 GPS accounts into a single hub. Outcome: 80% faster incident detection.",
-                "Implemented Design System with design tokens and WCAG AA accessibility across 3 products."
+                "Led the redesign of Centaurus 2.0 Android App, including offline-first architecture, voice commands, and Lottie micro-interactions. Outcome: 98% logging accuracy and 120 hours saved per month. This redesign started from identifying that 40% of logs were inconsistent due to connectivity issues.",
+                "Unified the Monitoring Console integrating telemetry, VoIP, and automated protocols working closely with the development team and the operations area. Outcome: reporting time reduced from 25 to 15 minutes and 100% audit compliance.",
+                "I developed the Control Tower, integrating 300+ GPS accounts into a single hub. Outcome: 80% faster incident detection, improving response time.",
+                "Implemented Design System with design tokens and WCAG AA accessibility across 3 products, improving contrast and visual hierarchy in critical monitoring flows to prevent unintentional errors."
             ]
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
             role: "Product Designer",
-            location: "Hybrid (Argentina)",
+            location: "Hybrid (In Argentina)",
             description: [
-                "Designed one platform and 6 internal management and supplier applications in Flutter for iOS and Android in 14 months.",
-                "Created a Design System with shared foundations and variations per business line, accelerating development speed.",
-                "Standardized reusable micro-interaction patterns across 7 products."
+                "I designed one platform and 6 internal management and supplier applications in Flutter for iOS and Android in 14 months.",
+                "I created a Design System with shared foundations and business-line variations, accelerating development through shared components and styles.",
+                "I standardized reusable micro-interaction patterns across 7 products."
             ]
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
             role: "UX/UI & Motion Designer",
-            location: "Hybrid (Argentina)",
+            location: "Hybrid (In Argentina)",
             description: [
                 "Extended Iké Asistencia’s brand system into a digital product for over 2 million users.",
-                "Designed DemandCloud from 0→1, a B2B SaaS (onboarding, dashboard, scheduling, and reports).",
+                "Designed DemandCloud from 0→1, a B2B SaaS (onboarding, dashboard, scheduling, and reports) that helped optimize cloud service costs.",
                 "Created illustrations for the different webapp products and animations for user actions."
             ]
         },
@@ -688,9 +688,9 @@ const DB_EN = {
             company: "EDUCAEDU",
             period: "2017 - 2021",
             role: "UX / UI Designer",
-            location: "Hybrid (Argentina)",
+            location: "Hybrid (In Argentina)",
             description: [
-                "Redesigned landing pages with content and UI strategy. Outcome: +20% increase in enrollments."
+                "Redesigned landing pages with content and UI strategy. Outcome: +20% increase in enrollments, after identifying that on average 60% of visitors dropped off before completing the enrollment form."
             ]
         }
     ],
