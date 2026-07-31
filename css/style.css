@@ -253,6 +253,25 @@ body.modal-open {
     flex-direction: column;
 }
 
+/* Monitores anchos: el wrapper crece para usar más espacio horizontal */
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1420px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .wrapper {
+        max-width: 1560px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .wrapper {
+        max-width: 1740px;
+    }
+}
+
 .header-nav {
     z-index: 100 !important;
     /* Asegura que los dropdowns floten sobre el grid */
