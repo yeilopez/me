@@ -133,6 +133,101 @@ body {
     }
 }
 
+/* En monitores grandes (alto ≥ 980px): crece un poco más.
+   Usa min-width: 1025px para NO afectar tablets (que ya tienen su propio layout). */
+@media (min-width: 1025px) and (min-height: 980px) {
+    .header-nav {
+        margin-bottom: 24px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .icon-blue,
+    .icon-dark {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+    .typewriter-container {
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    .statement p {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 40px;
+    }
+
+    .hero {
+        padding: 40px 48px;
+    }
+
+    .sidebar-main-title {
+        font-size: 28px;
+        margin: 40px 28px 14px 28px;
+    }
+
+    .project-filter-tabs {
+        margin: 0 28px 24px 28px;
+    }
+
+    #project-list {
+        padding: 0 28px 40px 28px;
+    }
+
+    .project-row {
+        padding: 28px 0;
+    }
+
+    .contact-sec .big-link {
+        font-size: 28px;
+    }
+
+    .footer-card {
+        min-height: 320px;
+    }
+
+    /* Limitar el crecimiento del contenedor de la foto:
+       el grid deja de crecer en ~860px de alto para que las cards
+       no se estiren con espacio vacío en monitores muy altos */
+    .grid-container {
+        max-height: 860px;
+    }
+}
+
+/* En monitores muy altos (alto ≥ 1150px): escala adicional + más espacio */
+@media (min-width: 1025px) and (min-height: 1150px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .typewriter-container {
+        font-size: 21px;
+    }
+
+    .statement p {
+        font-size: 21px;
+    }
+
+    .sidebar-main-title {
+        font-size: 30px;
+    }
+
+    .contact-sec .big-link {
+        font-size: 30px;
+    }
+
+    /* Permite un poco más de crecimiento en pantallas realmente grandes */
+    .grid-container {
+        max-height: 960px;
+    }
+}
+
 /* Animaciones Globales */
 @keyframes revealUp {
     from {
