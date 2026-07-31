@@ -1,5 +1,5 @@
 :root {
-    --bg: #F2F2F4;
+    --bg: linear-gradient(to top, rgb(206, 252, 241) 11.76%, rgb(173, 216, 255));
     --black: #111111;
     --gray: #4A4A4A;
     --white: #FFFFFF;
@@ -1640,7 +1640,7 @@ body.modal-open {
 }
 
 .dropdown-content a:hover {
-    background: #f5f5f7;
+    background: var(--pill-bg);
 }
 
 .dropdown-content .material-symbols-outlined {
