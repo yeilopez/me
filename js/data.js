@@ -326,43 +326,43 @@ const DB_ES = {
     education: [
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
-            year: "Fin. 2023",
+            year: "2023 - 2023",
             degree: "Posgrado en Gestión de Proyectos",
             type: "superior"
         },
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
-            year: "Fin. 2019",
+            year: "2019 - 2019",
             degree: "Diplomatura, UX y Accesibilidad",
             type: "superior"
         },
         {
             institution: "UNIVERSIDAD DE BUENOS AIRES (UBA)",
-            year: "Fin. 2018",
+            year: "2012 - 2018",
             degree: "Carrera de Diseño Gráfico",
             type: "superior"
         },
         {
             institution: "NELSON RODRÍGUEZ-PEÑA",
-            year: "Fin. 2024",
+            year: "2026 - 2026",
             degree: "IA para Diseñadores",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "Fin. 2024",
+            year: "2024 - 2024",
             degree: "Métricas y Diseño",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "Fin. 2022",
+            year: "2022 - 2022",
             degree: "Product Designer",
             type: "curso"
         },
         {
             institution: "CENTRO UNIVERSITARIO DE IDIOMAS (CUI)",
-            year: "Fin. 2022",
+            year: "2022 - 2022",
             degree: "Inglés",
             type: "curso"
         }
@@ -697,43 +697,43 @@ const DB_EN = {
     education: [
         {
             institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
-            year: "End. 2023",
+            year: "2023 - 2023",
             degree: "Postgraduate in Project Management",
             type: "superior"
         },
         {
             institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
-            year: "End. 2019",
+            year: "2019 - 2019",
             degree: "Diploma, UX and Accessibility",
             type: "superior"
         },
         {
             institution: "UNIVERSITY OF BUENOS AIRES (UBA)",
-            year: "End. 2018",
+            year: "2012 - 2018",
             degree: "Bachelor of Graphic Design",
             type: "superior"
         },
         {
             institution: "NELSON RODRÍGUEZ-PEÑA",
-            year: "End. 2024",
+            year: "2026 - 2026",
             degree: "AI for Designers",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "End. 2024",
+            year: "2024 - 2024",
             degree: "Metrics & Design",
             type: "curso"
         },
         {
             institution: "SOL MESZ",
-            year: "End. 2022",
+            year: "2022 - 2022",
             degree: "Product Designer",
             type: "curso"
         },
         {
             institution: "LANGUAGES UNIVERSITY CENTER (CUI)",
-            year: "End. 2022",
+            year: "2022 - 2022",
             degree: "English",
             type: "curso"
         }
