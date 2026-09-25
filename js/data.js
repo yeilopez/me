@@ -5,6 +5,10 @@ const DB_ES = {
             title: "App Centaurus 2.0",
             category: "product",
             tagline: "App Android para custodios con soporte offline, reportes automatizados y microinteracciones Lottie. −120h/mes en revisión manual y 98% de precisión en datos.",
+            metrics: [
+                { value: "−120h", label: "rev. manual / mes" },
+                { value: "98%", label: "precisión de datos" }
+            ],
             tags: ["Logística de Seguridad", "Eficiencia Operativa", "Animaciones", "App para celulares", "Figma"],
             image: "projects/app-centaurus/hero.png",
             challenge: "La falta de visibilidad en terreno de las custodias físicas de camiones que impedía conocer el estado real de los servicios, limitando la respuesta ante <b>sucesos en ruta</b> y generando una ceguera informativa que impactaba directamente en la facturación y seguridad.",
@@ -86,6 +90,10 @@ const DB_ES = {
             "title": "Consola de Monitoreo",
             "category": "product",
             "tagline": "De WhatsApp/Excel a una plataforma unificada con SLA 100% auditable. Tiempo de reporte reducido de 25 a 15 minutos en promedio.",
+            "metrics": [
+                { "value": "15 min", "label": "reporte promedio" },
+                { "value": "100%", "label": "SLA auditable" }
+            ],
             "tags": ["Control Tower", "SLA Strategy", "Product Strategy", "Crisis Management"],
             "image": "projects/monitoring/hero.png",
             "challenge": "Garantizar el cumplimiento del compromiso de reporte cada 25 minutos y eliminar la brecha de información que permitía que los clientes detectaran incidentes antes que el equipo interno.",
@@ -162,6 +170,10 @@ const DB_ES = {
             title: "Torre de control",
             category: "product",
             tagline: "Plataforma que centraliza la operación de los clientes independientemente de sus proveedores GPS, con +300 cuentas unificadas, alertas sonoras y gestión por excepción.",
+            metrics: [
+                { value: "+300", label: "cuentas unificadas" },
+                { value: "100%", label: "centralización" }
+            ],
             isConstruction: false,
             image: "projects/control-tower/hero.png",
             tags: ["Logística de Seguridad", "Eficiencia Operativa", "SASS", "Figma"],
@@ -233,6 +245,9 @@ const DB_ES = {
             title: "Iké",
             category: "product",
             tagline: "Webapp que digitalizó al 100% la contratación de servicios: desde la solicitud hasta la confirmación, eliminando por completo la gestión manual.",
+            metrics: [
+                { value: "100%", label: "proceso digitalizado" }
+            ],
             tags: ["Digitalización", "Web App", "UX/UI", "Figma"],
             image: "projects/ike/hero.png",
             challenge: "Digitalización de servicios mediante una webapp moderna que centraliza y simplifica la experiencia del usuario final.",
@@ -244,6 +259,9 @@ const DB_ES = {
             title: "Hubbing",
             category: "product",
             tagline: "6 apps Flutter (iOS/Android) + plataforma web para gestión de rutas, flota, personal y controles de calidad en un ecosistema centralizado.",
+            metrics: [
+                { value: "6+1", label: "apps + plataforma" }
+            ],
             tags: ["Sistema de Gestión", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
             image: "projects/hubbing/hero.png",
             challenge: "Diseño de una plataforma integral de gestión interna que centraliza operaciones, equipos y flujos de trabajo en una sola interfaz web y móvil.",
@@ -255,7 +273,7 @@ const DB_ES = {
             title: "Suitable - Animación de proceso logístico",
             category: "animation",
             tagline: "Animación del hero para Suitable: startup que centralizaba pedidos de restaurantes desde redes y WhatsApp para su impresión y despacho automático.",
-            tags: ["Figma"],
+            tags: ["Motion Design", "Lottie", "After Effects"],
             image: "projects/suitable/hero.png",
             externalLink: "https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
         },
@@ -264,7 +282,7 @@ const DB_ES = {
             title: "Suitable - 4 animaciones",
             category: "animation",
             tagline: "4 animaciones Lottie para las secciones clave: bot multicanal, métricas de negocio, gestión de pedidos e impresión, y fidelización de clientes.",
-            tags: ["Figma"],
+            tags: ["Motion Design", "Lottie", "After Effects"],
             image: "projects/suitable/4-a.png",
             externalLink: "https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
         },
@@ -273,7 +291,7 @@ const DB_ES = {
             title: "Identidad visual - Teatro Argentino de la plata",
             category: "animation",
             tagline: "Identidad visual completa para el Teatro Argentino de La Plata, uno de los teatros líricos más importantes de Latinoamérica.",
-            tags: ["Figma"],
+            tags: ["Branding", "Identidad Visual"],
             image: "projects/ta/hero.png",
             externalLink: "https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
         }
@@ -364,6 +382,10 @@ const DB_EN = {
             title: "Centaurus App 2.0",
             category: "product",
             tagline: "Android app for cargo escorts with offline support, automated reporting and Lottie microinteractions. −120h/month in manual review and 98% data accuracy.",
+            metrics: [
+                { value: "−120h", label: "manual review / mo" },
+                { value: "98%", label: "data accuracy" }
+            ],
             tags: ["Security Logistics", "Operational Efficiency", "Animations", "Mobile App", "Figma"],
             image: "projects/app-centaurus/hero.png",
             challenge: "The lack of field visibility in physical truck escorts prevented knowing the real status of services, limiting response to <b>route events</b> and generating information blindness that directly impacted billing and security.",
@@ -445,6 +467,10 @@ const DB_EN = {
             "title": "Monitoring Console",
             "category": "product",
             "tagline": "From WhatsApp/Excel to a unified platform with 100% auditable SLA. Average reporting time reduced from 25 to 15 minutes.",
+            "metrics": [
+                { "value": "15 min", "label": "avg. report time" },
+                { "value": "100%", "label": "auditable SLA" }
+            ],
             "tags": ["Control Tower", "SLA Strategy", "Product Strategy", "Crisis Management"],
             "image": "projects/monitoring/hero.png",
             "challenge": "Ensuring compliance with the 25-minute reporting commitment and eliminating the information gap that allowed clients to detect incidents before the internal team.",
@@ -521,6 +547,10 @@ const DB_EN = {
             title: "Control Tower",
             category: "product",
             tagline: "Platform that centralizes client operations regardless of their GPS providers, with 300+ unified accounts, sound alerts and exception-based management.",
+            metrics: [
+                { value: "+300", label: "unified accounts" },
+                { value: "100%", label: "centralization" }
+            ],
             isConstruction: false,
             image: "projects/control-tower/hero.png",
             tags: ["Security Logistics", "Operational Efficiency", "SASS", "Figma"],
@@ -592,6 +622,9 @@ const DB_EN = {
             title: "Iké",
             category: "product",
             tagline: "Webapp that digitized 100% of the service contracting process: from request to confirmation, eliminating all manual management.",
+            metrics: [
+                { value: "100%", label: "digitized process" }
+            ],
             tags: ["Digitalization", "Web App", "UX/UI", "Figma"],
             image: "projects/ike/hero.png",
             challenge: "Service digitalization through a modern webapp that centralizes and simplifies the end-user experience.",
@@ -603,6 +636,9 @@ const DB_EN = {
             title: "Hubbing",
             category: "product",
             tagline: "6 Flutter apps (iOS/Android) + web platform for route, fleet, personnel and quality control management in a centralized ecosystem.",
+            metrics: [
+                { value: "6+1", label: "apps + platform" }
+            ],
             tags: ["Management System", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
             image: "projects/hubbing/hero.png",
             challenge: "Design of a comprehensive internal management platform that centralizes operations, teams, and workflows in a single web and mobile interface.",
@@ -614,7 +650,7 @@ const DB_EN = {
             title: "Suitable - Logistic process animation",
             category: "animation",
             tagline: "Hero animation for Suitable, a startup centralizing restaurant orders from social media and WhatsApp for automatic printing and dispatch.",
-            tags: ["Figma"],
+            tags: ["Motion Design", "Lottie", "After Effects"],
             image: "projects/suitable/hero.png",
             externalLink: "https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process"
         },
@@ -623,7 +659,7 @@ const DB_EN = {
             title: "Suitable - 4 animations",
             category: "animation",
             tagline: "4 Lottie animations for key sections: multichannel bot, business metrics, order management & printing, and customer loyalty cards.",
-            tags: ["Figma"],
+            tags: ["Motion Design", "Lottie", "After Effects"],
             image: "projects/suitable/4-a.png",
             externalLink: "https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations"
         },
@@ -632,7 +668,7 @@ const DB_EN = {
             title: "Visual Identity - Teatro Argentino de la plata",
             category: "animation",
             tagline: "Complete visual identity for Teatro Argentino de La Plata, one of the most important lyric theaters in Latin America.",
-            tags: ["Figma"],
+            tags: ["Branding", "Visual Identity"],
             image: "projects/ta/hero.png",
             externalLink: "https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata"
         }
