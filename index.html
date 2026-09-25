@@ -4,19 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yeison Bedoya Lopez — Senior Product Designer UX UI en Manizales, Colombia. Producto, design systems, IA y motion.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yeison Bedoya Lopez | Senior Product Designer - UX UI">
+  <meta property="og:description" content="Diseño productos digitales con impacto en el negocio y las personas. Producto, UX/UI, design systems e IA.">
+  <meta property="og:image" content="https://yeilopez.github.io/me/assets/avatar.png">
+  <meta property="og:url" content="https://yeilopez.github.io/me/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yeison Bedoya Lopez | Senior Product Designer">
+  <meta name="twitter:description" content="Product Designer UX UI — Manizales, Colombia.">
+  <meta name="twitter:image" content="https://yeilopez.github.io/me/assets/avatar.png">
   <title>Yeison Bedoya Lopez | Senior Product Designer - UX UI</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0" />
-  <!-- Script de Precarga de Tema para evitar parpadeos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#1A1A1A">
   <script>
     (function () {
       const storedTheme = localStorage.getItem('theme');
       if (storedTheme === 'dark') {
         document.documentElement.classList.add('dark');
+      } else if (storedTheme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
       }
 
-      // Detección de idioma y redirección
       const storedLang = localStorage.getItem('language');
       const path = window.location.pathname;
       const isEnPage = path.includes('en.html');
@@ -32,7 +48,8 @@
       }
     })();
   </script>
-  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/style.css?v=10.0">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script type="application/ld+json">
     {
@@ -42,7 +59,7 @@
       "jobTitle": "Senior Product Designer",
       "url": "https://yeilopez.github.io/me/"
     }
-    </script>
+  </script>
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -53,115 +70,262 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="card header-nav">
-      <div class="brand">
-        <span class="name">YEISON BEDOYA LOPEZ</span>
-        <span class="dot">•</span>
-        <span class="role">SENIOR PRODUCT DESIGNER - UX UI</span>
-        <div class="loc">
-          <span class="material-symbols-outlined">globe_location_pin</span>
-          <span>MANIZALES • COLOMBIA</span>
+  <div class="site">
+    <!-- Compact sticky header (appears on scroll) -->
+    <div class="header-compact" id="header-compact" aria-hidden="true">
+      <div class="header-compact-inner">
+        <div class="info-s">
+          <img src="assets/avatar.png" class="img-profile-s" alt="Yeison Bedoya Lopez" width="48" height="48">
+          <div class="group-info-s">
+            <div class="name-s">YEISON BEDOYA LOPEZ</div>
+            <div class="role-s">SENIOR PRODUCT DESIGNER - UX UI</div>
+          </div>
+        </div>
+        <div class="social social-s">
+          <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" rel="noopener" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <span class="social-badge">in</span>
+          </a>
+          <a href="https://www.behance.net/yeilpz" target="_blank" rel="noopener" aria-label="Behance" data-tooltip="Behance">
+            <span class="social-badge">Be</span>
+          </a>
+          <a href="mailto:yeilopez.design@gmail.com?subject=Contacto%20desde%20la%20web" aria-label="Email" data-tooltip="Enviar mensaje">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+        <div class="menu-responsive-container">
+          <span class="menu-label hide-mobile">Menú</span>
+          <button class="toggle-menu" id="toggle-menu" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+          </button>
         </div>
       </div>
-      <nav class="menu">
-        <button class="nav-btn" onclick="openTab('exp')"><span class="material-symbols-outlined">badge</span>
-          EXPERIENCIA</button>
-        <button class="nav-btn" onclick="openTab('edu')"><span class="material-symbols-outlined">school</span>
-          EDUCACIÓN</button>
-        <a class="nav-btn" href="assets/pdf/a_cv-su_yeison-bedoya-lopez_product-design.pdf" download="a_cv-su_yeison-bedoya-lopez_product-design.pdf" data-tooltip="Descargar pdf">
-          <span class="material-symbols-outlined">download</span> CV
-        </a>
+    </div>
+
+    <!-- Mobile overlay menu -->
+    <div id="menu" class="mobile-menu">
+      <nav class="main-nav">
+        <ul>
+          <li><a class="js-scroll-trigger" href="#about"><i data-lucide="coffee"></i> Sobre mí</a></li>
+          <li><a class="js-scroll-trigger" href="#projects"><i data-lucide="folders"></i> Proyectos</a></li>
+          <li><a class="js-scroll-trigger" href="#experience"><i data-lucide="monitor-check"></i> Experiencia</a></li>
+          <li><a class="js-scroll-trigger" href="#education"><i data-lucide="book-open-text"></i> Educación</a></li>
+          <li><a class="js-scroll-trigger" href="#contact"><i data-lucide="message-circle-more"></i> Contacto</a></li>
+        </ul>
       </nav>
+      <div class="menu-footer">
+        <a class="btn-cv" href="assets/pdf/a_cv-su_yeison-bedoya-lopez_product-design.pdf" download="a_cv-su_yeison-bedoya-lopez_product-design.pdf">
+          <i data-lucide="file-down"></i>
+          <span>Descargar cv</span>
+        </a>
+        <div class="mobile-theme-row">
+          <a href="en.html" onclick="localStorage.setItem('language','en')" class="mode-item">
+            <i data-lucide="languages"></i>
+            <span>ESP — English</span>
+          </a>
+          <button class="mode-item" type="button" onclick="toggleTheme()">
+            <span id="themeIconWrapMobile"><i data-lucide="sun"></i></span>
+            <span id="themeTextMobile">CLARO</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full header -->
+    <header class="site-header" id="about-top">
+      <div class="top-bar">
+        <div class="img-profile-wrap">
+          <img src="assets/avatar.png" class="img-profile" alt="Yeison Bedoya Lopez" width="161" height="160">
+        </div>
+        <div class="info">
+          <h1 class="name"><span class="name-word">YEISON</span> <span class="name-word">BEDOYA</span> <span class="name-word">LOPEZ</span></h1>
+          <div class="info-bottom">
+            <div class="role">SENIOR PRODUCT DESIGNER - UX UI</div>
+            <div class="loc">
+              <i data-lucide="map-pin-house"></i>
+              <span>Manizales - Colombia</span>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" rel="noopener" aria-label="LinkedIn" data-tooltip="LinkedIn">
+                <span class="social-badge">in</span>
+              </a>
+              <a href="https://www.behance.net/yeilpz" target="_blank" rel="noopener" aria-label="Behance" data-tooltip="Behance">
+                <span class="social-badge">Be</span>
+              </a>
+              <a href="mailto:yeilopez.design@gmail.com?subject=Contacto%20desde%20la%20web" aria-label="Email" data-tooltip="Enviar mensaje">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main class="grid-container">
-      <section class="card hero">
-        <h1>Diseño productos digitales con impacto en el negocio y las personas.</h1>
-        <p class="typewriter-container">Para ello, <span id="typewriter-text" aria-hidden="true"></span><span
-            class="cursor">|</span></p>
-        <p class="sr-only">Para ello, utilizo la IA y el código para llevar soluciones complejas directamente a producción. Integro estrategia de producto, UX/UI y sistemas de diseño escalables. Colaboro con equipos de negocio e ingeniería para validar hipótesis rápido con métricas. Diseño experiencias interactivas y accesibles con Figma, prototipado y Motion design / Lottie.</p>
-      </section>
+    <nav class="nav-menu" aria-label="Principal">
+      <ul class="nav-links hide-responsive">
+        <li><a class="nav-link js-scroll-trigger" href="#about"><i data-lucide="coffee"></i> SOBRE MÍ</a></li>
+        <li><a class="nav-link js-scroll-trigger" href="#projects"><i data-lucide="folders"></i> PROYECTOS</a></li>
+        <li><a class="nav-link js-scroll-trigger" href="#experience"><i data-lucide="monitor-check"></i> EXPERIENCIA</a></li>
+        <li><a class="nav-link js-scroll-trigger" href="#education"><i data-lucide="book-open-text"></i> EDUCACIÓN</a></li>
+        <li><a class="nav-link js-scroll-trigger" href="#contact"><i data-lucide="message-circle-more"></i> CONTACTO</a></li>
+      </ul>
+      <a class="btn-cv" href="assets/pdf/a_cv-su_yeison-bedoya-lopez_product-design.pdf" download="a_cv-su_yeison-bedoya-lopez_product-design.pdf">
+        <i data-lucide="file-down"></i>
+        <span>Descargar cv</span>
+      </a>
+    </nav>
 
-      <div class="pills-container floating-pills" id="pills-container" aria-hidden="true">
-        <!-- Pills injected via JS -->
-      </div>
-
-      <section class="card projects-sidebar">
-        <h3 class="sidebar-main-title">Proyectos</h3>
-        <div class="project-filter-tabs" id="project-filter-tabs" role="tablist" aria-label="Filtrar proyectos">
-          <button class="filter-tab active" data-filter="product" role="tab" aria-selected="true" id="tab-product">Ux /
-            Ui</button>
-          <button class="filter-tab" data-filter="animation" role="tab" aria-selected="false"
-            id="tab-animation">Extra</button>
-          <button class="filter-tab" data-filter="all" role="tab" aria-selected="false" id="tab-all">Todos</button>
+    <main>
+      <!-- Hero -->
+      <section class="hero-section reveal" id="hero" style="--i:0">
+        <div class="hero-inner">
+          <i data-lucide="sparkles" class="hero-icon"></i>
+          <h2 class="hero-title">Diseño productos digitales con impacto en el negocio y las personas.</h2>
+          <p class="hero-sub">Para ello, <span id="typewriter-text" aria-hidden="true"></span><span class="cursor">|</span></p>
+          <p class="sr-only">Para ello, utilizo la IA y el código para llevar soluciones complejas directamente a producción. Integro estrategia de producto, UX/UI y sistemas de diseño escalables. Colaboro con equipos de negocio e ingeniería para validar hipótesis rápido con métricas. Diseño experiencias interactivas y accesibles con Figma, prototipado y Motion design / Lottie.</p>
         </div>
-        <div id="project-list"></div>
       </section>
 
-      <div class="bottom-row">
-        <section class="card photo-box">
-                <img src="assets/avatar.png" alt="Profile" width="923" height="1152">
-              </section>
-        
-              <section class="card footer-card">
-                <div class="contact-sec">
-                  <span class="small-title">Hablemos</span>
-                  <a href="mailto:yeilopez.design@gmail.com?subject=Contacto%20desde%20la%20web"
-                    class="big-link hover-underline">Enviar
-                    mensaje</a>
-                </div>
-                <div class="footer-links">
-                  <div class="social">
-                    <a href="https://www.behance.net/yeilpz" target="_blank" class="hover-underline">BEHANCE</a>
-                    <a href="https://lottiefiles.com/yeilpz" target="_blank" class="hover-underline">LOTTIEFILES
-                      (PÚBLICAS)</a>
-                    <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" class="hover-underline">LINKEDIN</a>
-                  </div>
-                  <div class="modes">
-                    <span class="mode-item" data-tooltip="View in English">
-                      <span class="material-symbols-outlined">language</span>
-                      <a href="en.html" onclick="localStorage.setItem('language', 'en')" class="hover-underline">ESP</a>
-                    </span>
-                    <span class="mode-item" id="themeToggleBtn" onclick="toggleTheme()" data-tooltip="Ver en modo oscuro">
-                      <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
-                      <span id="themeText" class="hover-underline">OSC</span>
-                    </span>
-                  </div>
-                </div>
-              </section>
+      <!-- Sobre mí -->
+      <section class="content-section reveal" id="about" style="--i:0">
+        <div class="section-name hsticky">
+          <div class="section-label">
+            <i data-lucide="coffee"></i>
+            <span>SOBRE MÍ</span>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="about-grid">
+            <div class="about-photo">
+              <img src="assets/avatar-cutout.png" alt="Yeison Bedoya Lopez" width="923" height="1152" loading="lazy" decoding="async">
+            </div>
+            <div class="about-copy">
+              <h3>Senior Product Designer<br>con más de 8 años en el oficio.</h3>
+              <p>Diseño y construyo productos digitales de punta a punta, integrando estrategia, UX/UI y sistemas de diseño. Utilizo la IA y el código como motor para prototipar, desarrollar y llevar soluciones complejas directamente a producción.</p>
+              <p>Trabajo con equipos de negocio, producto e ingeniería para reducir la distancia entre diseño y desarrollo, validando hipótesis de forma rápida y medible.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills strip -->
+      <div class="skills-strip" aria-label="Habilidades">
+        <div class="skills-strip-inner">
+          <div class="skills-cloud" id="pills-container"></div>
+        </div>
       </div>
+
+      <!-- Proyectos -->
+      <section class="content-section reveal" id="projects" style="--i:0">
+        <div class="section-name hsticky">
+          <div class="section-label">
+            <i data-lucide="folders"></i>
+            <span>PROYECTOS</span>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="project-filter-sticky hsticky-filter">
+            <div class="project-filter-tabs" id="project-filter-tabs" role="tablist" aria-label="Filtrar proyectos">
+              <button class="filter-tab active" data-filter="product" role="tab" aria-selected="true">UX / UI / Producto</button>
+              <button class="filter-tab" data-filter="animation" role="tab" aria-selected="false">Gráfico y animaciones</button>
+              <button class="filter-tab" data-filter="all" role="tab" aria-selected="false">Todos</button>
+            </div>
+          </div>
+          <h3 class="projects-heading" id="projects-heading">UX / UI / Producto</h3>
+          <div class="projects-grid" id="project-list"></div>
+        </div>
+      </section>
+
+      <!-- Experiencia -->
+      <section class="content-section reveal" id="experience" style="--i:0">
+        <div class="section-name hsticky">
+          <div class="section-label">
+            <i data-lucide="monitor-check"></i>
+            <span>EXPERIENCIA</span>
+          </div>
+        </div>
+        <div class="section-content">
+          <h3 class="section-heading">Mi trayectoria</h3>
+          <div class="timeline-container" id="experience-timeline"></div>
+        </div>
+      </section>
+
+      <!-- Educación -->
+      <section class="content-section reveal" id="education" style="--i:0">
+        <div class="section-name hsticky">
+          <div class="section-label">
+            <i data-lucide="book-open-text"></i>
+            <span>EDUCACIÓN</span>
+          </div>
+        </div>
+        <div class="section-content">
+          <div id="education-timeline"></div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="content-section reveal" id="contact" style="--i:0">
+        <div class="section-name hsticky">
+          <div class="section-label">
+            <i data-lucide="message-circle-more"></i>
+            <span>CONTACTO</span>
+          </div>
+        </div>
+        <div class="section-content contact-content">
+          <h3 class="contact-title">Hablemos.</h3>
+          <p class="contact-sub">Para algún trabajo o colaboración envíame un mensaje.</p>
+          <a class="btn-primary" href="mailto:yeilopez.design@gmail.com?subject=Contacto%20desde%20la%20web">
+            Enviar mensaje
+          </a>
+          <a class="contact-email" href="mailto:yeilopez.design@gmail.com">yeilopez.design@gmail.com</a>
+        </div>
+      </section>
     </main>
+
+    <div class="settings-bar" aria-label="Idioma y tema">
+      <a class="mode-item" href="en.html" onclick="localStorage.setItem('language','en')" data-tooltip="View in English">
+        <i data-lucide="languages"></i>
+        <span>ESP</span>
+      </a>
+      <button class="mode-item" id="themeToggleBtn" onclick="toggleTheme()" type="button" data-tooltip="Ver en modo oscuro">
+        <span id="themeIconWrap"><i data-lucide="sun"></i></span>
+        <span id="themeText">CLARO</span>
+      </button>
+    </div>
+
+    <footer class="site-footer">
+      <p class="credits">
+        <i data-lucide="heart" class="heart-icon"></i>
+        <span>Hecho con amor por Yeison Bedoya Lopez</span>
+      </p>
+    </footer>
   </div>
 
   <div id="project-modal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
         <span id="modal-sticky-title" class="modal-sticky-title"></span>
-        <button class="close-x" onclick="closeModal()"><span class="material-symbols-outlined">close</span></button>
+        <button class="close-x" onclick="closeModal()" aria-label="Cerrar">
+          <i data-lucide="x"></i>
+        </button>
       </div>
       <div id="modal-section-banner" class="modal-section-banner"></div>
       <div id="modal-body"></div>
     </div>
   </div>
 
-  <script src="js/data.js?v=2.0"></script>
-  <script src="js/main.js?v=2.0"></script>
+  <script src="js/data.js?v=3.4"></script>
+  <script src="js/main.js?v=4.4"></script>
 
-  <!-- Contenido estructurado para sistemas ATS y crawlers. No visible para usuarios. -->
   <div class="sr-only" aria-hidden="true">
-
     <section>
       <h1>Yeison Bedoya — Senior Product Designer - UX UI</h1>
       <p>Product builder con IA · Design Systems · SaaS · B2B · B2C</p>
       <p>Sobre mí: Diseño y construyo productos digitales de punta a punta, integrando estrategia, UX/UI y sistemas de diseño. Para ello, utilizo la IA y el código como un motor clave para prototipar, desarrollar y llevar soluciones complejas directamente a producción. Trabajo en colaboración con equipos de negocio, producto e ingeniería para reducir la distancia entre diseño y desarrollo, validando hipótesis de forma rápida y medible.</p>
-
       <h2>Habilidades y herramientas</h2>
       <p>Estrategia de Producto | Desarrollo asistido por IA | UX/UI | Claude / Cursor / Codex MCPs | Agentes | Design Thinking | Métricas | Investigación de usuarios | Metodologías ágiles | Figma (Experto) | Prototipado | Sistemas de diseño | Accesibilidad (WCAG) | Motion design / Lottie | HTML CSS | Hotjar | Notion | Suite de Adobe</p>
       <p>Idiomas: Español (nativo) | Inglés B2+</p>
       <p>Contacto: yeilopez.design@gmail.com — linkedin.com/in/yeilpz — behance.net/yeilpz — yeilopez.github.io/me/ — Manizales, Colombia (UTC-5).</p>
     </section>
-
     <section>
       <h2>Experiencia Laboral</h2>
       <article>
@@ -200,7 +364,6 @@
         </ul>
       </article>
     </section>
-
     <section>
       <h2>Proyectos Destacados</h2>
       <article>
@@ -220,7 +383,6 @@
         <p>Hub centralizador agnóstico que unifica APIs de rastreo de múltiples proveedores GPS (300+ cuentas centralizadas). Gestión por excepción, detección de incidentes 80% más rápida.</p>
       </article>
     </section>
-
     <section>
       <h2>Educación</h2>
       <article>
@@ -245,9 +407,7 @@
         <p>2024</p>
       </article>
     </section>
-
   </div>
-  <!-- /ATS content -->
 </body>
 
 </html>
