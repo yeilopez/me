@@ -6,8 +6,8 @@ const DB_ES = {
             category: "product",
             tagline: "App Android para custodios con soporte offline, reportes automatizados y microinteracciones Lottie. −120h/mes en revisión manual y 98% de precisión en datos.",
             metrics: [
-                { value: "−120h", label: "rev. manual / mes" },
-                { value: "98%", label: "precisión de datos" }
+                { value: "−120h/mes", label: "ahorradas en revisión de chats" },
+                { value: "+45%", label: "satisfacción del custodio" }
             ],
             tags: ["Logística de Seguridad", "Eficiencia Operativa", "Animaciones", "App para celulares", "Figma"],
             image: "projects/app-centaurus/hero.png",
@@ -91,8 +91,8 @@ const DB_ES = {
             "category": "product",
             "tagline": "De WhatsApp/Excel a una plataforma unificada con SLA 100% auditable. Tiempo de reporte reducido de 25 a 15 minutos en promedio.",
             "metrics": [
-                { "value": "15 min", "label": "reporte promedio" },
-                { "value": "100%", "label": "SLA auditable" }
+                { "value": "25 → 15 min", "label": "tiempo promedio de reporte" },
+                { "value": "100%", "label": "cumplimiento de SLA con el cliente" }
             ],
             "tags": ["Control Tower", "SLA Strategy", "Product Strategy", "Crisis Management"],
             "image": "projects/monitoring/hero.png",
@@ -170,10 +170,6 @@ const DB_ES = {
             title: "Torre de control",
             category: "product",
             tagline: "Plataforma que centraliza la operación de los clientes independientemente de sus proveedores GPS, con +300 cuentas unificadas, alertas sonoras y gestión por excepción.",
-            metrics: [
-                { value: "+300", label: "cuentas unificadas" },
-                { value: "100%", label: "centralización" }
-            ],
             isConstruction: false,
             image: "projects/control-tower/hero.png",
             tags: ["Logística de Seguridad", "Eficiencia Operativa", "SASS", "Figma"],
@@ -245,9 +241,6 @@ const DB_ES = {
             title: "Iké",
             category: "product",
             tagline: "Webapp que digitalizó al 100% la contratación de servicios: desde la solicitud hasta la confirmación, eliminando por completo la gestión manual.",
-            metrics: [
-                { value: "100%", label: "proceso digitalizado" }
-            ],
             tags: ["Digitalización", "Web App", "UX/UI", "Figma"],
             image: "projects/ike/hero.png",
             challenge: "Digitalización de servicios mediante una webapp moderna que centraliza y simplifica la experiencia del usuario final.",
@@ -259,9 +252,6 @@ const DB_ES = {
             title: "Hubbing",
             category: "product",
             tagline: "6 apps Flutter (iOS/Android) + plataforma web para gestión de rutas, flota, personal y controles de calidad en un ecosistema centralizado.",
-            metrics: [
-                { value: "6+1", label: "apps + plataforma" }
-            ],
             tags: ["Sistema de Gestión", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
             image: "projects/hubbing/hero.png",
             challenge: "Diseño de una plataforma integral de gestión interna que centraliza operaciones, equipos y flujos de trabajo en una sola interfaz web y móvil.",
@@ -383,8 +373,8 @@ const DB_EN = {
             category: "product",
             tagline: "Android app for cargo escorts with offline support, automated reporting and Lottie microinteractions. −120h/month in manual review and 98% data accuracy.",
             metrics: [
-                { value: "−120h", label: "manual review / mo" },
-                { value: "98%", label: "data accuracy" }
+                { value: "−120h/mo", label: "saved in chat review & transcription" },
+                { value: "+45%", label: "escort satisfaction (NPS)" }
             ],
             tags: ["Security Logistics", "Operational Efficiency", "Animations", "Mobile App", "Figma"],
             image: "projects/app-centaurus/hero.png",
@@ -468,8 +458,8 @@ const DB_EN = {
             "category": "product",
             "tagline": "From WhatsApp/Excel to a unified platform with 100% auditable SLA. Average reporting time reduced from 25 to 15 minutes.",
             "metrics": [
-                { "value": "15 min", "label": "avg. report time" },
-                { "value": "100%", "label": "auditable SLA" }
+                { "value": "25 → 15 min", "label": "average reporting time" },
+                { "value": "100%", "label": "client SLA compliance" }
             ],
             "tags": ["Control Tower", "SLA Strategy", "Product Strategy", "Crisis Management"],
             "image": "projects/monitoring/hero.png",
@@ -547,10 +537,6 @@ const DB_EN = {
             title: "Control Tower",
             category: "product",
             tagline: "Platform that centralizes client operations regardless of their GPS providers, with 300+ unified accounts, sound alerts and exception-based management.",
-            metrics: [
-                { value: "+300", label: "unified accounts" },
-                { value: "100%", label: "centralization" }
-            ],
             isConstruction: false,
             image: "projects/control-tower/hero.png",
             tags: ["Security Logistics", "Operational Efficiency", "SASS", "Figma"],
@@ -622,9 +608,6 @@ const DB_EN = {
             title: "Iké",
             category: "product",
             tagline: "Webapp that digitized 100% of the service contracting process: from request to confirmation, eliminating all manual management.",
-            metrics: [
-                { value: "100%", label: "digitized process" }
-            ],
             tags: ["Digitalization", "Web App", "UX/UI", "Figma"],
             image: "projects/ike/hero.png",
             challenge: "Service digitalization through a modern webapp that centralizes and simplifies the end-user experience.",
@@ -636,9 +619,6 @@ const DB_EN = {
             title: "Hubbing",
             category: "product",
             tagline: "6 Flutter apps (iOS/Android) + web platform for route, fleet, personnel and quality control management in a centralized ecosystem.",
-            metrics: [
-                { value: "6+1", label: "apps + platform" }
-            ],
             tags: ["Management System", "Web Platform", "Mobile Apps", "UX/UI", "Figma"],
             image: "projects/hubbing/hero.png",
             challenge: "Design of a comprehensive internal management platform that centralizes operations, teams, and workflows in a single web and mobile interface.",

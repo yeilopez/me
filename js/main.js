@@ -342,21 +342,21 @@ function initTypewriter() {
             charIndex++;
         }
 
-        let delay = isDeleting ? 12 : 20;
+        let delay = isDeleting ? 18 : 36;
 
         if (!isDeleting && charIndex === current.length) {
-            delay = 900;
+            delay = 2000;
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             phraseIndex = (phraseIndex + 1) % phrases.length;
-            delay = 180;
+            delay = 320;
         }
 
         setTimeout(type, delay);
     }
 
-    setTimeout(type, 300);
+    setTimeout(type, 400);
 }
 
 function initPills() {
