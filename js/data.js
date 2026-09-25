@@ -280,46 +280,46 @@ const DB_ES = {
     ],
     experience: [
         {
-            company: "DETECTA SECURITY",
+            company: "DETECTA",
             period: "2024 - 2026",
             role: "Product Designer",
-            location: "Remoto (Para México)",
+            location: "B2B logistics security · Remoto (Para México)",
             description: [
-                "Rediseñé la App Centaurus 2.0 para Android, incluyendo arquitectura offline-first, comandos de voz y microinteracciones con Lottie. Resultado: 98% de efectividad en registros y 120 horas mensuales ahorradas. El rediseño partió de detectar 40% de registros inconsistentes por falta de conexión.",
-                "Unifiqué la Consola de Monitoreo integrando telemetría, VoIP y protocolos automatizados trabajando junto a los desarrolladores y el área de operaciones. Resultado: tiempo de reporte reducido de 25 a 15 minutos y 100% de cumplimiento auditable.",
-                "Desarrollé la Torre de Control que integra +300 cuentas GPS en un solo lugar. Resultado: Detección de incidentes 80% más rápido mejorando el tiempo de respuesta.",
-                "Implementé el Design System con design tokens y accesibilidad WCAG AA en 3 productos, mejorando el contraste y jerarquía visual en los flujos críticos de monitoreo para así evitar errores involuntarios."
+                "Rediseñé la app Centaurus 2.0 (Android) con arquitectura offline-first, comandos de voz y microinteracciones con Lottie, reduciendo la carga de revisión manual en más de 120 horas al mes.",
+                "Unifiqué la Consola de Monitoreo junto a ingeniería y operaciones (telemetría, VoIP y protocolos), reduciendo el tiempo de reporte de 25 a 15 min con SLA medible y auditable.",
+                "Diseñé la Torre de Control para centralizar 300+ cuentas GPS y transformar el monitoreo en una gestión por excepción.",
+                "Construí y extendí un sistema de diseño con tokens y criterios de accesibilidad WCAG AA en los 3 productos."
             ]
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
             role: "Product Designer",
-            location: "Híbrido (En Argentina)",
+            location: "Software factory · Híbrido (En Argentina)",
             description: [
-                "Diseñé una plataforma y 6 aplicaciones de gestión interna y para proveedores en Flutter para iOS y Android en 14 meses.",
-                "Creé un Design System con base compartida y variaciones según la línea de negocio, lo que aceleró el desarrollo con componentes y estilos compartidos.",
-                "Estandaricé patrones de microinteracciones reutilizables en 7 productos."
+                "Diseñé 1 plataforma web y 6 aplicaciones de gestión en Flutter (iOS y Android) para la gestión interna de Hubbing Latam.",
+                "Construí un sistema de diseño con base compartida y variaciones por línea de negocio para agilizar los desarrollos.",
+                "Estandaricé patrones de microinteracciones reutilizables en 7 productos para mantener consistencia."
             ]
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
-            role: "Diseñador UX/UI y Motion Designer",
-            location: "Híbrido (En Argentina)",
+            role: "Diseñador UX/UI",
+            location: "Software factory · Híbrido (En Argentina)",
             description: [
-                "Extendí el sistema de marca de Iké Asistencia a un producto digital para más de 2 millones de usuarios.",
-                "Diseñé desde cero DemandCloud, un SaaS B2B (onboarding, dashboard, scheduling y reportes) que permitía optimizar costos en servicios de cloud.",
-                "Creé ilustraciones para los diferentes productos de la webapp y animaciones para las acciones de usuario."
+                "Simplifiqué los procesos de Iké Asistencia con producto digital utilizado por más de 2 millones de usuarios.",
+                "Creé ilustraciones para los diferentes productos de la webapp y animaciones para remarcar las acciones y feedback de usuario.",
+                "Diseñé desde cero DemandCloud, un SaaS B2B que abarca incorporación, panel de control, programación y reportes."
             ]
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "Diseñador UX / UI",
-            location: "Híbrido (En Argentina)",
+            role: "Diseñador UX/UI",
+            location: "B2C EdTech · Híbrido (En Argentina)",
             description: [
-                "Rediseñé landings con estrategia de contenido y UI. Resultado: +20% en inscripciones tras identificar que en promedio el 60% de las visitas abandonaba antes de completar el formulario de inscripción."
+                "Rediseñé páginas de captación optimizando estrategia de contenido y UI, contribuyendo a aumentar las inscripciones un 20%."
             ]
         }
     ],
@@ -333,13 +333,13 @@ const DB_ES = {
         {
             institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
             year: "2019 - 2019",
-            degree: "Diplomatura, UX y Accesibilidad",
+            degree: "Diplomado en UX y Accesibilidad",
             type: "superior"
         },
         {
             institution: "UNIVERSIDAD DE BUENOS AIRES (UBA)",
             year: "2012 - 2018",
-            degree: "Carrera de Diseño Gráfico",
+            degree: "Licenciatura en Diseño Gráfico",
             type: "superior"
         },
         {
@@ -352,18 +352,6 @@ const DB_ES = {
             institution: "SOL MESZ",
             year: "2024 - 2024",
             degree: "Métricas y Diseño",
-            type: "curso"
-        },
-        {
-            institution: "SOL MESZ",
-            year: "2022 - 2022",
-            degree: "Product Designer",
-            type: "curso"
-        },
-        {
-            institution: "CENTRO UNIVERSITARIO DE IDIOMAS (CUI)",
-            year: "2022 - 2022",
-            degree: "Inglés",
             type: "curso"
         }
     ]
@@ -651,66 +639,66 @@ const DB_EN = {
     ],
     experience: [
         {
-            company: "DETECTA SECURITY",
+            company: "DETECTA",
             period: "2024 - 2026",
             role: "Product Designer",
-            location: "Remote (For Mexico)",
+            location: "B2B logistics security · Remote (Mexico)",
             description: [
-                "Led the redesign of Centaurus 2.0 Android App, including offline-first architecture, voice commands, and Lottie micro-interactions. Outcome: 98% logging accuracy and 120 hours saved per month. This redesign started from identifying that 40% of logs were inconsistent due to connectivity issues.",
-                "Unified the Monitoring Console integrating telemetry, VoIP, and automated protocols working closely with the development team and the operations area. Outcome: reporting time reduced from 25 to 15 minutes and 100% audit compliance.",
-                "I developed the Control Tower, integrating 300+ GPS accounts into a single hub. Outcome: 80% faster incident detection, improving response time.",
-                "Implemented Design System with design tokens and WCAG AA accessibility across 3 products, improving contrast and visual hierarchy in critical monitoring flows to prevent unintentional errors."
+                "Redesigned the Centaurus 2.0 app (Android) with an offline-first architecture, voice commands, and Lottie micro-interactions, reducing manual review time by over 120 hours per month.",
+                "Unified the Monitoring Console with engineering and operations (telemetry, VoIP, and protocols), reducing report time from 25 to 15 minutes with measurable and auditable SLA.",
+                "Designed the Control Tower to centralize 300+ GPS accounts and transform monitoring into exception-based management.",
+                "Built and extended a design system with tokens and WCAG AA accessibility criteria across the 3 products."
             ]
         },
         {
             company: "BELOG IT",
             period: "2023 - 2024",
             role: "Product Designer",
-            location: "Hybrid (In Argentina)",
+            location: "Software factory · Hybrid (Argentina)",
             description: [
-                "I designed one platform and 6 internal management and supplier applications in Flutter for iOS and Android in 14 months.",
-                "I created a Design System with shared foundations and business-line variations, accelerating development through shared components and styles.",
-                "I standardized reusable micro-interaction patterns across 7 products."
+                "Designed 1 web platform and 6 management apps in Flutter (iOS and Android) for Hubbing Latam's internal operations.",
+                "Built a design system with a shared base and business-line variations to speed up development.",
+                "Standardized reusable micro-interaction patterns across 7 products to maintain consistency."
             ]
         },
         {
             company: "FIERA STUDIO",
             period: "2021 - 2022",
-            role: "UX/UI & Motion Designer",
-            location: "Hybrid (In Argentina)",
+            role: "UX/UI Designer",
+            location: "Software factory · Hybrid (Argentina)",
             description: [
-                "Extended Iké Asistencia’s brand system into a digital product for over 2 million users.",
-                "Designed DemandCloud from 0→1, a B2B SaaS (onboarding, dashboard, scheduling, and reports) that helped optimize cloud service costs.",
-                "Created illustrations for the different webapp products and animations for user actions."
+                "Simplified Iké Asistencia’s digital product processes used by over 2 million users.",
+                "Created illustrations for the different products of the web app and animations to highlight user actions and feedback.",
+                "Designed DemandCloud from scratch, a B2B SaaS covering onboarding, control panel, scheduling, and reporting."
             ]
         },
         {
             company: "EDUCAEDU",
             period: "2017 - 2021",
-            role: "UX / UI Designer",
-            location: "Hybrid (In Argentina)",
+            role: "UX/UI Designer",
+            location: "B2C EdTech · Hybrid (Argentina)",
             description: [
-                "Redesigned landing pages with content and UI strategy. Outcome: +20% increase in enrollments, after identifying that on average 60% of visitors dropped off before completing the enrollment form."
+                "Redesigned acquisition pages optimizing content strategy and UI, contributing to a 20% increase in enrollments."
             ]
         }
     ],
     education: [
         {
-            institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
+            institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
             year: "2023 - 2023",
-            degree: "Postgraduate in Project Management",
+            degree: "Master's in Project Management",
             type: "superior"
         },
         {
-            institution: "NATIONAL TECHNOLOGICAL UNIVERSITY (UTN)",
+            institution: "UNIVERSIDAD TECNOLÓGICA NACIONAL (UTN)",
             year: "2019 - 2019",
-            degree: "Diploma, UX and Accessibility",
+            degree: "UX and Accessibility Diploma",
             type: "superior"
         },
         {
-            institution: "UNIVERSITY OF BUENOS AIRES (UBA)",
+            institution: "UNIVERSIDAD DE BUENOS AIRES (UBA)",
             year: "2012 - 2018",
-            degree: "Bachelor of Graphic Design",
+            degree: "Graphic Design Degree",
             type: "superior"
         },
         {
@@ -722,19 +710,7 @@ const DB_EN = {
         {
             institution: "SOL MESZ",
             year: "2024 - 2024",
-            degree: "Metrics & Design",
-            type: "curso"
-        },
-        {
-            institution: "SOL MESZ",
-            year: "2022 - 2022",
-            degree: "Product Designer",
-            type: "curso"
-        },
-        {
-            institution: "LANGUAGES UNIVERSITY CENTER (CUI)",
-            year: "2022 - 2022",
-            degree: "English",
+            degree: "Metrics and Design",
             type: "curso"
         }
     ]

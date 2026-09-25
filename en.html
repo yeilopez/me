@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yeison Bedoya Lopez | Senior Product Designer - UX UI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0" />
   <!-- Theme Preload Script -->
@@ -69,33 +69,23 @@
           EXPERIENCE</button>
         <button class="nav-btn" onclick="openTab('edu')"><span class="material-symbols-outlined">school</span>
           EDUCATION</button>
-        <div class="dropdown">
-          <a class="nav-btn" href="#" onclick="return false;" data-tooltip="Choose version"><span
-              class="material-symbols-outlined">download</span> RESUME</a>
-          <div class="dropdown-content">
-            <a href="assets/pdf/a_resume-su_yeison-bedoya-lopez_product-design.pdf"
-              download="a_resume-su_yeison-bedoya-lopez_product-design"><span class="material-symbols-outlined" style="font-size: 18px; margin-right: 4px; vertical-align: middle;">download</span> Visual Resume (PDF)</a>
-            <a href="assets/pdf/ats-resume_yeison-bedoya-lopez_product-design.pdf"
-              download="ats-resume_yeison-bedoya-lopez_product-design.pdf"><span class="material-symbols-outlined" style="font-size: 18px; margin-right: 4px; vertical-align: middle;">download</span> ATS-Friendly Resume (PDF)</a>
-          </div>
-        </div>
+        <a class="nav-btn" href="assets/pdf/a_resume-su_yeison-bedoya-lopez_product-design.pdf" download="a_resume-su_yeison-bedoya-lopez_product-design.pdf" data-tooltip="Download pdf">
+          <span class="material-symbols-outlined">download</span> RESUME
+        </a>
       </nav>
     </header>
 
     <main class="grid-container">
       <section class="card hero">
-        <span class="material-symbols-outlined icon-dark">magic_button</span>
         <h1>I design digital products with impact on business and people.</h1>
-        <p class="typewriter-container">I do it with <span id="typewriter-text" aria-hidden="true"></span><span
+        <p class="typewriter-container">To achieve this, <span id="typewriter-text" aria-hidden="true"></span><span
             class="cursor">|</span></p>
-        <p class="sr-only">I achieve it with a comprehensive vision, from strategy to code. AI to clarify data
-          and speed up delivery. metrics that validate every decision. flexibility to iterate and adjust
-          course. micro-interactions that elevate experience.</p>
+        <p class="sr-only">To achieve this, I leverage AI and code to take complex solutions straight to production. I integrate product strategy, UX/UI, and scalable design systems. I collaborate with business and engineering teams to validate hypotheses quickly with metrics. I craft accessible, interactive experiences with Figma, prototyping, and Motion design / Lottie.</p>
       </section>
 
-      <section class="card photo-box">
-        <img src="assets/avatar.png" alt="Profile">
-      </section>
+      <div class="pills-container floating-pills" id="pills-container" aria-hidden="true">
+        <!-- Pills injected via JS -->
+      </div>
 
       <section class="card projects-sidebar">
         <h3 class="sidebar-main-title">Projects</h3>
@@ -109,39 +99,37 @@
         <div id="project-list"></div>
       </section>
 
-      <section class="card statement">
-        <p>I act as a <strong>bridge between strategic vision and technical execution</strong>, communicating
-          with business and engineering.</p>
-        <div class="pills-container" id="pills-container" aria-hidden="true">
-          <!-- Pills injected via JS -->
-        </div>
-      </section>
-
-      <section class="card footer-card">
-        <div class="contact-sec">
-          <span class="small-title">Let's talk</span>
-          <a href="mailto:yeilopez.design@gmail.com?subject=Contact%20from%20website"
-            class="big-link hover-underline">Send message</a>
-        </div>
-        <div class="footer-links">
-          <div class="social">
-            <a href="https://www.behance.net/yeilpz" target="_blank" class="hover-underline">BEHANCE</a>
-            <a href="https://lottiefiles.com/yeilpz" target="_blank" class="hover-underline">LOTTIEFILES
-              (PUBLIC)</a>
-            <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" class="hover-underline">LINKEDIN</a>
-          </div>
-          <div class="modes">
-            <span class="mode-item" data-tooltip="Ver en español">
-              <span class="material-symbols-outlined">language</span>
-              <a href="index.html" onclick="localStorage.setItem('language', 'es')" class="hover-underline">ENG</a>
-            </span>
-            <span class="mode-item" id="themeToggleBtn" onclick="toggleTheme()" data-tooltip="View in dark mode">
-              <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
-              <span id="themeText" class="hover-underline">DRK</span>
-            </span>
-          </div>
-        </div>
-      </section>
+      <div class="bottom-row">
+        <section class="card photo-box">
+                <img src="assets/avatar.png" alt="Profile" width="923" height="1152">
+              </section>
+        
+              <section class="card footer-card">
+                <div class="contact-sec">
+                  <span class="small-title">Let's talk</span>
+                  <a href="mailto:yeilopez.design@gmail.com?subject=Contact%20from%20website"
+                    class="big-link hover-underline">Send message</a>
+                </div>
+                <div class="footer-links">
+                  <div class="social">
+                    <a href="https://www.behance.net/yeilpz" target="_blank" class="hover-underline">BEHANCE</a>
+                    <a href="https://lottiefiles.com/yeilpz" target="_blank" class="hover-underline">LOTTIEFILES
+                      (PUBLIC)</a>
+                    <a href="https://www.linkedin.com/in/yeilpz/" target="_blank" class="hover-underline">LINKEDIN</a>
+                  </div>
+                  <div class="modes">
+                    <span class="mode-item" data-tooltip="Ver en español">
+                      <span class="material-symbols-outlined">language</span>
+                      <a href="index.html" onclick="localStorage.setItem('language', 'es')" class="hover-underline">ENG</a>
+                    </span>
+                    <span class="mode-item" id="themeToggleBtn" onclick="toggleTheme()" data-tooltip="View in dark mode">
+                      <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+                      <span id="themeText" class="hover-underline">DRK</span>
+                    </span>
+                  </div>
+                </div>
+              </section>
+      </div>
     </main>
   </div>
 
@@ -163,139 +151,97 @@
   <div class="sr-only" aria-hidden="true">
 
     <section>
-      <h1>Yeison Bedoya Lopez — Senior Product Designer - UX/UI Designer</h1>
-      <p>Senior Product Designer with more than 8 years of experience. I have a strong graphic design background that
-        ensures high visual quality, which I combine with business and technology understanding to bring every project
-        to its fullest potential. I adapt well to established brands as well as initiatives starting from zero. I work
-        in short iterations, listen to engineering, design, and business teams, and adjust based on what the data and
-        user feedback show.</p>
+      <h1>Yeison Bedoya — Senior Product Designer - UX/UI</h1>
+      <p>Product builder with AI · Design Systems · SaaS · B2B · B2C</p>
+      <p>About me: I design and build end-to-end digital products, integrating strategy, UX/UI, and design systems. To achieve this, I leverage AI and code as key drivers to prototype, develop, and take complex solutions straight to production. I work collaboratively with business, product, and engineering teams to bridge the gap between design and development, validating hypotheses quickly and measurably.</p>
 
-      <h2>Key Achievements</h2>
-      <ul>
-        <li>Reduced 120 manual review hours/month and increased NPS by +45% with the redesign of Centaurus 2.0.</li>
-        <li>Built 2 Design Systems from scratch for 10 products in production.</li>
-        <li>Designed one platform and 6 internal management applications in Flutter (iOS and Android) in 14 months.</li>
-        <li>Achieved +20% increase in enrollments for a B2C EdTech platform.</li>
-      </ul>
-
-      <p>Skills: Product Strategy | UX/UI | User Research | Metrics | Design Systems | Visual Design | WCAG Accessibility | Motion Design | Agile/Scrum | Figma (Expert) | Prototyping | Design Thinking | AI-Assisted Prototyping | Lottie | HTML | CSS | Adobe Suite | Hotjar | Notion</p>
-      <p>Contact: yeilopez.design@gmail.com — linkedin.com/in/yeilpz — behance.net/yeilpz — yeilopez.github.io/me/ —
-        Manizales, Colombia.</p>
+      <h2>Skills and tools</h2>
+      <p>Product Strategy | AI-assisted Development | UX/UI | Claude / Cursor / Codex MCPs | Agents | Design Thinking | Metrics | User Research | Agile Methodologies | Figma (Expert) | Prototyping | Design Systems | Accessibility (WCAG) | Motion design / Lottie | HTML CSS | Hotjar | Notion | Adobe Suite</p>
+      <p>Languages: Spanish (native) | English B2+</p>
+      <p>Contact: yeilopez.design@gmail.com — linkedin.com/in/yeilpz — behance.net/yeilpz — yeilopez.github.io/me/ — Manizales, Colombia (UTC-5).</p>
     </section>
 
     <section>
       <h2>Work Experience</h2>
       <article>
-        <h3>Detecta Security — Product Designer</h3>
-        <p>June 2024 – April 2026</p>
-        <p>I led the redesign of Centaurus 2.0 Android App, including offline-first architecture, voice commands, and
-          Lottie micro-interactions. Outcome: 98% logging accuracy and 120 hours saved per month.</p>
-        <p>I unified the Monitoring Console integrating telemetry, VoIP, and automated protocols. Outcome: reporting
-          time
-          reduced from 25 to 15 minutes and 100% audit compliance.</p>
-        <p>I built the Control Tower that integrates over 300 GPS accounts into a single hub. Outcome: 80% faster
-          incident
-          detection.</p>
-        <p>I implemented a Design System with design tokens and WCAG AA accessibility across 3 products.</p>
+        <h3>DETECTA · Product Designer</h3>
+        <p>B2B logistics security · Remote (Mexico) · June 2024 – September 2026</p>
+        <ul>
+          <li>Redesigned the Centaurus 2.0 app (Android) with an offline-first architecture, voice commands, and Lottie micro-interactions, reducing manual review time by over 120 hours per month.</li>
+          <li>Unified the Monitoring Console with engineering and operations (telemetry, VoIP, and protocols), reducing report time from 25 to 15 minutes with measurable and auditable SLA.</li>
+          <li>Designed the Control Tower to centralize 300+ GPS accounts and transform monitoring into exception-based management.</li>
+          <li>Built and extended a design system with tokens and WCAG AA accessibility criteria across the 3 products.</li>
+        </ul>
       </article>
       <article>
-        <h3>Belog IT — Product Designer</h3>
-        <p>February 2023 – April 2024</p>
-        <p>Designed one platform and 6 internal management and supplier applications in Flutter for iOS and Android in
-          14 months.</p>
-        <p>I created a Design System with shared foundations and variations per business line, accelerating development
-          speed.</p>
-        <p>I standardized reusable micro-interaction patterns across 7 products.</p>
+        <h3>BELOG IT · Product Designer</h3>
+        <p>Software factory · Hybrid (Argentina) · February 2023 – April 2024</p>
+        <ul>
+          <li>Designed 1 web platform and 6 management apps in Flutter (iOS and Android) for Hubbing Latam's internal operations.</li>
+          <li>Built a design system with a shared base and business-line variations to speed up development.</li>
+          <li>Standardized reusable micro-interaction patterns across 7 products to maintain consistency.</li>
+        </ul>
       </article>
       <article>
-        <h3>Fiera Studio — UX/UI &amp; Motion Designer</h3>
-        <p>May 2021 – November 2022</p>
-        <p>I extended Iké Asistencia’s brand system into a digital product for over 2 million users.</p>
-        <p>I designed DemandCloud from 0→1, a B2B SaaS (onboarding, dashboard, scheduling, and reports).</p>
-        <p>I created illustrations for the different webapp products and animations for user actions.</p>
+        <h3>FIERA STUDIO · UX/UI Designer</h3>
+        <p>Software factory · Hybrid (Argentina) · May 2021 – November 2022</p>
+        <ul>
+          <li>Simplified Iké Asistencia’s digital product processes used by over 2 million users.</li>
+          <li>Created illustrations for the different products of the web app and animations to highlight user actions and feedback.</li>
+          <li>Designed DemandCloud from scratch, a B2B SaaS covering onboarding, control panel, scheduling, and reporting.</li>
+        </ul>
       </article>
       <article>
-        <h3>Educaedu — UX / UI Designer</h3>
-        <p>November 2017 – May 2021</p>
-        <p>I redesigned landing pages with content and UI strategy. Outcome: +20% increase in enrollments.</p>
+        <h3>EDUCAEDU · UX/UI Designer</h3>
+        <p>B2C EdTech · Hybrid (Argentina) · November 2017 – May 2021</p>
+        <ul>
+          <li>Redesigned acquisition pages optimizing content strategy and UI, contributing to a 20% increase in enrollments.</li>
+        </ul>
       </article>
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <article>
         <h3>Centaurus App 2.0 — Detecta Security</h3>
         <p>Role: Senior Product / Motion Designer. Platform: Android Mobile App. Client: Detecta Security.</p>
-        <p>End-to-end redesign of a physical vehicle escort app. Offline-first architecture, hands-free voice commands,
-          automatic push notifications, Lottie micro-interactions, design system with dark mode and design tokens.</p>
-        <p>Results: -120 hours/month in manual review, 98% event registration accuracy, +45% NPS improvement from
-          guards.</p>
-        <p>View on Google Play: https://play.google.com/store/apps/details?id=io.detectasecurity.centaurus</p>
+        <p>End-to-end redesign of a physical vehicle escort app. Offline-first architecture, hands-free voice commands, automatic push notifications, Lottie micro-interactions, design system with dark mode and design tokens.</p>
+        <p>Results: -120 hours/month in manual review, 98% event registration accuracy, +45% NPS improvement from guards.</p>
       </article>
       <article>
         <h3>Monitoring Console — Detecta Security</h3>
         <p>Role: Lead Product Designer. Platform: SaaS Desktop Web. Client: Detecta Security.</p>
-        <p>Full redesign of the operational security control center. Replaced fragmented ecosystem (WhatsApp + Excel)
-          with a unified platform featuring telemetry, VoIP, automated emergency protocols, and a client portal.
-          25-minute SLA per service.</p>
-        <p>Results: 15-minute average report time (25-min target), 100% auditable SLA compliance, 98% traceability
-          accuracy.</p>
+        <p>Full redesign of the operational security control center. Replaced fragmented ecosystem (WhatsApp + Excel) with a unified platform featuring telemetry, VoIP, automated emergency protocols, and a client portal. Reporting time reduced from 25 to 15 min with 100% auditable SLA.</p>
       </article>
       <article>
         <h3>Control Tower — Detecta Security</h3>
         <p>Role: Lead Product Designer. Platform: SaaS Desktop Web. Client: Detecta Security.</p>
-        <p>Agnostic centralization hub unifying GPS tracking APIs from multiple providers. Eliminates the need to
-          monitor 300 individual mirror accounts. Multi-level sound alerts, card and data grid views, exception-based
-          management, role-based access control.</p>
-        <p>Results: 100% accounts unified in a single command center, estimated 80% reduction in incident detection
-          time.</p>
-      </article>
-      <article>
-        <h3>Suitable — Logistics Process Animation</h3>
-        <p>Motion Design. Figma. View on Behance:
-          https://www.behance.net/gallery/130881673/Suitable-Business-logistic-process</p>
-      </article>
-      <article>
-        <h3>Suitable — Set of 4 Lottie Animations</h3>
-        <p>Motion Design. Lottie, After Effects. View on Behance:
-          https://www.behance.net/gallery/140125135/Logistic-Process-Part-2-LottieFiles-Animations</p>
-      </article>
-      <article>
-        <h3>Visual Identity — Teatro Argentino de La Plata</h3>
-        <p>Branding, Visual Identity. View on Behance:
-          https://www.behance.net/gallery/78036325/Identidad-Teatro-Argentino-de-la-Plata</p>
+        <p>Agnostic centralization hub unifying GPS tracking APIs from multiple providers (300+ centralized accounts). Exception-based management, 80% faster incident detection.</p>
       </article>
     </section>
 
     <section>
       <h2>Education</h2>
       <article>
-        <h3>National Technological University (UTN) — Postgraduate in Project Management</h3>
-        <p>January 2023 – December 2023</p>
+        <h3>Universidad Tecnológica Nacional (UTN) — Master's in Project Management</h3>
+        <p>January 2023 – December 2023 · Argentina</p>
       </article>
       <article>
-        <h3>National Technological University (UTN) — Diploma in UX and Accessibility</h3>
-        <p>January 2019 – December 2019</p>
+        <h3>Universidad Tecnológica Nacional (UTN) — UX and Accessibility Diploma</h3>
+        <p>January 2019 – December 2019 · Argentina</p>
       </article>
       <article>
-        <h3>University of Buenos Aires (UBA) — Graphic Design Degree</h3>
-        <p>January 2012 – December 2018</p>
+        <h3>Universidad de Buenos Aires (UBA) — Graphic Design Degree</h3>
+        <p>January 2012 – December 2018 · Argentina</p>
+      </article>
+      <h3>Recent Courses</h3>
+      <article>
+        <h4>Nelson Rodríguez-Peña — AI for Designers</h4>
+        <p>2026</p>
       </article>
       <article>
-        <h3>Nelson Rodríguez-Peña — AI for Designers</h3>
-        <p>August 2024 – September 2024</p>
-      </article>
-      <article>
-        <h3>Sol Mesz — Metrics and Design</h3>
-        <p>February 2024 – March 2024</p>
-      </article>
-      <article>
-        <h3>Sol Mesz — Product Designer</h3>
-        <p>February 2022 – March 2022</p>
-      </article>
-      <article>
-        <h3>Centro Universitario de Idiomas (CUI) — English</h3>
-        <p>January 2019 – December 2022</p>
+        <h4>Sol Mesz — Metrics and Design</h4>
+        <p>2024</p>
       </article>
     </section>
 

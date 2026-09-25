@@ -42,26 +42,32 @@ const LANG = document.documentElement.lang || 'es';
 const TRANSLATIONS = {
     es: {
         typewriter: [
-            "una visión integral, de la estrategia al código.",
-            "IA para clarificar datos y agilizar entregas.",
-            "métricas que validan cada decisión.",
-            "flexibilidad para iterar y ajustar el rumbo.",
-            "micro-interacciones que elevan la experiencia."
+            "utilizo una visión integral, de la estrategia al código.",
+            "uso la IA para clarificar datos y agilizar entregas en producción.",
+            "me baso en métricas que validan cada decisión.",
+            "mantengo la flexibilidad para iterar y ajustar el rumbo.",
+            "diseño micro-interacciones que elevan la experiencia."
         ],
         pills: [
             "Estrategia de Producto",
+            "Desarrollo asistido por IA",
             "UX/UI",
-            "User Research",
-            "Métricas y Negocio",
-            "Design Systems",
-            "Diseño Visual",
-            "WCAG AA",
-            "Motion Design",
-            "Agile/Scrum",
-            "AI-assisted workflows",
-            "Vibe Coding",
-            "Experto en Figma",
-            "Lottie"
+            "Claude / Cursor / Codex",
+            "MCPs",
+            "Agentes",
+            "Design Thinking",
+            "Métricas",
+            "Investigación de usuarios",
+            "Metodologías ágiles",
+            "Figma (Experto)",
+            "Prototipado",
+            "Sistemas de diseño",
+            "Accesibilidad (WCAG)",
+            "Motion design / Lottie",
+            "HTML CSS",
+            "Hotjar",
+            "Notion",
+            "Suite de Adobe"
         ],
         categories: {
             'product': 'Ux Ui Producto',
@@ -93,26 +99,32 @@ const TRANSLATIONS = {
     },
     en: {
         typewriter: [
-            "a comprehensive vision, from strategy to code.",
-            "AI to clarify data and speed up delivery.",
-            "metrics that validate every decision.",
-            "flexibility to iterate and adjust course.",
-            "micro-interactions that elevate experience."
+            "I apply a holistic vision, from strategy to code.",
+            "I use AI to clarify data and accelerate production deliveries.",
+            "I rely on metrics that validate every decision.",
+            "I maintain the flexibility to iterate and adjust course.",
+            "I design micro-interactions that elevate the experience."
         ],
         pills: [
             "Product Strategy",
+            "AI-assisted Development",
             "UX/UI",
+            "Claude / Cursor / Codex",
+            "MCPs",
+            "Agents",
+            "Design Thinking",
+            "Metrics",
             "User Research",
-            "Metrics & Business",
+            "Agile Methodologies",
+            "Figma (Expert)",
+            "Prototyping",
             "Design Systems",
-            "Visual Design",
-            "WCAG AA Accessibility",
-            "Motion Design",
-            "Agile/Scrum",
-            "AI-assisted workflows",
-            "Vibe Coding",
-            "Figma Expert",
-            "Lottie"
+            "Accessibility (WCAG)",
+            "Motion design / Lottie",
+            "HTML CSS",
+            "Hotjar",
+            "Notion",
+            "Adobe Suite"
         ],
         categories: {
             'product': 'UX UI Product',
@@ -168,7 +180,7 @@ function initTypewriter() {
         } else {
             textElement.textContent = currentPhrase.substring(0, charIndex + 1);
             charIndex++;
-            typeSpeed = 40; // Typing speed
+            typeSpeed = 20; // Double the typing speed
         }
 
         if (!isDeleting && charIndex === currentPhrase.length) {

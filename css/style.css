@@ -1,5 +1,5 @@
 :root {
-    --bg: linear-gradient(to top, rgb(206, 252, 241) 11.76%, rgb(173, 216, 255));
+    --bg: #EAF9F9;
     --black: #111111;
     --gray: #4A4A4A;
     --white: #FFFFFF;
@@ -107,6 +107,10 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond', serif;
+}
+
 /* En desktop, el body ocupa exactamente el viewport y no hace scroll vertical */
 @media (min-width: 1200px) {
     body {
@@ -152,11 +156,6 @@ body {
         font-size: 15px;
         margin-top: 8px;
         min-height: 2.8em;
-    }
-
-    .statement p {
-        font-size: 15px;
-        line-height: 1.4;
     }
 
     .pills-container {
@@ -225,10 +224,6 @@ body {
         margin-top: 18px;
     }
 
-    .statement p {
-        font-size: 20px;
-    }
-
     .card {
         padding: 40px;
     }
@@ -280,10 +275,6 @@ body {
         font-size: 21px;
     }
 
-    .statement p {
-        font-size: 21px;
-    }
-
     .sidebar-main-title {
         font-size: 30px;
     }
@@ -316,30 +307,11 @@ body.modal-open {
 }
 
 .wrapper {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-/* Monitores anchos: el wrapper crece para usar más espacio horizontal */
-@media (min-width: 1440px) {
-    .wrapper {
-        max-width: 1420px;
-    }
-}
-
-@media (min-width: 1600px) {
-    .wrapper {
-        max-width: 1560px;
-    }
-}
-
-@media (min-width: 1800px) {
-    .wrapper {
-        max-width: 1740px;
-    }
 }
 
 .header-nav {
@@ -375,13 +347,17 @@ body.modal-open {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding: 15px 40px;
+    padding: 22px 40px;
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-card);
 }
 
 .brand .name {
-    font-weight: 900;
-    font-size: 19px;
-    letter-spacing: -0.5px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.2px;
 }
 
 .brand .dot {
@@ -644,11 +620,11 @@ body.modal-open {
     width: 100%;
 }
 
-/* El Grid que pone proyectos a la derecha */
+/* Bento Grid Layout - Projects on the left, Hero & bottom cards on the right */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(0, 1.2fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1.25fr) auto minmax(0, 1fr);
     gap: 20px;
     flex: 1;
     min-height: 0;
@@ -657,19 +633,19 @@ body.modal-open {
 }
 
 /* Staggered animation delays for Bento cards */
-.hero {
+.projects-sidebar {
     animation-delay: 0.1s;
 }
 
-.photo-box {
+.hero {
     animation-delay: 0.2s;
 }
 
-.projects-sidebar {
+.pills-container {
     animation-delay: 0.3s;
 }
 
-.statement {
+.photo-box {
     animation-delay: 0.4s;
 }
 
@@ -677,21 +653,36 @@ body.modal-open {
     animation-delay: 0.5s;
 }
 
+.projects-sidebar {
+    grid-column: 9 / 13;
+    grid-row: 1 / 4;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    height: 100%;
+    min-height: 0;
+}
 
 .hero {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     grid-row: 1 / 2;
     padding: 35px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.15;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .icon-blue {
@@ -707,54 +698,60 @@ body.modal-open {
 }
 
 .typewriter-container {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     margin-top: 15px;
     min-height: 3.2em;
-    /* Reserva espacio para evitar el salto de contenido al escribir */
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
+.pills-container {
+    grid-column: 1 / 9;
+    grid-row: 2 / 3;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.bottom-row {
+    grid-column: 1 / 9;
+    grid-row: 3 / 4;
+    display: flex;
+    gap: 20px;
+    min-height: 0;
+}
 
 .photo-box {
-    grid-column: 7 / 10;
-    grid-row: 1 / 2;
     padding: 0;
     overflow: hidden;
     background: var(--white);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-card);
+    height: 100%;
+    min-height: 0;
+    aspect-ratio: 923 / 1152;
+    flex-shrink: 0;
 }
 
 .photo-box img {
-    width: 75%;
-    height: 75%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+    display: block;
+    margin: 0 auto;
 }
-
-.statement {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.statement p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--black);
-}
-
-.pills-container {
-    margin-top: 25px;
-    overflow: hidden;
-    white-space: nowrap;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
 
 .pills {
     display: flex;
@@ -762,18 +759,6 @@ body.modal-open {
     gap: 8px;
     margin-top: 15px;
     min-height: 30px;
-}
-
-.projects-sidebar {
-    grid-column: 10 / 13;
-    grid-row: 1 / 3;
-    overflow: hidden;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    border-radius: var(--radius);
-    height: 100%;
-    min-height: 0;
 }
 
 .scrollable-content {
@@ -784,8 +769,6 @@ body.modal-open {
 }
 
 .footer-card {
-    grid-column: 6 / 10;
-    grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -793,6 +776,7 @@ body.modal-open {
     color: var(--white);
     height: 100%;
     min-height: 0;
+    flex-grow: 1;
 }
 
 .contact-sec {
@@ -808,11 +792,12 @@ body.modal-open {
 }
 
 .contact-sec .big-link {
+    font-family: 'EB Garamond', serif;
     color: #FFFFFF;
     /* Blanco fijo para legibilidad sobre fondo oscuro */
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 
@@ -891,9 +876,9 @@ body.modal-open {
     background: var(--white);
     border: 1px solid var(--border-row);
     color: var(--black);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 7px 16px;
+    border-radius: 999px;
+    font-size: 13px;
     font-weight: 500;
     display: inline-block;
 }
@@ -924,6 +909,9 @@ body.modal-open {
 }
 
 .project-row h4 {
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
     transition: color 0.3s var(--expo-out);
 }
 
@@ -984,7 +972,7 @@ body.modal-open {
 
 /* ===== Sidebar Main Title ===== */
 .sidebar-main-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--black);
     letter-spacing: -0.5px;
@@ -1747,42 +1735,42 @@ body.modal-open {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
         gap: 20px;
         height: auto;
         max-height: none;
     }
 
     .hero {
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
         grid-row: 1 / 2;
+        min-height: 340px;
     }
 
-    .photo-box {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        max-width: none;
-        width: 100%;
-        height: 100%;
+    .pills-container {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin: 0;
+        padding: 4px 0;
     }
 
     .projects-sidebar {
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         max-height: none;
         height: auto;
         overflow: visible;
     }
 
-    .statement {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
+    .bottom-row {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        height: 340px;
     }
 
-    .footer-card {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
+    .photo-box {
+        max-width: none;
     }
 
     #project-list {
@@ -1840,23 +1828,51 @@ body.modal-open {
         flex-direction: column;
         height: auto;
         max-height: none;
+        gap: 16px;
     }
 
-    .photo-box {
-        order: -1;
-        max-width: 320px;
-        height: 320px;
-        margin: 0 auto;
+    .hero {
+        padding: 30px 24px;
     }
 
     .hero h1 {
-        font-size: 24px;
+        font-size: 26px;
+    }
+
+    .pills-container {
+        padding: 4px 0;
+        margin: 0;
     }
 
     .projects-sidebar {
         height: auto;
         max-height: none;
         overflow: visible;
+    }
+
+    .bottom-row {
+        display: contents;
+    }
+
+    .photo-box {
+        order: -1;
+        max-width: 100%;
+        height: 320px;
+        margin: 0;
+        border-radius: var(--radius);
+        overflow: hidden;
+        align-self: center;
+    }
+
+    .photo-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom center;
+    }
+
+    .footer-card {
+        min-height: 260px;
     }
 
     #project-list {
