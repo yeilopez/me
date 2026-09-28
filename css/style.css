@@ -813,6 +813,12 @@ button {
     min-height: 1.6em;
 }
 
+@media (max-width: 767px) {
+    .hero-sub {
+        min-height: calc(1.45em * 2);
+    }
+}
+
 .cursor {
     display: inline-block;
     margin-left: 1px;
@@ -1017,12 +1023,15 @@ button {
     font-size: 0.88rem;
     font-weight: 500;
     color: var(--black);
+    background: #EFEFEF;
     border: 1px solid transparent;
+    cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .filter-tab:hover {
     color: var(--black);
+    background: #E6E6E6;
 }
 
 .filter-tab.active {
@@ -1034,10 +1043,12 @@ button {
 
 .dark .filter-tab {
     color: var(--gray);
+    background: #2E2D2D;
 }
 
 .dark .filter-tab:hover {
     color: var(--black);
+    background: #383737;
 }
 
 .dark .filter-tab.active {
