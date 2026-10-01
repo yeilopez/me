@@ -195,7 +195,7 @@ function getScrollOffset(id) {
         || (compact && compact.classList.contains('visible'));
 
     if (showCompact) {
-        return compactH + navH;
+        return compactH + navH - 1;
     }
 
     return navH;
@@ -587,12 +587,12 @@ function syncStickyOffsets() {
     const nav = document.querySelector('.nav-menu');
 
     if (inner) {
-        const compactH = Math.round(inner.getBoundingClientRect().height) || 78;
+        const compactH = inner.offsetHeight || Math.round(inner.getBoundingClientRect().height) || 78;
         root.style.setProperty('--compact-header-h', `${compactH}px`);
     }
 
     if (nav) {
-        const navH = Math.round(nav.getBoundingClientRect().height) || 68;
+        const navH = nav.offsetHeight || Math.round(nav.getBoundingClientRect().height) || 68;
         root.style.setProperty('--nav-h', `${navH}px`);
     }
 }
