@@ -14,6 +14,9 @@
     --pill-bg: #F9F9FA;
     --pill-text: #1C1B1B;
     --muted-text: #5C5C5C;
+    /* Cristal (navbars + barra de filtros) */
+    --glass-bg: rgba(249, 249, 250, 0.72);
+    --glass-blur: saturate(180%) blur(20px);
     --header-offset: 0px;
     --nav-sticky-top: 0px;
     --section-sticky-top: 72px;
@@ -43,6 +46,9 @@
     --pill-bg: #2A2929;
     --pill-text: #ffffff;
     --muted-text: #C3C3C3;
+    /* Cristal (navbars + barra de filtros) */
+    --glass-bg: rgba(36, 35, 35, 0.72);
+    --glass-blur: saturate(180%) blur(20px);
 }
 
 ::view-transition-group(root) {
@@ -254,17 +260,13 @@ button {
     justify-content: space-between;
     padding: 12px 24px;
     min-height: 72px;
-    background: rgba(255, 255, 255, 0.72);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     box-sizing: border-box;
-}
-
-.dark .header-compact-inner {
-    background: rgba(28, 27, 27, 0.72);
 }
 
 .info-s {
@@ -692,17 +694,13 @@ button {
     gap: 16px;
     padding: 12px 24px;
     border-bottom: 1px solid var(--border);
-    background: rgba(249, 249, 250, 0.72);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
     position: sticky;
     top: 0;
     z-index: 30;
     width: 100%;
-}
-
-.dark .nav-menu {
-    background: rgba(36, 35, 35, 0.72);
 }
 
 @media (min-width: 992px) {
@@ -801,6 +799,7 @@ button {
     padding: 96px 24px 80px;
     border-bottom: 1px solid var(--border);
     text-align: center;
+    background: var(--bg);
 }
 
 .hero-inner {
@@ -985,7 +984,6 @@ button {
 .skills-strip {
     width: 100%;
     background: var(--surface);
-    border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 28px 24px;
 }
@@ -1023,11 +1021,15 @@ button {
     position: sticky;
     top: var(--section-sticky-top);
     z-index: 6;
-    background: var(--bg);
-    padding: 20px 0 16px;
-    margin: 0 0 8px;
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border);
+    /* el cristal se extiende a los bordes de la columna */
+    padding: 20px var(--filter-glass-right) 16px var(--filter-glass-left);
+    margin: 0 calc(-1 * var(--filter-glass-right)) 8px calc(-1 * var(--filter-glass-left));
     /* sella contra el borde inferior del navbar */
-    box-shadow: 0 -1px 0 var(--bg);
+    box-shadow: 0 -1px 0 var(--glass-bg);
 }
 
 .project-filter-tabs {
@@ -1087,7 +1089,7 @@ button {
 .project-card {
     background: var(--surface);
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.01);
+    border: 1px solid var(--border);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1097,7 +1099,7 @@ button {
 }
 
 .dark .project-card {
-    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-color: var(--border);
 }
 
 .project-card-media {
@@ -1436,9 +1438,11 @@ button {
 }
 
 .animate-in.is-visible,
-.reveal.is-visible {
+.reveal.is-visible,
+.hero-section,
+.content-section {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1748,11 +1752,17 @@ body {
     /* -1px cierra el hueco subpixel entre chrome sticky y filtros/labels */
     --section-sticky-top: calc(var(--compact-header-h, 78px) - 1px);
     --section-label-h: 65px; /* alto aprox. del .section-label sticky en mobile */
+    /* Espejan el padding lateral de .section-content para que el cristal
+       de .project-filter-sticky llegue a los bordes de la columna */
+    --filter-glass-left: 24px;
+    --filter-glass-right: 24px;
 }
 
 @media (min-width: 768px) {
     body {
         --section-label-h: 73px;
+        --filter-glass-left: 48px;
+        --filter-glass-right: 48px;
     }
 }
 
@@ -1763,6 +1773,14 @@ body {
 
     body.has-compact-header {
         --section-sticky-top: calc(var(--compact-header-h, 78px) + var(--nav-h, 68px) - 2px);
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        /* .section-content: padding: 80px 80px 100px 48px */
+        --filter-glass-left: 48px;
+        --filter-glass-right: 80px;
     }
 }
 
